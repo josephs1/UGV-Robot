@@ -23,6 +23,8 @@ try:
             client_socket.sendall(b"RIGHT")
         elif keyboard.is_pressed("esc"):
             break
+        else:
+            client_socket.sendall(b"silent")
 except KeyboardInterrupt:
     pass
 finally:
