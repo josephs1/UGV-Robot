@@ -28,8 +28,10 @@ try:
             break
         print(f"Received from laptop: {data}")
         
+        print("Testing 1")
         # Send data to Arduino
         arduino.write(data.encode())
+        print("Testing 2")
 finally:
     client_socket.close()
     arduino.close()
