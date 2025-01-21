@@ -19,12 +19,12 @@ try:
             client_socket.sendall(b"DOWN")
         elif keyboard.is_pressed("left"):
             client_socket.sendall(b"LEFT")
-        elif keyboard.is_pressed("right"):
-            client_socket.sendall(b"RIGHT")
+        # elif keyboard.is_pressed("right"):
+        #     client_socket.sendall(b"RIGHT")
         elif keyboard.is_pressed("esc"):
             break
         else:
-            client_socket.sendall(b"silent")
+            client_socket.sendall(b"RIGHT")
 except KeyboardInterrupt:
     pass
 finally:
