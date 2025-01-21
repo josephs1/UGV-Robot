@@ -36,3 +36,5 @@ finally:
     client_socket.close()
     arduino.close()
     print("Connections closed.")
+
+# Installed this for viewing the arduino terminal output: sudo apt-get install minicom
