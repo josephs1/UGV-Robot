@@ -28,15 +28,11 @@ try:
             break
         print(f"Received from laptop: {data}")
         
-        print("Testing 1")
         # Send data to Arduino
         arduino.write(data.encode())
-        print("Testing 2")
 except Exception as e:
     print(f"Error occurred: {e}")
 finally:
     client_socket.close()
     arduino.close()
     print("Connections closed.")
-
-# Installed this for viewing the arduino terminal output: sudo apt-get install minicom
