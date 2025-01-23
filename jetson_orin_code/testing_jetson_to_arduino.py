@@ -4,7 +4,7 @@ import time
 # Set up serial connection to Arduino
 SERIAL_PORT = "/dev/ttyACM0"  # Change this if necessary
 BAUD_RATE = 9600
-arduino = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)
+arduino = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=10)
 
 try:
     # Define messages to send
