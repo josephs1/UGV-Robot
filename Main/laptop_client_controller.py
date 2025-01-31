@@ -49,15 +49,15 @@ try:
             else:
                 new_command = ""
 
-            # Send the command if it has changed
+            # Send the command if it has changed. (Would get rid of in actual or maybe just have it so when new commend="" is sent, to update)
             if new_command and new_command != command_sent:
                 client_socket.sendall(new_command.encode())
                 print(f"Sent: {new_command}")
                 command_sent = new_command
                 last_time = current_time  # Update last_time
 
-            # Check if the "Back" button (button 6) is pressed to exit
-            if joystick.get_button(6):
+            # Check if the "Back" button (button B) is pressed to exit. (0 is A button. 1 is B button.)
+            if joystick.get_button(1):
                 break
 
         time.sleep(0.01)  # Small delay to prevent excessive CPU usage
