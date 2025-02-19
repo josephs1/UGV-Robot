@@ -4,24 +4,24 @@
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
   name="robot_arm_urdf">
-  
+
   <link name="world"/>
-  
+
   <link
     name="base_link">
     <inertial>
       <origin
-        xyz="0.146303583389375 0.0227364363233699 0.0786183231131826"
+        xyz="-0.00066697 -7.2955E-05 0.11391"
         rpy="0 0 0" />
       <mass
-        value="2.27847589927695" />
+        value="1.2708" />
       <inertia
-        ixx="0.00380444742254977"
-        ixy="-0.000206188903864419"
-        ixz="0.000150989469734131"
-        iyy="0.00486443002009746"
-        iyz="1.9405372408666E-05"
-        izz="0.00720649909693205" />
+        ixx="0.0025837"
+        ixy="-1.2489E-07"
+        ixz="-3.2925E-07"
+        iyy="0.0025874"
+        iyz="-4.1069E-08"
+        izz="0.0043243" />
     </inertial>
     <visual>
       <origin
@@ -34,7 +34,7 @@
       <material
         name="">
         <color
-          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+          rgba="0.75294 0.75294 0.75294 1" />
       </material>
     </visual>
     <collision>
@@ -47,28 +47,28 @@
       </geometry>
     </collision>
   </link>
-  
+
   <joint name="base_joint" type="fixed">
   	<parent link="world"/>
   	<child link="base_link"/>
   	<origin rpy="0 0 0" xyz="0.0 0.0 0.25"/>
   </joint>
-  
+
   <link
     name="link_1">
     <inertial>
       <origin
-        xyz="0.0306447925880698 0.281344566727743 0.372206162482047"
+        xyz="-1.3692E-05 -1.7969E-05 0.0089223"
         rpy="0 0 0" />
       <mass
-        value="0.641883744293896" />
+        value="0.10142" />
       <inertia
-        ixx="0.000465537868722206"
-        ixy="2.92544171696999E-05"
-        ixz="2.03341844754776E-05"
-        iyy="0.000617295838132801"
-        iyz="-3.98067161000968E-06"
-        izz="0.000626361475668464" />
+        ixx="8.687E-05"
+        ixy="8.9807E-08"
+        ixz="-3.7136E-09"
+        iyy="8.6652E-05"
+        iyz="-4.8736E-09"
+        izz="0.00017129" />
     </inertial>
     <visual>
       <origin
@@ -81,7 +81,7 @@
       <material
         name="">
         <color
-          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+          rgba="0.75294 0.75294 0.75294 1" />
       </material>
     </visual>
     <collision>
@@ -98,14 +98,14 @@
     name="joint_1"
     type="revolute">
     <origin
-      xyz="0.004244 0.37679 -0.077856"
-      rpy="1.5708 0 0" />
+      xyz="0 0 0.15678"
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
       link="link_1" />
     <axis
-      xyz="0 1 0" />
+      xyz="0 0 1" />
     <limit
       lower="-3.142"
       upper="3.142"
@@ -116,17 +116,17 @@
     name="link_2">
     <inertial>
       <origin
-        xyz="0.00995410909543785 0.173905303533361 0.0632176576099199"
+        xyz="0.001181 0.0061963 0.17391"
         rpy="0 0 0" />
       <mass
-        value="0.394669428659782" />
+        value="0.39467" />
       <inertia
-        ixx="0.00201544140173863"
-        ixy="-4.81655903692797E-07"
-        ixz="-5.89755045158386E-06"
-        iyy="0.00014684046202116"
-        iyz="1.0488729854379E-07"
-        izz="0.00197252279397421" />
+        ixx="0.0020154"
+        ixy="5.8976E-06"
+        ixz="-4.8166E-07"
+        iyy="0.0019725"
+        iyz="-1.0489E-07"
+        izz="0.00014684" />
     </inertial>
     <visual>
       <origin
@@ -139,7 +139,7 @@
       <material
         name="">
         <color
-          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+          rgba="0.75294 0.75294 0.75294 1" />
       </material>
     </visual>
     <collision>
@@ -156,14 +156,14 @@
     name="joint_2"
     type="revolute">
     <origin
-      xyz="-0.0129136150732728 0.308337646724069 0.307358400547654"
+      xyz="0.00010358 1.3092E-05 0.0737"
       rpy="0 0 0" />
     <parent
       link="link_1" />
     <child
       link="link_2" />
     <axis
-      xyz="-0.125391445630158 0 -0.992107345685324" />
+      xyz="-0.12539 0.99211 0" />
     <limit
       lower="-1.57"
       upper="1.57"
@@ -174,17 +174,17 @@
     name="link_3">
     <inertial>
       <origin
-        xyz="-0.101730833124941 -0.00013569897650012 0.112485387666801"
+        xyz="-0.1146 -0.010681 -0.0001357"
         rpy="0 0 0" />
       <mass
-        value="0.259256412516919" />
+        value="0.25926" />
       <inertia
-        ixx="8.82055214106673E-05"
-        ixy="1.91288092550191E-08"
-        ixz="0.000147246406091982"
-        iyy="0.0012487740196317"
-        iyz="5.73285944186787E-08"
-        izz="0.0012348363247349" />
+        ixx="8.8206E-05"
+        ixy="-0.00014725"
+        ixz="1.9129E-08"
+        iyy="0.0012348"
+        iyz="-5.7329E-08"
+        izz="0.0012488" />
     </inertial>
     <visual>
       <origin
@@ -197,7 +197,7 @@
       <material
         name="">
         <color
-          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+          rgba="0.75294 0.75294 0.75294 1" />
       </material>
     </visual>
     <collision>
@@ -214,14 +214,14 @@
     name="joint_3"
     type="revolute">
     <origin
-      xyz="-0.0040937973882068 0.406399999999999 -0.0323904588559681"
+      xyz="0 0 0.4064"
       rpy="0 0 0" />
     <parent
       link="link_2" />
     <child
       link="link_3" />
     <axis
-      xyz="-0.125391445630158 0 -0.992107345685324" />
+      xyz="0.12539 -0.99211 0" />
     <limit
       lower="-1"
       upper="3.14"
@@ -232,17 +232,17 @@
     name="link_4">
     <inertial>
       <origin
-        xyz="0.00956075507296156 0.028864624504545 0.0735538720173586"
+        xyz="0.00069115 -0.0033768 0.028865"
         rpy="0 0 0" />
       <mass
-        value="0.18731544221453" />
+        value="0.18732" />
       <inertia
-        ixx="0.000131172951702039"
-        ixy="4.79991337558464E-09"
-        ixz="-3.82564484824128E-06"
-        iyy="0.000133438325492828"
-        iyz="1.72597973055121E-08"
-        izz="0.000105908438964448" />
+        ixx="0.00013117"
+        ixy="3.8256E-06"
+        ixz="4.7999E-09"
+        iyy="0.00010591"
+        iyz="-1.726E-08"
+        izz="0.00013344" />
     </inertial>
     <visual>
       <origin
@@ -255,7 +255,7 @@
       <material
         name="">
         <color
-          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+          rgba="0.75294 0.75294 0.75294 1" />
       </material>
     </visual>
     <collision>
@@ -272,14 +272,14 @@
     name="joint_4"
     type="revolute">
     <origin
-      xyz="-0.344415980373364 0 0.0713450468234001"
+      xyz="-0.34841 -0.039718 0"
       rpy="0 0 0" />
     <parent
       link="link_3" />
     <child
       link="link_4" />
     <axis
-      xyz="-0.125391445630158 0 -0.992107345685324" />
+      xyz="-0.12539 0.99211 0" />
     <limit
       lower="-3.14"
       upper="0"
@@ -290,17 +290,17 @@
     name="link_5">
     <inertial>
       <origin
-        xyz="-4.27844132344646E-09 0.013259123530174 2.67440514178929E-09"
+        xyz="-4.2785E-09 -2.6744E-09 0.0075841"
         rpy="0 0 0" />
       <mass
-        value="0.00352439273827263" />
+        value="0.0035244" />
       <inertia
-        ixx="2.30460116989414E-07"
-        ixy="4.50680847413183E-13"
-        ixz="4.85236076885767E-12"
-        iyy="3.99508652333463E-07"
-        iyz="5.01163318609839E-13"
-        izz="2.30445970855517E-07" />
+        ixx="2.3046E-07"
+        ixy="-4.8524E-12"
+        ixz="4.5068E-13"
+        iyy="2.3045E-07"
+        iyz="-5.0116E-13"
+        izz="3.9951E-07" />
     </inertial>
     <visual>
       <origin
@@ -313,7 +313,7 @@
       <material
         name="">
         <color
-          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+          rgba="0.75294 0.75294 0.75294 1" />
       </material>
     </visual>
     <collision>
@@ -330,21 +330,21 @@
     name="joint_5"
     type="revolute">
     <origin
-      xyz="0.00886960764909822 0.0715224872569122 0.0701770591910485"
+      xyz="0 0 0.077198"
       rpy="0 0 0" />
     <parent
       link="link_4" />
     <child
       link="link_5" />
     <axis
-      xyz="0 -1 0" />
+      xyz="0 0 -1" />
     <limit
       lower="-3.14"
       upper="3.14"
       effort="2.45"
       velocity="8.08" />
   </joint>
-  
+
   <transmission name="link_1_trans">
   	<type>transmission_interface/SimpleTransmission</type>
   	<joint name="joint_1">
@@ -425,5 +425,5 @@
   <gazebo reference="link_5">
   	<selfCollide>true</selfCollide>
   </gazebo>
-  
+
 </robot>
