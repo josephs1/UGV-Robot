@@ -223,8 +223,8 @@
     <axis
       xyz="0.12539 -0.99211 0" />
     <limit
-      lower="-1"
-      upper="3.14"
+      lower="-3.14"
+      upper="1"
       effort="7.85"
       velocity="6.54" />
   </joint>
@@ -424,6 +424,7 @@
   
   <gazebo reference="link_5">
   	<selfCollide>true</selfCollide>
+  	
   </gazebo>
 
 </robot>
