@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'joint_1', 'joint_2', 'joint_3', 'joint_4', 'joint_5', 'ee_thumb_prox_joint', 'ee_thumb_dist_joint', 'ee_finger1_roll_joint', 'ee_finger1_prox_joint', 'ee_finger1_dist_joint', 'ee_finger2_roll_joint', 'ee_finger2_prox_joint', 'ee_finger2_dist_joint', ]
