@@ -1,0 +1,1 @@
+/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/catkin_ws2/devel/.private/catkin/local_setup.fish

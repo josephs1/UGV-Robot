@@ -251,8 +251,8 @@ CMakeFiles/run_tests.dir/clean:
 # Target rules for target CMakeFiles/_run_tests_catkin_nosetests.dir
 
 # All Build rule for target.
-CMakeFiles/_run_tests_catkin_nosetests.dir/all: CMakeFiles/_run_tests_catkin_nosetests_test.local_tests.dir/all
 CMakeFiles/_run_tests_catkin_nosetests.dir/all: CMakeFiles/_run_tests_catkin_nosetests_test.unit_tests.dir/all
+CMakeFiles/_run_tests_catkin_nosetests.dir/all: CMakeFiles/_run_tests_catkin_nosetests_test.local_tests.dir/all
 	$(MAKE) -f CMakeFiles/_run_tests_catkin_nosetests.dir/build.make CMakeFiles/_run_tests_catkin_nosetests.dir/depend
 	$(MAKE) -f CMakeFiles/_run_tests_catkin_nosetests.dir/build.make CMakeFiles/_run_tests_catkin_nosetests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin/CMakeFiles --progress-num= "Built target _run_tests_catkin_nosetests"

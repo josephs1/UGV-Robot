@@ -1,8 +1,0 @@
-prefix=/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/devel/.private/moveit_robot_arm_sim
-
-Name: moveit_robot_arm_sim
-Description: Description of moveit_robot_arm_sim
-Version: 0.3.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
