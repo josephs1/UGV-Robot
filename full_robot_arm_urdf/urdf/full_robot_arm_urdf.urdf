@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="full_robot_arm_urdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.00066697 -7.2956E-05 0.11391"
+        rpy="0 0 0" />
+      <mass
+        value="1.2708" />
+      <inertia
+        ixx="0.0025837"
+        ixy="-1.2489E-07"
+        ixz="-3.2925E-07"
+        iyy="0.0025874"
+        iyz="-4.1069E-08"
+        izz="0.0043243" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="0.034889 0.0045793 0.046707"
+        rpy="0 0 0" />
+      <mass
+        value="0.64188" />
+      <inertia
+        ixx="0.00046554"
+        ixy="-2.0334E-05"
+        ixz="2.9258E-05"
+        iyy="0.00062637"
+        iyz="3.9809E-06"
+        izz="0.0006173" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.15678"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.142"
+      upper="3.142"
+      effort="28.35"
+      velocity="5.24" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="0.001209 0.0061315 0.17443"
+        rpy="0 0 0" />
+      <mass
+        value="0.39695" />
+      <inertia
+        ixx="0.0020155"
+        ixy="5.8977E-06"
+        ixz="-4.807E-07"
+        iyy="0.0019726"
+        iyz="-1.0537E-07"
+        izz="0.0001469" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="0.00010358 1.3092E-05 0.0737"
+      rpy="0 0 0" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="-0.12539 0.99211 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="28.35"
+      velocity="5.24" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="-0.120540562634149 -0.0102131061643456 -5.76519410341314E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.271185231914755" />
+      <inertia
+        ixx="9.09203079177439E-05"
+        ixy="-0.000147557836847333"
+        ixz="-2.18123959028502E-08"
+        iyy="0.00123949608117588"
+        iyz="3.22187008268715E-07"
+        izz="0.00125346711057046" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="revolute">
+    <origin
+      xyz="0 0 0.4064"
+      rpy="0 0 0" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0.12539 -0.99211 0" />
+    <limit
+      lower="-1"
+      upper="3.14"
+      effort="7.85"
+      velocity="6.54" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="0.000691147483266152 -0.00337681280202297 0.0288646245756417"
+        rpy="0 0 0" />
+      <mass
+        value="0.18731544179836" />
+      <inertia
+        ixx="0.000131172951960669"
+        ixy="3.82564482216409E-06"
+        ixz="4.79993052351855E-09"
+        iyy="0.000105908438924271"
+        iyz="-1.72598376294206E-08"
+        izz="0.000133438325685805" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="revolute">
+    <origin
+      xyz="-0.34841 -0.039718 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="-0.12539 0.99211 0" />
+    <limit
+      lower="-3.14"
+      upper="0"
+      effort="2.45"
+      velocity="8.08" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="0.0135249185469873 0.0104054911896331 0.0389186612091647"
+        rpy="0 0 0" />
+      <mass
+        value="0.451187361366382" />
+      <inertia
+        ixx="0.000179281260637796"
+        ixy="-3.85719776156931E-06"
+        ixz="-6.31784674882797E-07"
+        iyy="0.000181879982946338"
+        iyz="-6.0025556110912E-08"
+        izz="0.000285356657571111" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5"
+    type="revolute">
+    <origin
+      xyz="0 0 0.077198"
+      rpy="0 0 0" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="2.45"
+      velocity="8.08" />
+  </joint>
+  <link
+    name="ee_thumb_prox">
+    <inertial>
+      <origin
+        xyz="-0.000363742372263914 -0.0136623441316672 0.0124786350606823"
+        rpy="0 0 0" />
+      <mass
+        value="0.0140616051661292" />
+      <inertia
+        ixx="2.66037470712265E-06"
+        ixy="-4.61561205563586E-08"
+        ixz="3.91772433458902E-08"
+        iyy="1.37750923910108E-06"
+        iyz="8.22644622578878E-07"
+        izz="1.61529675721767E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/ee_thumb_prox.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/ee_thumb_prox.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ee_thumb_prox_joint"
+    type="revolute">
+    <origin
+      xyz="0.044583 0.0062919 0.080425"
+      rpy="0 0 1.6777" />
+    <parent
+      link="link_5" />
+    <child
+      link="ee_thumb_prox" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="1.57"
+      effort="2.45"
+      velocity="8.08" />
+  </joint>
+  <link
+    name="ee_thumb_dist">
+    <inertial>
+      <origin
+        xyz="4.9545E-07 -0.013721 0.012657"
+        rpy="0 0 0" />
+      <mass
+        value="0.011962" />
+      <inertia
+        ixx="1.1235E-06"
+        ixy="5.1548E-09"
+        ixz="-2.7094E-09"
+        iyy="7.9913E-07"
+        iyz="8.7468E-08"
+        izz="8.0291E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/ee_thumb_dist.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/ee_thumb_dist.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ee_thumb_dist_joint"
+    type="revolute">
+    <origin
+      xyz="0 -0.035355 0.035355"
+      rpy="0 0 0" />
+    <parent
+      link="ee_thumb_prox" />
+    <child
+      link="ee_thumb_dist" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="1.57"
+      effort="2.45"
+      velocity="8.08" />
+  </joint>
+  <link
+    name="ee_finger1_roll">
+    <inertial>
+      <origin
+        xyz="-0.0030344450905359 0.00298790974640029 0.0236510274163294"
+        rpy="0 0 0" />
+      <mass
+        value="0.026092694642213" />
+      <inertia
+        ixx="1.75874153155982E-06"
+        ixy="2.55040020024406E-07"
+        ixz="2.05949516104452E-07"
+        iyy="2.10388510315654E-06"
+        iyz="-8.14519287998053E-08"
+        izz="2.52686919974154E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/ee_finger1_roll.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/ee_finger1_roll.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ee_finger1_roll_joint"
+    type="revolute">
+    <origin
+      xyz="-0.02203 -0.029016 0.039425"
+      rpy="0 0 1.6777" />
+    <parent
+      link="link_5" />
+    <child
+      link="ee_finger1_roll" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="2.45"
+      velocity="8.08" />
+  </joint>
+  <link
+    name="ee_finger1_prox">
+    <inertial>
+      <origin
+        xyz="-0.0100151366264025 0.0100881023099159 0.0126098230447425"
+        rpy="0 0 0" />
+      <mass
+        value="0.0146611614005227" />
+      <inertia
+        ixx="2.05001390459699E-06"
+        ixy="6.35204259208587E-07"
+        ixz="5.67345609755155E-07"
+        iyy="2.00461936538838E-06"
+        iyz="-5.98929942827042E-07"
+        izz="1.62919639103441E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/ee_finger1_prox.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/ee_finger1_prox.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ee_finger1_prox_joint"
+    type="revolute">
+    <origin
+      xyz="0 0 0.043"
+      rpy="0 0 0" />
+    <parent
+      link="ee_finger1_roll" />
+    <child
+      link="ee_finger1_prox" />
+    <axis
+      xyz="-0.69373 -0.72024 0" />
+    <limit
+      lower="0"
+      upper="1.57"
+      effort="2.45"
+      velocity="8.08" />
+  </joint>
+  <link
+    name="ee_finger1_dist">
+    <inertial>
+      <origin
+        xyz="-0.0099923 0.0091921 0.011874"
+        rpy="0 0 0" />
+      <mass
+        value="0.01344" />
+      <inertia
+        ixx="9.8068E-07"
+        ixy="1.3211E-07"
+        ixz="6.4617E-08"
+        iyy="1.0007E-06"
+        iyz="-5.8229E-08"
+        izz="8.5994E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/ee_finger1_dist.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/ee_finger1_dist.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ee_finger1_dist_joint"
+    type="revolute">
+    <origin
+      xyz="-0.025475 0.024538 0.03534"
+      rpy="0 0 0" />
+    <parent
+      link="ee_finger1_prox" />
+    <child
+      link="ee_finger1_dist" />
+    <axis
+      xyz="-0.69373 -0.72024 0" />
+    <limit
+      lower="0"
+      upper="1.57"
+      effort="2.45"
+      velocity="8.08" />
+  </joint>
+  <link
+    name="ee_finger2_roll">
+    <inertial>
+      <origin
+        xyz="0.00334718250235318 0.00334927922012673 0.0253640265895112"
+        rpy="0 0 0" />
+      <mass
+        value="0.0232082046067633" />
+      <inertia
+        ixx="1.59711372864254E-06"
+        ixy="-2.50507212743501E-07"
+        ixz="-2.05033589186341E-07"
+        iyy="1.92999911038311E-06"
+        iyz="-8.38287232295659E-08"
+        izz="2.29417877831148E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/ee_finger2_roll.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/ee_finger2_roll.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ee_finger2_roll_joint"
+    type="revolute">
+    <origin
+      xyz="-0.028004 0.026665 0.039425"
+      rpy="0 0 1.6777" />
+    <parent
+      link="link_5" />
+    <child
+      link="ee_finger2_roll" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="2.45"
+      velocity="8.08" />
+  </joint>
+  <link
+    name="ee_finger2_prox">
+    <inertial>
+      <origin
+        xyz="0.00982114968186977 0.0100894020170717 0.0127607456764693"
+        rpy="0 0 0" />
+      <mass
+        value="0.0146611931889972" />
+      <inertia
+        ixx="2.0707844397317E-06"
+        ixy="-6.25843565648403E-07"
+        ixz="-5.62879421403144E-07"
+        iyy="2.00142298950427E-06"
+        iyz="-6.06361385897441E-07"
+        izz="1.61160043588826E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/ee_finger2_prox.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/ee_finger2_prox.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ee_finger2_prox_joint"
+    type="revolute">
+    <origin
+      xyz="-4.8612E-05 4.9507E-05 0.043"
+      rpy="0 0 0" />
+    <parent
+      link="ee_finger2_roll" />
+    <child
+      link="ee_finger2_prox" />
+    <axis
+      xyz="0.70063 -0.71353 0" />
+    <limit
+      lower="0"
+      upper="1.57"
+      effort="2.45"
+      velocity="8.08" />
+  </joint>
+  <link
+    name="ee_finger2_dist">
+    <inertial>
+      <origin
+        xyz="0.0096228 0.0090347 0.011962"
+        rpy="0 0 0" />
+      <mass
+        value="0.013599" />
+      <inertia
+        ixx="9.8748E-07"
+        ixy="-1.3157E-07"
+        ixz="-6.4233E-08"
+        iyy="1.0023E-06"
+        iyz="-5.8906E-08"
+        izz="8.5866E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/ee_finger2_dist.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_robot_arm_urdf/meshes/ee_finger2_dist.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ee_finger2_dist_joint"
+    type="revolute">
+    <origin
+      xyz="0.024968 0.024516 0.035715"
+      rpy="0 0 0" />
+    <parent
+      link="ee_finger2_prox" />
+    <child
+      link="ee_finger2_dist" />
+    <axis
+      xyz="0.70063 -0.71353 0" />
+    <limit
+      lower="0"
+      upper="1.57"
+      effort="2.45"
+      velocity="8.08" />
+  </joint>
+</robot>
