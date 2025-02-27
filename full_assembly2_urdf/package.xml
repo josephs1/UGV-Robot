@@ -1,10 +1,10 @@
 <package format="2">
-  <name>full_robot_arm_urdf</name>
+  <name>full_assembly2_urdf</name>
   <version>1.0.0</version>
   <description>
-    <p>URDF Description package for full_robot_arm_urdf</p>
+    <p>URDF Description package for full_assembly2_urdf</p>
     <p>This package contains configuration data, 3D models and launch files
-for full_robot_arm_urdf robot</p>
+for full_assembly2_urdf robot</p>
   </description>
   <author>TODO</author>
   <maintainer email="TODO@email.com" />
