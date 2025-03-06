@@ -52,9 +52,9 @@
     </group_state>
     <group_state name="arm_pick_object" group="arm_group">
         <joint name="joint_1" value="0"/>
-        <joint name="joint_2" value="-0.8388"/>
-        <joint name="joint_3" value="-0.2193"/>
-        <joint name="joint_4" value="-2.5091"/>
+        <joint name="joint_2" value="-1.042"/>
+        <joint name="joint_3" value="-0.218"/>
+        <joint name="joint_4" value="-2.304"/>
         <joint name="joint_5" value="0"/>
     </group_state>
     <group_state name="arm_lift_object" group="arm_group">
@@ -66,9 +66,9 @@
     </group_state>
     <group_state name="arm_opposite_pose" group="arm_group">
         <joint name="joint_1" value="-3.142"/>
-        <joint name="joint_2" value="-0.4588"/>
-        <joint name="joint_3" value="-0.2193"/>
-        <joint name="joint_4" value="-2.8891"/>
+        <joint name="joint_2" value="-1.042"/>
+        <joint name="joint_3" value="-0.218"/>
+        <joint name="joint_4" value="-2.304"/>
         <joint name="joint_5" value="0"/>
     </group_state>
     <group_state name="arm_place_object" group="arm_group">
@@ -107,6 +107,16 @@
         <joint name="ee_finger2_roll_joint" value="0"/>
         <joint name="ee_thumb_dist_joint" value="-0.9"/>
         <joint name="ee_thumb_prox_joint" value="-0.95"/>
+    </group_state>
+    <group_state name="grab_cube" group="hand_group">
+        <joint name="ee_finger1_dist_joint" value="-0.7"/>
+        <joint name="ee_finger1_prox_joint" value="-0.5"/>
+        <joint name="ee_finger1_roll_joint" value="0"/>
+        <joint name="ee_finger2_dist_joint" value="0.7"/>
+        <joint name="ee_finger2_prox_joint" value="0.5"/>
+        <joint name="ee_finger2_roll_joint" value="0"/>
+        <joint name="ee_thumb_dist_joint" value="-0.989"/>
+        <joint name="ee_thumb_prox_joint" value="-0.629"/>
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="hand_ee" parent_link="link_5" group="hand_group"/>
