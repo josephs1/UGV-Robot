@@ -11,9 +11,11 @@ controller_list:
     - joint_3
     - joint_4
     - joint_5
+      
   - name: hand_ee_controller
     action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
+    default: true
     joints:
     - ee_thumb_prox_joint
     - ee_thumb_dist_joint
@@ -23,3 +25,4 @@ controller_list:
     - ee_finger2_roll_joint
     - ee_finger2_prox_joint
     - ee_finger2_dist_joint
+

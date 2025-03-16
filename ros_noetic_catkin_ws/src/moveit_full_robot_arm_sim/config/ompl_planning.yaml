@@ -196,8 +196,103 @@ arm_group:
     - BITstar
   projection_evaluator: joints(joint_1,joint_2)
   longest_valid_segment_fraction: 0.005
-hand_group:
+thumb_group:
   default_planner_config: RRT
+  planner_configs:
+    - AnytimePathShortening
+    - SBL
+    - EST
+    - LBKPIECE
+    - BKPIECE
+    - KPIECE
+    - RRT
+    - RRTConnect
+    - RRTstar
+    - TRRT
+    - PRM
+    - PRMstar
+    - FMT
+    - BFMT
+    - PDST
+    - STRIDE
+    - BiTRRT
+    - LBTRRT
+    - BiEST
+    - ProjEST
+    - LazyPRM
+    - LazyPRMstar
+    - SPARS
+    - SPARStwo
+    - AITstar
+    - ABITstar
+    - BITstar
+  projection_evaluator: joints(ee_thumb_prox_joint,ee_thumb_dist_joint)
+  longest_valid_segment_fraction: 0.005
+finger1_group:
+  default_planner_config: RRT
+  planner_configs:
+    - AnytimePathShortening
+    - SBL
+    - EST
+    - LBKPIECE
+    - BKPIECE
+    - KPIECE
+    - RRT
+    - RRTConnect
+    - RRTstar
+    - TRRT
+    - PRM
+    - PRMstar
+    - FMT
+    - BFMT
+    - PDST
+    - STRIDE
+    - BiTRRT
+    - LBTRRT
+    - BiEST
+    - ProjEST
+    - LazyPRM
+    - LazyPRMstar
+    - SPARS
+    - SPARStwo
+    - AITstar
+    - ABITstar
+    - BITstar
+  projection_evaluator: joints(ee_finger1_roll_joint,ee_finger1_prox_joint)
+  longest_valid_segment_fraction: 0.005
+finger2_group:
+  default_planner_config: RRT
+  planner_configs:
+    - AnytimePathShortening
+    - SBL
+    - EST
+    - LBKPIECE
+    - BKPIECE
+    - KPIECE
+    - RRT
+    - RRTConnect
+    - RRTstar
+    - TRRT
+    - PRM
+    - PRMstar
+    - FMT
+    - BFMT
+    - PDST
+    - STRIDE
+    - BiTRRT
+    - LBTRRT
+    - BiEST
+    - ProjEST
+    - LazyPRM
+    - LazyPRMstar
+    - SPARS
+    - SPARStwo
+    - AITstar
+    - ABITstar
+    - BITstar
+  projection_evaluator: joints(ee_finger2_roll_joint,ee_finger2_prox_joint)
+  longest_valid_segment_fraction: 0.005
+hand_group:
   planner_configs:
     - AnytimePathShortening
     - SBL
