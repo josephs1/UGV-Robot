@@ -111,7 +111,7 @@ def start_jetson_server():
         ssh_client.connect(JETSON_IP, username=JETSON_USER, password=JETSON_PASS)
 
         # Start the jetson_server.py script in a new terminal window (e.g., using gnome-terminal or xterm)
-        command = f'gnome-terminal -- bash -c "python3 ~/workspaces/UGV-Robot/Main/jetson_server.py; exec bash"'
+        command = f'gnome-terminal -- bash -c "python3 ~/CodeWorkspace/UGV-Robot/Main/jetson_server.py; exec bash"'
         # For xterm, use the following command:
         # command = f'xterm -e "python3 ~/workspaces/UGV-Robot/Main/jetson_server.py; bash"'
         

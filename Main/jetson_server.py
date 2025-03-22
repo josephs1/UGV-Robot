@@ -3,11 +3,11 @@ import socket
 import serial
 
 # Set up serial connection to Arduino
-SERIAL_PORT = "/dev/ttyACM0"  # Replace with the Arduino's serial port
+########SERIAL_PORT = "/dev/ttyACM0"  # Replace with the Arduino's serial port
 # Command for scanning ports: ls /dev/ttyACM*
 # Giving write permissions: sudo chmod 666 /dev/ttyACM0
 BAUD_RATE = 9600
-arduino = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)
+########arduino = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)
 
 # Set up server
 HOST = "0.0.0.0"
@@ -29,10 +29,10 @@ try:
         print(f"Received from laptop: {data}")
         
         # Send data to Arduino
-        arduino.write(data.encode())
+        ##########arduino.write(data.encode())
 except Exception as e:
     print(f"Error occurred: {e}")
 finally:
     client_socket.close()
-    arduino.close()
+    ##########arduino.close()
     print("Connections closed.")
