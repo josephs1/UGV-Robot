@@ -5,10 +5,10 @@ import paramiko # Require 'pip install paramiko'
 import subprocess # Used for opening a new terminal window
 
 # Define Jetson Orin Nano's IP and port
-JETSON_IP = "192.168.1.189" # Replace with the Jetson's actual IP address
-JETSON_USER = "huskyorin"   # Jetson Username
-JETSON_PASS = "abs108"      # Jetson Password
-PORT = 12345
+JETSON_IP = "10.0.0.179" # Replace with the Jetson's actual IP address
+JETSON_USER = "ugv-c7"   # Jetson Username
+JETSON_PASS = "stevens-siemens-C7"      # Jetson Password
+PORT = 12345 # sudo netstat -tuln
 
 # Initialize pygame and the joystick
 pygame.init()
@@ -110,10 +110,13 @@ def start_jetson_server():
         # Connect to Jetson Nano
         ssh_client.connect(JETSON_IP, username=JETSON_USER, password=JETSON_PASS)
 
-        # Start the jetson_server.py script in the background
-        command = f'python3 ~/workspaces/UGV-Robot/Main/jetson_server.py &'
+        # Start the jetson_server.py script in a new terminal window (e.g., using gnome-terminal or xterm)
+        command = f'gnome-terminal -- bash -c "python3 ~/workspaces/UGV-Robot/Main/jetson_server.py; exec bash"'
+        # For xterm, use the following command:
+        # command = f'xterm -e "python3 ~/workspaces/UGV-Robot/Main/jetson_server.py; bash"'
+        
         ssh_client.exec_command(command)
-        print("Started jetson_server.py on the Jetson Nano.")
+        print("Started jetson_server.py on the Jetson Nano in a new terminal.")
 
         ssh_client.close()
 
