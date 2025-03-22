@@ -11,7 +11,7 @@ BAUD_RATE = 9600
 
 # Set up server
 HOST = "0.0.0.0"
-PORT = 111
+PORT = 12345
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.bind((HOST, PORT))
 server_socket.listen(1)
