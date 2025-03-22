@@ -1,6 +1,10 @@
 # Used sudo apt install python3-serial on jetson
 import socket
 import serial
+import logging
+
+# Set up logging
+logging.basicConfig(filename='~/jetson_server_output.log', level=logging.INFO)
 
 # Set up serial connection to Arduino
 ########SERIAL_PORT = "/dev/ttyACM0"  # Replace with the Arduino's serial port
@@ -16,9 +20,9 @@ server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.bind((HOST, PORT))
 server_socket.listen(1)
 
-print("Waiting for connection from laptop...")
+logging.info("Waiting for connection from laptop...")
 client_socket, addr = server_socket.accept()
-print(f"Connected to {addr}")
+logging.info(f"Connected to {addr}")
 
 try:
     while True:
@@ -26,13 +30,13 @@ try:
         data = client_socket.recv(1024).decode("utf-8")
         if not data:
             break
-        print(f"Received from laptop: {data}")
+        logging.info(f"Received from laptop: {data}")
         
         # Send data to Arduino
         ##########arduino.write(data.encode())
 except Exception as e:
-    print(f"Error occurred: {e}")
+    logging.error(f"Error occurred: {e}")
 finally:
     client_socket.close()
     ##########arduino.close()
-    print("Connections closed.")
+    logging.info("Connections closed.")

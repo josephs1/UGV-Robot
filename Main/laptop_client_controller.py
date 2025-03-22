@@ -3,6 +3,7 @@ import pygame  # Requires 'pip install pygame'
 import time
 import paramiko  # Require 'pip install paramiko'
 import subprocess  # Used for opening a new terminal window
+import threading  # For running capture_jetson_terminal in a separate thread
 
 # Define Jetson Orin Nano's IP and port
 JETSON_IP = "10.0.0.179"  # Replace with the Jetson's actual IP address
@@ -38,20 +39,24 @@ def capture_jetson_terminal():
         # Connect to Jetson Nano
         ssh_client.connect(JETSON_IP, username=JETSON_USER, password=JETSON_PASS)
 
-        # Open an interactive shell session
-        stdin, stdout, stderr = ssh_client.exec_command('/bin/bash')
+        # Start the jetson_server.py script in the background
+        command = f'python3 ~/CodeWorkspace/UGV-Robot/Main/jetson_server.py &'
+        ssh_client.exec_command(command)
 
-        # Open a new terminal window (PowerShell or Command Prompt)
-        terminal_process = subprocess.Popen(['start', 'powershell', '-NoExit', 'echo "Jetson Nano Terminal Output"'], shell=True)
+        # Open a new terminal window (PowerShell or Command Prompt) to display the Jetson terminal output
+        terminal_process = subprocess.Popen(['start', 'powershell', '-NoExit', '-Command', 'echo "Jetson Nano Terminal Output"'], shell=True)
 
-        # Continuously read and print output from the Jetson Nano
+        # Continuously read and print output from the Jetson Nano's terminal using SSH
+        stdin, stdout, stderr = ssh_client.exec_command('tail -f ~/CodeWorkspace/UGV-Robot/Main/jetson_server_output.log')
+
+        # Continuously send Jetson's output to the terminal window
         while True:
             output = stdout.readline()
             if output == '' and stdout.channel.exit_status_ready():
                 break
             if output:
-                # Send the Jetson Nano output to the new terminal window
-                terminal_process.stdin.write(f"{output}\n")  # Write output to the new terminal window
+                # Send output to the PowerShell window
+                terminal_process.stdin.write(f"{output.strip()}\n")
                 terminal_process.stdin.flush()
 
         ssh_client.close()
@@ -124,6 +129,11 @@ def start_jetson_server():
     except Exception as e:
         print(f"Error starting the Jetson server: {e}")
 
+    # Start Jetson terminal capture in a separate thread
+    capture_thread = threading.Thread(target=capture_jetson_terminal)
+    capture_thread.daemon = True  # Allow the thread to exit when the main program exits
+    capture_thread.start()
+
 # Wait for Jetson server to be ready for connection
 def wait_for_jetson_server():
     while True:
@@ -141,6 +151,9 @@ start_jetson_server()  # Start the terminal window for showing Jetson terminal
 
 # Wait for the Jetson server to be ready to accept connections
 wait_for_jetson_server()
+
+# Call the capture_jetson_terminal function to capture output
+capture_jetson_terminal()  # This will start the SSH terminal capture
 
 # Start the local terminal capture and the Jetson terminal capture
 if __name__ == "__main__":
