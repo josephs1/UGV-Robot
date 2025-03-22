@@ -41,13 +41,18 @@ def capture_jetson_terminal():
         # Open an interactive shell session
         stdin, stdout, stderr = ssh_client.exec_command('/bin/bash')
 
+        # Open a new terminal window (PowerShell or Command Prompt)
+        terminal_process = subprocess.Popen(['start', 'powershell', '-NoExit', 'echo "Jetson Nano Terminal Output"'], shell=True)
+
         # Continuously read and print output from the Jetson Nano
         while True:
             output = stdout.readline()
             if output == '' and stdout.channel.exit_status_ready():
                 break
             if output:
-                print(f"Jetson Terminal: {output}", end='')  # Print Jetson's output
+                # Send the Jetson Nano output to the new terminal window
+                terminal_process.stdin.write(f"{output}\n")  # Write output to the new terminal window
+                terminal_process.stdin.flush()
 
         ssh_client.close()
     except Exception as e:
@@ -100,15 +105,24 @@ def capture_local_terminal():
         pass
 
 # Function to start a new terminal window on the laptop to show Jetson's terminal output
-def start_laptop_terminal():
+def start_jetson_server():
     try:
-        # Launch a new terminal window on the laptop to show the Jetson's terminal output
-        # We'll use gnome-terminal for Linux. You could change this to xterm, etc., if needed
-        command = f'gnome-terminal -- bash -c "python3 {__file__}; exec bash"'
-        subprocess.Popen(command, shell=True)
-        print("Opened a new terminal window on the laptop.")
+        # SSH client setup to run the jetson_server.py remotely
+        ssh_client = paramiko.SSHClient()
+        ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())  # Automatically accept the host key
+
+        # Connect to Jetson Nano
+        ssh_client.connect(JETSON_IP, username=JETSON_USER, password=JETSON_PASS)
+
+        # Start the jetson_server.py script in the background
+        command = f'python3 ~/CodeWorkspace/UGV-Robot/Main/jetson_server.py &'
+        ssh_client.exec_command(command)
+        print("Started jetson_server.py on the Jetson Orin Nano.")
+
+        ssh_client.close()
+
     except Exception as e:
-        print(f"Error opening new terminal window: {e}")
+        print(f"Error starting the Jetson server: {e}")
 
 # Wait for Jetson server to be ready for connection
 def wait_for_jetson_server():
@@ -123,7 +137,7 @@ def wait_for_jetson_server():
             time.sleep(2)  # Wait for 2 seconds before retrying
 
 # Start the Jetson server
-start_laptop_terminal()  # Start the terminal window for showing Jetson terminal
+start_jetson_server()  # Start the terminal window for showing Jetson terminal
 
 # Wait for the Jetson server to be ready to accept connections
 wait_for_jetson_server()
