@@ -8,7 +8,7 @@ import subprocess # Used for opening a new terminal window
 JETSON_IP = "10.0.0.179" # Replace with the Jetson's actual IP address
 JETSON_USER = "ugv-c7"   # Jetson Username
 JETSON_PASS = "stevens-siemens-C7"      # Jetson Password
-PORT = 12345 # sudo netstat -tuln
+PORT = 111 # sudo netstat -tuln
 
 # Initialize pygame and the joystick
 pygame.init()
