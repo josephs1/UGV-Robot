@@ -3,9 +3,6 @@ import socket
 import serial
 import logging
 
-# Set up logging
-logging.basicConfig(filename='~/jetson_server_output.log', level=logging.INFO)
-
 # Set up serial connection to Arduino
 ########SERIAL_PORT = "/dev/ttyACM0"  # Replace with the Arduino's serial port
 # Command for scanning ports: ls /dev/ttyACM*
@@ -19,6 +16,9 @@ PORT = 12345
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.bind((HOST, PORT))
 server_socket.listen(1)
+
+# Set up logging
+logging.basicConfig(filename='~/jetson_server_output.log', level=logging.INFO)
 
 logging.info("Waiting for connection from laptop...")
 client_socket, addr = server_socket.accept()
