@@ -17,11 +17,12 @@ server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.bind((HOST, PORT))
 server_socket.listen(1)
 
+client_socket, addr = server_socket.accept()
 # Set up logging
 logging.basicConfig(filename='~/jetson_server_output.log', level=logging.INFO)
 
 logging.info("Waiting for connection from laptop...")
-client_socket, addr = server_socket.accept()
+
 logging.info(f"Connected to {addr}")
 
 try:

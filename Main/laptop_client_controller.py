@@ -129,11 +129,6 @@ def start_jetson_server():
     except Exception as e:
         print(f"Error starting the Jetson server: {e}")
 
-    # Start Jetson terminal capture in a separate thread
-    capture_thread = threading.Thread(target=capture_jetson_terminal)
-    capture_thread.daemon = True  # Allow the thread to exit when the main program exits
-    capture_thread.start()
-
 # Wait for Jetson server to be ready for connection
 def wait_for_jetson_server():
     while True:
