@@ -19,7 +19,7 @@ server_socket.listen(1)
 
 client_socket, addr = server_socket.accept()
 # Set up logging
-logging.basicConfig(filename='~/jetson_server_output.log', level=logging.INFO)
+logging.basicConfig(filename='/home/ugv-c7/CodeWorkspace/UGV-Robot/Main/jetson_server_output.log', level=logging.INFO)
 
 logging.info("Waiting for connection from laptop...")
 
