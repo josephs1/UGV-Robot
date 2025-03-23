@@ -9,6 +9,7 @@ setup.py
 ../../build/py_pub_sub/py_pub_sub.egg-info/top_level.txt
 ../../build/py_pub_sub/py_pub_sub.egg-info/zip-safe
 py_pub_sub/__init__.py
+py_pub_sub/py_pub.py
 resource/py_pub_sub
 test/test_copyright.py
 test/test_flake8.py
