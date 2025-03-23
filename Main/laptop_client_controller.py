@@ -5,6 +5,8 @@ import paramiko  # Require 'pip install paramiko'
 #import subprocess  # Used for opening a new terminal window
 import threading  # For running the log display in a separate thread
 import re
+import os
+import sys
 
 # Define Jetson Orin Nano's IP and port
 JETSON_IP = "10.0.0.179"  # Replace with the Jetson's actual IP address
@@ -12,9 +14,15 @@ JETSON_USER = "ugv-c7"     # Jetson Username
 JETSON_PASS = "stevens-siemens-C7"  # Jetson Password
 PORT = 12345  # Port number (should match the Jetson server)
 
+# Redirect stdout to devnull to suppress Pygame output
+sys.stdout = open(os.devnull, 'w')
+
 # Initialize pygame and the joystick
 pygame.init()
 pygame.joystick.init()
+
+# Reset stdout to its default behavior (optional, in case you want to print things later)
+sys.stdout = sys.__stdout__
 
 # Ensure at least one controller is connected
 if pygame.joystick.get_count() == 0:
@@ -157,3 +165,4 @@ if __name__ == "__main__":
     client_socket.close()
     pygame.quit()
     print("Connection closed.")
+    os._exit(1)
