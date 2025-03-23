@@ -23,7 +23,7 @@ logging.basicConfig(filename='/home/ugv-c7/CodeWorkspace/UGV-Robot/Main/jetson_s
                     filemode='w')
 client_socket, addr = server_socket.accept()
 logging.info(f"Connected to client at {addr}.")
-logging.info("Use the left joystick to send commands. Press 'Back' on the controller to exit.\n")
+logging.info("Use the left joystick to send commands. Press 'Back' on the controller to exit.")
 
 try:
     while True:
@@ -33,7 +33,7 @@ try:
             break
         if data=="exit":
             break
-        logging.info(f"{data}\n")
+        logging.info(f"{data}")
         
         # Send data to Arduino
         ##########arduino.write(data.encode())
