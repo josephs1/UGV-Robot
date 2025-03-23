@@ -32,9 +32,7 @@ try:
         if not data:
             break
         if data=="exit":
-            client_socket.close()
-            ##########arduino.close()
-            logging.info("Connections closed.")
+            break
         logging.info(f"Received from laptop: {data}")
         
         # Send data to Arduino

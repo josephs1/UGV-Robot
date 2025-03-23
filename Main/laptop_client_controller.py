@@ -30,9 +30,6 @@ client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 last_time = time.time()
 command_sent = ""
 
-# To keep track of the Jetson server process so we can kill it later
-jetson_process_pid = None
-
 # Function to capture and display Jetson logs via SSH
 def display_jetson_log():
     try:
@@ -116,7 +113,6 @@ def capture_local_terminal():
 
 # Function to start a new terminal window on the laptop to show Jetson's terminal output
 def start_jetson_server():
-    global jetson_process_pid
     try:
         # SSH client setup to run the jetson_server.py remotely
         ssh_client = paramiko.SSHClient()
@@ -128,11 +124,7 @@ def start_jetson_server():
         # Start the jetson_server.py script in the background
         command = f'python3 ~/CodeWorkspace/UGV-Robot/Main/jetson_server.py &'
         stdin, stdout, stderr = ssh_client.exec_command(command)
-        
-        jetson_process_pid = int(stdout.read().strip())
-
         print("Started jetson_server.py on the Jetson Orin Nano.")
-
         ssh_client.close()
 
     except Exception as e:
