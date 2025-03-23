@@ -22,8 +22,8 @@ logging.basicConfig(filename='/home/ugv-c7/CodeWorkspace/UGV-Robot/Main/jetson_s
                     level=logging.INFO, 
                     filemode='w')
 client_socket, addr = server_socket.accept()
-logging.info(f"Connected to client at {addr}")
-logging.info("Use the left joystick to send commands. Press 'Back' on the controller to exit.")
+logging.info(f"Connected to client at {addr}.")
+logging.info("Use the left joystick to send commands. Press 'Back' on the controller to exit.\n")
 
 try:
     while True:
