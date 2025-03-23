@@ -7,16 +7,12 @@ import threading  # For running the log display in a separate thread
 import re
 import os
 import sys
-#import logging
 
 # Define Jetson Orin Nano's IP and port
 JETSON_IP = "10.0.0.179"  # Replace with the Jetson's actual IP address
 JETSON_USER = "ugv-c7"     # Jetson Username
 JETSON_PASS = "stevens-siemens-C7"  # Jetson Password
 PORT = 12345  # Port number (should match the Jetson server)
-
-# Redirect stderr to devnull to suppress Pygame's startup output
-sys.stderr = open(os.devnull, 'w')
 
 # Initialize pygame and the joystick
 pygame.init()
