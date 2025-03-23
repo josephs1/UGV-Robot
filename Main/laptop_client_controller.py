@@ -6,8 +6,8 @@ import paramiko  # Require 'pip install paramiko'
 import threading  # For running the log display in a separate thread
 import re
 import os
-#import sys
-import logging
+import sys
+#import logging
 
 # Define Jetson Orin Nano's IP and port
 JETSON_IP = "10.0.0.179"  # Replace with the Jetson's actual IP address
@@ -15,8 +15,8 @@ JETSON_USER = "ugv-c7"     # Jetson Username
 JETSON_PASS = "stevens-siemens-C7"  # Jetson Password
 PORT = 12345  # Port number (should match the Jetson server)
 
-# Suppress pygame's output by setting logging to WARNING or higher
-logging.getLogger('pygame').setLevel(logging.WARNING)
+# Redirect stderr to devnull to suppress Pygame's startup output
+sys.stderr = open(os.devnull, 'w')
 
 # Initialize pygame and the joystick
 pygame.init()
@@ -59,7 +59,7 @@ def display_jetson_log():
             if output:
                 # Clean up the log output by removing the INFO:root: part using regular expression
                 cleaned_output = re.sub(log_prefix_pattern, '', output.strip())
-                print(f"Jetson Output: {cleaned_output}")
+                print(f"Jetson: {cleaned_output}")
 
         ssh_client.close()
 
@@ -98,7 +98,7 @@ def capture_local_terminal():
                     # Send the command if it has changed
                     if new_command and new_command != command_sent:
                         client_socket.sendall(new_command.encode())
-                        print(f"Local Terminal Command Sent: {new_command}")
+                        print(f"Client: {new_command}")
                         command_sent = new_command
                         last_time = current_time  # Update last_time
 
@@ -128,7 +128,7 @@ def start_jetson_server():
         # Start the jetson_server.py script in the background
         command = f'python3 ~/CodeWorkspace/UGV-Robot/Main/jetson_server.py &'
         stdin, stdout, stderr = ssh_client.exec_command(command)
-        print("Started jetson_server.py on the Jetson Orin Nano.")
+        print("Started jetson_server.py on the Jetson.")
         ssh_client.close()
 
     except Exception as e:
@@ -160,5 +160,5 @@ if __name__ == "__main__":
     # Close the socket and quit pygame
     client_socket.close()
     pygame.quit()
-    print("Connection closed.")
+    print("Connections closed.")
     os._exit(1)
