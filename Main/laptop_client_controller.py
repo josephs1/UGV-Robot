@@ -2,9 +2,8 @@ import socket
 import pygame  # Requires 'pip install pygame'
 import time
 import paramiko  # Require 'pip install paramiko'
-import subprocess  # Used for opening a new terminal window
+#import subprocess  # Used for opening a new terminal window
 import threading  # For running the log display in a separate thread
-import os
 import re
 
 # Define Jetson Orin Nano's IP and port
@@ -30,6 +29,9 @@ client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # Variable to track the last time a command was sent
 last_time = time.time()
 command_sent = ""
+
+# To keep track of the Jetson server process so we can kill it later
+jetson_process_pid = None
 
 # Function to capture and display Jetson logs via SSH
 def display_jetson_log():
@@ -60,6 +62,8 @@ def display_jetson_log():
 
     except Exception as e:
         print(f"Error while displaying the log: {e}")
+    except KeyboardInterrupt:
+        pass
 
 # Function to capture the local terminal output (laptop's terminal)
 def capture_local_terminal():
@@ -70,7 +74,6 @@ def capture_local_terminal():
         while True:
             pygame.event.pump()  # Process controller events
             current_time = time.time()
-
             right_trigger = joystick.get_axis(3)
 
             # Only send commands if the right trigger is pressed (threshold check)
@@ -100,15 +103,20 @@ def capture_local_terminal():
 
             # Check if the "Back" button (button B) is pressed to exit.
             if joystick.get_button(1):
+                new_command = "exit"
+                client_socket.sendall(new_command.encode())
                 break
 
-            time.sleep(0.01)  # Small delay to prevent excessive CPU usage
+            time.sleep(0.02)  # Small delay to prevent excessive CPU usage
 
     except KeyboardInterrupt:
+        new_command = "exit"
+        client_socket.sendall(new_command.encode())
         pass
 
 # Function to start a new terminal window on the laptop to show Jetson's terminal output
 def start_jetson_server():
+    global jetson_process_pid
     try:
         # SSH client setup to run the jetson_server.py remotely
         ssh_client = paramiko.SSHClient()
@@ -119,7 +127,10 @@ def start_jetson_server():
 
         # Start the jetson_server.py script in the background
         command = f'python3 ~/CodeWorkspace/UGV-Robot/Main/jetson_server.py &'
-        ssh_client.exec_command(command)
+        stdin, stdout, stderr = ssh_client.exec_command(command)
+        
+        jetson_process_pid = int(stdout.read().strip())
+
         print("Started jetson_server.py on the Jetson Orin Nano.")
 
         ssh_client.close()
@@ -139,18 +150,15 @@ def wait_for_jetson_server():
             print("Waiting for Jetson server to be ready...")
             time.sleep(2)  # Wait for 2 seconds before retrying
 
-# Start the Jetson server
-start_jetson_server()  # Start the terminal window for showing Jetson terminal
-
-# Wait for the Jetson server to be ready to accept connections
-wait_for_jetson_server()
-
-# Start the display_log function in a separate thread
-log_thread = threading.Thread(target=display_jetson_log)
-log_thread.start()
-
 # Start the local terminal capture and the Jetson terminal capture
 if __name__ == "__main__":
+    start_jetson_server() 
+    wait_for_jetson_server()
+
+    # Start the display_log function in a separate thread
+    log_thread = threading.Thread(target=display_jetson_log)
+    log_thread.start()
+
     capture_local_terminal()
 
     # Close the socket and quit pygame

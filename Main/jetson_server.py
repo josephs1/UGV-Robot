@@ -31,6 +31,10 @@ try:
         data = client_socket.recv(1024).decode("utf-8")
         if not data:
             break
+        if data=="exit":
+            client_socket.close()
+            ##########arduino.close()
+            logging.info("Connections closed.")
         logging.info(f"Received from laptop: {data}")
         
         # Send data to Arduino
