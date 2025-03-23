@@ -2,7 +2,7 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
 
-def ObjectPositionPublisher(Node):
+class ObjectPositionPublisher(Node):
     def __init__(self):
         super().__init__('object_position_publisher')
         self.publisher_ = self.create_publisher(String, 'object_position', 10)
