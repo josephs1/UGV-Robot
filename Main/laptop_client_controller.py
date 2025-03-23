@@ -60,7 +60,7 @@ def display_jetson_log():
             if output:
                 # Clean up the log output by removing the INFO:root: part using regular expression
                 cleaned_output = re.sub(log_prefix_pattern, '', output.strip())
-                print(f"Jetson: {cleaned_output}\n")
+                print(f"Jetson: {cleaned_output}")
 
         ssh_client.close()
 

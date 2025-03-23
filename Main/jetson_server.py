@@ -33,7 +33,7 @@ try:
             break
         if data=="exit":
             break
-        logging.info(f"{data}")
+        logging.info(f"{data}\n")
         
         # Send data to Arduino
         ##########arduino.write(data.encode())
