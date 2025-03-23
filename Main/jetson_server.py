@@ -42,4 +42,4 @@ except Exception as e:
 finally:
     client_socket.close()
     ##########arduino.close()
-    logging.info("Connection closed.")
+    logging.info("Jetson: Connection closed.")

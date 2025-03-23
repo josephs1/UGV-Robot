@@ -161,5 +161,5 @@ if __name__ == "__main__":
     # Close the socket and quit pygame
     client_socket.close()
     pygame.quit()
-    print("Connections closed.")
+    print("Client: Connection closed.")
     os._exit(1)
