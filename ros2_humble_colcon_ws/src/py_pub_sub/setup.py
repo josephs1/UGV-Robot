@@ -17,7 +17,7 @@ setup(
     maintainer_email='ugv-c7@todo.todo',
     description='TODO: Package description',
     license='TODO: License declaration',
-    tests_require=['pytest'],
+    #tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             "py_pub = py_pub_sub.py_pub:main",
