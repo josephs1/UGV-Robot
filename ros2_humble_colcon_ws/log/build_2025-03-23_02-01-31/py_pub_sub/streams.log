@@ -1,0 +1,28 @@
+[1.572s] Invoking command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/py_pub_sub': PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/py_pub_sub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_pub_sub build --build-base /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/py_pub_sub/build install --record /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/py_pub_sub/install.log --single-version-externally-managed install_data
+[2.147s] running egg_info
+[2.148s] writing ../../build/py_pub_sub/py_pub_sub.egg-info/PKG-INFO
+[2.149s] writing dependency_links to ../../build/py_pub_sub/py_pub_sub.egg-info/dependency_links.txt
+[2.149s] writing entry points to ../../build/py_pub_sub/py_pub_sub.egg-info/entry_points.txt
+[2.150s] writing requirements to ../../build/py_pub_sub/py_pub_sub.egg-info/requires.txt
+[2.150s] writing top-level names to ../../build/py_pub_sub/py_pub_sub.egg-info/top_level.txt
+[2.154s] reading manifest file '../../build/py_pub_sub/py_pub_sub.egg-info/SOURCES.txt'
+[2.156s] writing manifest file '../../build/py_pub_sub/py_pub_sub.egg-info/SOURCES.txt'
+[2.157s] running build
+[2.157s] running build_py
+[2.157s] copying py_pub_sub/py_pub.py -> /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/py_pub_sub/build/lib/py_pub_sub
+[2.158s] copying py_pub_sub/py_sub.py -> /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/py_pub_sub/build/lib/py_pub_sub
+[2.158s] running install
+[2.159s] running install_lib
+[2.161s] copying /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/py_pub_sub/build/lib/py_pub_sub/py_pub.py -> /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub/lib/python3.10/site-packages/py_pub_sub
+[2.162s] copying /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/py_pub_sub/build/lib/py_pub_sub/py_sub.py -> /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub/lib/python3.10/site-packages/py_pub_sub
+[2.163s] byte-compiling /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub/lib/python3.10/site-packages/py_pub_sub/py_pub.py to py_pub.cpython-310.pyc
+[2.165s] byte-compiling /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub/lib/python3.10/site-packages/py_pub_sub/py_sub.py to py_sub.cpython-310.pyc
+[2.165s] running install_data
+[2.166s] running install_egg_info
+[2.169s] removing '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub/lib/python3.10/site-packages/py_pub_sub-0.0.0-py3.10.egg-info' (and everything under it)
+[2.170s] Copying ../../build/py_pub_sub/py_pub_sub.egg-info to /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub/lib/python3.10/site-packages/py_pub_sub-0.0.0-py3.10.egg-info
+[2.172s] running install_scripts
+[2.225s] Installing py_pub script to /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub/lib/py_pub_sub
+[2.226s] Installing py_sub script to /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub/lib/py_pub_sub
+[2.226s] writing list of installed files to '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/py_pub_sub/install.log'
+[2.328s] Invoked command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/py_pub_sub' returned '0': PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/py_pub_sub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_pub_sub build --build-base /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/py_pub_sub/build install --record /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/py_pub_sub/install.log --single-version-externally-managed install_data
