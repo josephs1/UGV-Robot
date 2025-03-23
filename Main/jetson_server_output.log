@@ -1,0 +1,11 @@
+INFO:root:Jetson: Connected to client at ('10.0.0.85', 64723).
+
+INFO:root:Use the left joystick to send commands. Press 'Back' on the controller to exit.
+
+INFO:root:Jetson: RIGHT
+
+INFO:root:Jetson: DOWN
+
+INFO:root:Jetson: RIGHT
+
+INFO:root:Jetson: Connection closed.
