@@ -60,7 +60,7 @@ def display_jetson_log():
             if output:
                 # Clean up the log output by removing the INFO:root: part using regular expression
                 cleaned_output = re.sub(log_prefix_pattern, '', output.strip())
-                print(f"Jetson: {cleaned_output}\n")
+                print(f"{cleaned_output}")
 
         ssh_client.close()
 
@@ -141,7 +141,7 @@ def wait_for_jetson_server():
         try:
             # Attempt to connect to the Jetson Nano's socket
             client_socket.connect((JETSON_IP, PORT))
-            print("Successfully connected to Jetson server.\n")
+            print("Successfully connected to Jetson server.")
             break  # Exit the loop if the connection is successful
         except (socket.error, ConnectionRefusedError) as e:
             print("Waiting for Jetson server to be ready...")
