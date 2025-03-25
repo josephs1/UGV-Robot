@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="4" failures="1" disabled="1" errors="0" time="0.041" timestamp="2025-03-24T23:27:12" name="AllTests">
+  <testsuite name="BulletCollisionDetectionTester" tests="2" failures="0" disabled="1" errors="0" time="0.036" timestamp="2025-03-24T23:27:12">
+    <testcase name="DISABLED_ContinuousCollisionSelf" status="notrun" result="suppressed" time="0" timestamp="1969-12-31T19:00:00" classname="moveit_core.BulletCollisionDetectionTester" />
+    <testcase name="ContinuousCollisionWorld" status="run" result="completed" time="0.036" timestamp="2025-03-24T23:27:12" classname="moveit_core.BulletCollisionDetectionTester" />
+  </testsuite>
+  <testsuite name="ContinuousCollisionUnit" tests="2" failures="1" disabled="0" errors="0" time="0.005" timestamp="2025-03-24T23:27:12">
+    <testcase name="BulletCastBVHCollisionBoxBoxUnit" status="run" result="completed" time="0.003" timestamp="2025-03-24T23:27:12" classname="moveit_core.ContinuousCollisionUnit">
+      <failure message="/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/moveit2/moveit_core/collision_detection_bullet/test/test_bullet_continuous_collision_checking.cpp:343&#x0A;The difference between result_vector[0].percent_interpolation and 0.6 is 0.10000005960464475, which exceeds 0.001, where&#x0A;result_vector[0].percent_interpolation evaluates to 0.49999994039535522,&#x0A;0.6 evaluates to 0.59999999999999998, and&#x0A;0.001 evaluates to 0.001." type=""><![CDATA[/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/moveit2/moveit_core/collision_detection_bullet/test/test_bullet_continuous_collision_checking.cpp:343
+The difference between result_vector[0].percent_interpolation and 0.6 is 0.10000005960464475, which exceeds 0.001, where
+result_vector[0].percent_interpolation evaluates to 0.49999994039535522,
+0.6 evaluates to 0.59999999999999998, and
+0.001 evaluates to 0.001.]]></failure>
+    </testcase>
+    <testcase name="BulletCastMeshVsBox" status="run" result="completed" time="0.002" timestamp="2025-03-24T23:27:12" classname="moveit_core.ContinuousCollisionUnit" />
+  </testsuite>
+</testsuites>

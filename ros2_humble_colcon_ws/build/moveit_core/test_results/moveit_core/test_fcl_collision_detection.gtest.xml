@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="11" failures="0" disabled="0" errors="0" time="3.261" timestamp="2025-03-24T23:27:12" name="AllTests">
+  <testsuite name="FCLCollisionCheck/CollisionDetectorTest/0" tests="11" failures="0" disabled="0" errors="0" time="3.261" timestamp="2025-03-24T23:27:12">
+    <testcase name="InitOK" type_param="collision_detection::CollisionDetectorAllocatorFCL" status="run" result="completed" time="0.293" timestamp="2025-03-24T23:27:12" classname="moveit_core.FCLCollisionCheck/CollisionDetectorTest/0" />
+    <testcase name="DefaultNotInCollision" type_param="collision_detection::CollisionDetectorAllocatorFCL" status="run" result="completed" time="0.284" timestamp="2025-03-24T23:27:13" classname="moveit_core.FCLCollisionCheck/CollisionDetectorTest/0" />
+    <testcase name="LinksInCollision" type_param="collision_detection::CollisionDetectorAllocatorFCL" status="run" result="completed" time="0.281" timestamp="2025-03-24T23:27:13" classname="moveit_core.FCLCollisionCheck/CollisionDetectorTest/0" />
+    <testcase name="ContactReporting" type_param="collision_detection::CollisionDetectorAllocatorFCL" status="run" result="completed" time="0.291" timestamp="2025-03-24T23:27:13" classname="moveit_core.FCLCollisionCheck/CollisionDetectorTest/0" />
+    <testcase name="ContactPositions" type_param="collision_detection::CollisionDetectorAllocatorFCL" status="run" result="completed" time="0.282" timestamp="2025-03-24T23:27:13" classname="moveit_core.FCLCollisionCheck/CollisionDetectorTest/0" />
+    <testcase name="AttachedBodyTester" type_param="collision_detection::CollisionDetectorAllocatorFCL" status="run" result="completed" time="0.288" timestamp="2025-03-24T23:27:14" classname="moveit_core.FCLCollisionCheck/CollisionDetectorTest/0" />
+    <testcase name="DiffSceneTester" type_param="collision_detection::CollisionDetectorAllocatorFCL" status="run" result="completed" time="0.294" timestamp="2025-03-24T23:27:14" classname="moveit_core.FCLCollisionCheck/CollisionDetectorTest/0" />
+    <testcase name="ConvertObjectToAttached" type_param="collision_detection::CollisionDetectorAllocatorFCL" status="run" result="completed" time="0.297" timestamp="2025-03-24T23:27:14" classname="moveit_core.FCLCollisionCheck/CollisionDetectorTest/0" />
+    <testcase name="TestCollisionMapAdditionSpeed" type_param="collision_detection::CollisionDetectorAllocatorFCL" status="run" result="completed" time="0.317" timestamp="2025-03-24T23:27:15" classname="moveit_core.FCLCollisionCheck/CollisionDetectorTest/0" />
+    <testcase name="MoveMesh" type_param="collision_detection::CollisionDetectorAllocatorFCL" status="run" result="completed" time="0.312" timestamp="2025-03-24T23:27:15" classname="moveit_core.FCLCollisionCheck/CollisionDetectorTest/0" />
+    <testcase name="TestChangingShapeSize" type_param="collision_detection::CollisionDetectorAllocatorFCL" status="run" result="completed" time="0.32" timestamp="2025-03-24T23:27:15" classname="moveit_core.FCLCollisionCheck/CollisionDetectorTest/0" />
+  </testsuite>
+</testsuites>

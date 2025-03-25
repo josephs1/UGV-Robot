@@ -1,0 +1,22 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+cachedir: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/launch_param_builder/.pytest_cache
+rootdir: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/launch_param_builder
+plugins: ament-flake8-0.12.11, launch-testing-ros-0.19.8, launch-testing-1.0.7, ament-xmllint-0.12.11, ament-pep257-0.12.11, ament-copyright-0.12.11, ament-lint-0.12.11, timeout-2.1.0, mock-3.6.1, repeat-0.9.1, rerunfailures-10.2, colcon-core-0.19.0, cov-3.0.0
+[1mcollecting ... [0m[1m
+collected 3 items                                                              [0m
+
+test/test_copyright.py [32m.[0m[33m                                                 [ 33%][0m
+test/test_launch_param_builder.py [32m.[0m[33m                                      [ 66%][0m
+test/test_parameter_injection.py [32m.[0m[33m                                       [100%][0m
+
+[33m=============================== warnings summary ===============================[0m
+../../../../../../../opt/ros/humble/local/lib/python3.10/dist-packages/xacro/__init__.py:558
+  Warning: invalid escape sequence '\$'
+
+../../../../../../../opt/ros/humble/local/lib/python3.10/dist-packages/xacro/__init__.py:559
+  Warning: invalid escape sequence '\s'
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+- generated xml file: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/launch_param_builder/pytest.xml -
+[33m======================== [32m3 passed[0m, [33m[1m2 warnings[0m[33m in 1.07s[0m[33m =========================[0m

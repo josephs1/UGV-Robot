@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="3" failures="0" disabled="0" errors="0" time="0.004" timestamp="2025-03-24T23:27:01" name="AllTests">
+  <testsuite name="OneRobot" tests="3" failures="0" disabled="0" errors="0" time="0.004" timestamp="2025-03-24T23:27:01">
+    <testcase name="testGenerateTrajectory" status="run" result="completed" time="0.002" timestamp="2025-03-24T23:27:01" classname="moveit_core.OneRobot" />
+    <testcase name="checkAbsoluteJointSpaceJump" status="run" result="completed" time="0.001" timestamp="2025-03-24T23:27:01" classname="moveit_core.OneRobot" />
+    <testcase name="checkRelativeJointSpaceJump" status="run" result="completed" time="0.001" timestamp="2025-03-24T23:27:01" classname="moveit_core.OneRobot" />
+  </testsuite>
+</testsuites>

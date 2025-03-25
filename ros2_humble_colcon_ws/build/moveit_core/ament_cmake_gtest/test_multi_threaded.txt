@@ -1,0 +1,27 @@
+-- run_test.py: extra environment variables to append:
+ - LD_LIBRARY_PATH+=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/planning_scene:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/planning_scene/../utils:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/planning_scene/../collision_detection_fcl:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/planning_scene/../collision_detection
+-- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/planning_scene':
+ - /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/planning_scene/test_multi_threaded --gtest_output=xml:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_multi_threaded.gtest.xml
+
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from PluginTests/CollisionDetectorTests
+[ RUN      ] PluginTests/CollisionDetectorTests.Threaded/0
+[INFO] [1742873214.914483286] [moveit_robot_model.robot_model]: Loading robot model 'panda'...
+[ERROR] [1742873214.942080324] [collision_detection]: Exception while loading FCL: Could not find library corresponding to plugin FCL. Make sure that the library 'collision_detector_fcl_plugin' actually exists.
+[  SKIPPED ] PluginTests/CollisionDetectorTests.Threaded/0 (32 ms)
+[ RUN      ] PluginTests/CollisionDetectorTests.Threaded/1
+[INFO] [1742873214.944586331] [moveit_robot_model.robot_model]: Loading robot model 'panda'...
+[       OK ] PluginTests/CollisionDetectorTests.Threaded/1 (356 ms)
+[----------] 2 tests from PluginTests/CollisionDetectorTests (388 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (388 ms total)
+[  PASSED  ] 1 test.
+[  SKIPPED ] 1 test, listed below:
+[  SKIPPED ] PluginTests/CollisionDetectorTests.Threaded/0
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_multi_threaded.gtest.xml'
+-- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_multi_threaded.gtest.xml'

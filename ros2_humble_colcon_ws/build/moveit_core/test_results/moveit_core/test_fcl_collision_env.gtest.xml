@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="8" failures="0" disabled="2" errors="0" time="0.152" timestamp="2025-03-24T23:27:12" name="AllTests">
+  <testsuite name="CollisionDetectionEnvTest" tests="8" failures="0" disabled="2" errors="0" time="0.152" timestamp="2025-03-24T23:27:12">
+    <testcase name="InitOK" status="run" result="completed" time="0.028" timestamp="2025-03-24T23:27:12" classname="moveit_core.CollisionDetectionEnvTest" />
+    <testcase name="DefaultNotInCollision" status="run" result="completed" time="0.025" timestamp="2025-03-24T23:27:12" classname="moveit_core.CollisionDetectionEnvTest" />
+    <testcase name="LinksInCollision" status="run" result="completed" time="0.025" timestamp="2025-03-24T23:27:12" classname="moveit_core.CollisionDetectionEnvTest" />
+    <testcase name="RobotWorldCollision_1" status="run" result="completed" time="0.025" timestamp="2025-03-24T23:27:12" classname="moveit_core.CollisionDetectionEnvTest" />
+    <testcase name="RobotWorldCollision_2" status="run" result="completed" time="0.024" timestamp="2025-03-24T23:27:12" classname="moveit_core.CollisionDetectionEnvTest" />
+    <testcase name="PaddingTest" status="run" result="completed" time="0.025" timestamp="2025-03-24T23:27:12" classname="moveit_core.CollisionDetectionEnvTest" />
+    <testcase name="DISABLED_ContinuousCollisionSelf" status="notrun" result="suppressed" time="0" timestamp="1969-12-31T19:00:00" classname="moveit_core.CollisionDetectionEnvTest" />
+    <testcase name="DISABLED_ContinuousCollisionWorld" status="notrun" result="suppressed" time="0" timestamp="1969-12-31T19:00:00" classname="moveit_core.CollisionDetectionEnvTest" />
+  </testsuite>
+</testsuites>

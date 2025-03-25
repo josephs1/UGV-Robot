@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="app_bringup.flake8"
+  tests="27"
+  errors="0"
+  failures="27"
+  time="0.863"
+>
+  <testcase
+    name="E302 (./launch/app.launch.py:4:1)"
+    classname="app_bringup.flake8"
+  >
+      <failure message="expected 2 blank lines, found 1:&#10;def generate_launch_description():&#10;"/>
+  </testcase>
+  <testcase
+    name="W191 (./launch/app.launch.py:5:1)"
+    classname="app_bringup.flake8"
+  >
+      <failure message="indentation contains tabs:&#10;&#9;ld = LaunchDescription()&#10;"/>
+  </testcase>
+  <testcase
+    name="W191 (./launch/app.launch.py:7:1)"
+    classname="app_bringup.flake8"
+  >
+      <failure message="indentation contains tabs:&#10;&#9;publisher_node = Node(&#10;"/>
+  </testcase>
+  <testcase
+    name="W191 (./launch/app.launch.py:8:1)"
+    classname="app_bringup.flake8"
+  >
+      <failure message='indentation contains tabs:&#10;&#9;&#9;package = "py_pub_sub",&#10;'/>
+  </testcase>
+  <testcase
+    name="E251 (./launch/app.launch.py:8:10)"
+    classname="app_bringup.flake8"
+  >
+      <failure message='unexpected spaces around keyword / parameter equals:&#10;&#9;&#9;package = "py_pub_sub",&#10;'/>
+  </testcase>
+  <testcase
+    name="E251 (./launch/app.launch.py:8:12)"
+    classname="app_bringup.flake8"
+  >
+      <failure message='unexpected spaces around keyword / parameter equals:&#10;&#9;&#9;package = "py_pub_sub",&#10;'/>
+  </testcase>
+  <testcase
+    name="Q000 (./launch/app.launch.py:8:13)"
+    classname="app_bringup.flake8"
+  >
+      <failure message='Double quotes found but single quotes preferred:&#10;&#9;&#9;package = "py_pub_sub",&#10;'/>
+  </testcase>
+  <testcase
+    name="W191 (./launch/app.launch.py:9:1)"
+    classname="app_bringup.flake8"
+  >
+      <failure message='indentation contains tabs:&#10;&#9;&#9;executable = "py_pub"&#10;'/>
+  </testcase>
+  <testcase
+    name="E251 (./launch/app.launch.py:9:13)"
+    classname="app_bringup.flake8"
+  >
+      <failure message='unexpected spaces around keyword / parameter equals:&#10;&#9;&#9;executable = "py_pub"&#10;'/>
+  </testcase>
+  <testcase
+    name="E251 (./launch/app.launch.py:9:15)"
+    classname="app_bringup.flake8"
+  >
+      <failure message='unexpected spaces around keyword / parameter equals:&#10;&#9;&#9;executable = "py_pub"&#10;'/>
+  </testcase>
+  <testcase
+    name="Q000 (./launch/app.launch.py:9:16)"
+    classname="app_bringup.flake8"
+  >
+      <failure message='Double quotes found but single quotes preferred:&#10;&#9;&#9;executable = "py_pub"&#10;'/>
+  </testcase>
+  <testcase
+    name="W191 (./launch/app.launch.py:10:1)"
+    classname="app_bringup.flake8"
+  >
+      <failure message="indentation contains tabs:&#10;&#9;)&#10;"/>
+  </testcase>
+  <testcase
+    name="W191 (./launch/app.launch.py:12:1)"
+    classname="app_bringup.flake8"
+  >
+      <failure message="indentation contains tabs:&#10;&#9;subscriber_node = Node(&#10;"/>
+  </testcase>
+  <testcase
+    name="W191 (./launch/app.launch.py:13:1)"
+    classname="app_bringup.flake8"
+  >
+      <failure message='indentation contains tabs:&#10;&#9;&#9;package = "py_pub_sub",&#10;'/>
+  </testcase>
+  <testcase
+    name="E251 (./launch/app.launch.py:13:10)"
+    classname="app_bringup.flake8"
+  >
+      <failure message='unexpected spaces around keyword / parameter equals:&#10;&#9;&#9;package = "py_pub_sub",&#10;'/>
+  </testcase>
+  <testcase
+    name="E251 (./launch/app.launch.py:13:12)"
+    classname="app_bringup.flake8"
+  >
+      <failure message='unexpected spaces around keyword / parameter equals:&#10;&#9;&#9;package = "py_pub_sub",&#10;'/>
+  </testcase>
+  <testcase
+    name="Q000 (./launch/app.launch.py:13:13)"
+    classname="app_bringup.flake8"
+  >
+      <failure message='Double quotes found but single quotes preferred:&#10;&#9;&#9;package = "py_pub_sub",&#10;'/>
+  </testcase>
+  <testcase
+    name="W191 (./launch/app.launch.py:14:1)"
+    classname="app_bringup.flake8"
+  >
+      <failure message='indentation contains tabs:&#10;&#9;&#9;executable = "py_sub"&#10;'/>
+  </testcase>
+  <testcase
+    name="E251 (./launch/app.launch.py:14:13)"
+    classname="app_bringup.flake8"
+  >
+      <failure message='unexpected spaces around keyword / parameter equals:&#10;&#9;&#9;executable = "py_sub"&#10;'/>
+  </testcase>
+  <testcase
+    name="E251 (./launch/app.launch.py:14:15)"
+    classname="app_bringup.flake8"
+  >
+      <failure message='unexpected spaces around keyword / parameter equals:&#10;&#9;&#9;executable = "py_sub"&#10;'/>
+  </testcase>
+  <testcase
+    name="Q000 (./launch/app.launch.py:14:16)"
+    classname="app_bringup.flake8"
+  >
+      <failure message='Double quotes found but single quotes preferred:&#10;&#9;&#9;executable = "py_sub"&#10;'/>
+  </testcase>
+  <testcase
+    name="W191 (./launch/app.launch.py:15:1)"
+    classname="app_bringup.flake8"
+  >
+      <failure message="indentation contains tabs:&#10;&#9;)&#10;"/>
+  </testcase>
+  <testcase
+    name="W191 (./launch/app.launch.py:17:1)"
+    classname="app_bringup.flake8"
+  >
+      <failure message="indentation contains tabs:&#10;&#9;ld.add_action(publisher_node)&#10;"/>
+  </testcase>
+  <testcase
+    name="W191 (./launch/app.launch.py:18:1)"
+    classname="app_bringup.flake8"
+  >
+      <failure message="indentation contains tabs:&#10;&#9;ld.add_action(subscriber_node)&#10;"/>
+  </testcase>
+  <testcase
+    name="W191 (./launch/app.launch.py:19:1)"
+    classname="app_bringup.flake8"
+  >
+      <failure message="indentation contains tabs:&#10;&#9;&#10;"/>
+  </testcase>
+  <testcase
+    name="W293 (./launch/app.launch.py:19:1)"
+    classname="app_bringup.flake8"
+  >
+      <failure message="blank line contains whitespace:&#10;&#9;&#10;"/>
+  </testcase>
+  <testcase
+    name="W191 (./launch/app.launch.py:20:1)"
+    classname="app_bringup.flake8"
+  >
+      <failure message="indentation contains tabs:&#10;&#9;return ld&#10;"/>
+  </testcase>
+  <system-out>Checked files:
+* ./launch/app.launch.py</system-out>
+</testsuite>

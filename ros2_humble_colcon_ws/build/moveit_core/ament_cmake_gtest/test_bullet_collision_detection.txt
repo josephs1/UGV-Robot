@@ -1,0 +1,83 @@
+-- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/collision_detection_bullet':
+ - /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/collision_detection_bullet/test_bullet_collision_detection --gtest_output=xml:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_bullet_collision_detection.gtest.xml
+
+[==========] Running 11 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 11 tests from BulletCollisionCheck/CollisionDetectorTest/0, where TypeParam = collision_detection::CollisionDetectorAllocatorBullet
+[ RUN      ] BulletCollisionCheck/CollisionDetectorTest/0.InitOK
+[INFO] [1742873227.050817243] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873227.057534281] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873227.057583604] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873227.131725575] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[       OK ] BulletCollisionCheck/CollisionDetectorTest/0.InitOK (247 ms)
+[ RUN      ] BulletCollisionCheck/CollisionDetectorTest/0.DefaultNotInCollision
+[INFO] [1742873227.294711700] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873227.300331583] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873227.300363783] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873227.372724278] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[       OK ] BulletCollisionCheck/CollisionDetectorTest/0.DefaultNotInCollision (237 ms)
+[ RUN      ] BulletCollisionCheck/CollisionDetectorTest/0.LinksInCollision
+[INFO] [1742873227.532258102] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873227.538015169] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873227.538048681] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873227.610821690] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[       OK ] BulletCollisionCheck/CollisionDetectorTest/0.LinksInCollision (235 ms)
+[ RUN      ] BulletCollisionCheck/CollisionDetectorTest/0.ContactReporting
+[INFO] [1742873227.766670518] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873227.772312390] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873227.772347214] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873227.845586573] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[       OK ] BulletCollisionCheck/CollisionDetectorTest/0.ContactReporting (240 ms)
+[ RUN      ] BulletCollisionCheck/CollisionDetectorTest/0.ContactPositions
+[INFO] [1742873228.006992227] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873228.012873576] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873228.012914801] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873228.085907420] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[       OK ] BulletCollisionCheck/CollisionDetectorTest/0.ContactPositions (235 ms)
+[ RUN      ] BulletCollisionCheck/CollisionDetectorTest/0.AttachedBodyTester
+[INFO] [1742873228.241664103] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873228.247408683] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873228.247443827] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873228.320528628] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[       OK ] BulletCollisionCheck/CollisionDetectorTest/0.AttachedBodyTester (241 ms)
+[ RUN      ] BulletCollisionCheck/CollisionDetectorTest/0.DiffSceneTester
+[INFO] [1742873228.482783219] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873228.488607466] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873228.488644499] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873228.561930563] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[       OK ] BulletCollisionCheck/CollisionDetectorTest/0.DiffSceneTester (519 ms)
+[ RUN      ] BulletCollisionCheck/CollisionDetectorTest/0.ConvertObjectToAttached
+[INFO] [1742873229.002605633] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873229.008410769] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873229.008446361] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873229.081947717] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[       OK ] BulletCollisionCheck/CollisionDetectorTest/0.ConvertObjectToAttached (248 ms)
+[ RUN      ] BulletCollisionCheck/CollisionDetectorTest/0.TestCollisionMapAdditionSpeed
+[INFO] [1742873229.250778895] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873229.256624359] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873229.256654958] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873229.330180799] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[INFO] [1742873230.768280297] [moveit.core.collision_detection.bullet]: Adding boxes took 1
+[       OK ] BulletCollisionCheck/CollisionDetectorTest/0.TestCollisionMapAdditionSpeed (1547 ms)
+[ RUN      ] BulletCollisionCheck/CollisionDetectorTest/0.MoveMesh
+[INFO] [1742873230.798632849] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873230.804833847] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873230.804866751] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873230.878450410] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[       OK ] BulletCollisionCheck/CollisionDetectorTest/0.MoveMesh (253 ms)
+[ RUN      ] BulletCollisionCheck/CollisionDetectorTest/0.TestChangingShapeSize
+[INFO] [1742873231.051467633] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873231.057254291] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873231.057287611] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873231.130832974] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[       OK ] BulletCollisionCheck/CollisionDetectorTest/0.TestChangingShapeSize (247 ms)
+[----------] 11 tests from BulletCollisionCheck/CollisionDetectorTest/0 (4250 ms total)
+
+[----------] Global test environment tear-down
+[==========] 11 tests from 1 test suite ran. (4251 ms total)
+[  PASSED  ] 11 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_bullet_collision_detection.gtest.xml'
+-- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_bullet_collision_detection.gtest.xml'

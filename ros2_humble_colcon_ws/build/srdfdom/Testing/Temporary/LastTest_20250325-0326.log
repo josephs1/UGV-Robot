@@ -1,0 +1,120 @@
+Start testing: Mar 24 23:26 EDT
+----------------------------------------------------------
+1/3 Testing: self_parser_test
+1/3 Test: self_parser_test
+Command: "/usr/bin/python3" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/test_results/srdfdom/self_parser_test.xunit.xml" "--package-name" "srdfdom" "--output-file" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/ament_cmake_pytest/self_parser_test.txt" "--command" "/usr/bin/python3" "-u" "-m" "pytest" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/srdfdom/test/test.py" "-o" "cache_dir=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/ament_cmake_pytest/self_parser_test/.cache" "--junit-xml=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/test_results/srdfdom/self_parser_test.xunit.xml" "--junit-prefix=srdfdom"
+Directory: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom
+"self_parser_test" start time: Mar 24 23:26 EDT
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom':
+ - /usr/bin/python3 -u -m pytest /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/srdfdom/test/test.py -o cache_dir=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/ament_cmake_pytest/self_parser_test/.cache --junit-xml=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/test_results/srdfdom/self_parser_test.xunit.xml --junit-prefix=srdfdom
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+cachedir: build/srdfdom/ament_cmake_pytest/self_parser_test/.cache
+rootdir: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws
+plugins: ament-flake8-0.12.11, launch-testing-ros-0.19.8, launch-testing-1.0.7, ament-xmllint-0.12.11, ament-pep257-0.12.11, ament-copyright-0.12.11, ament-lint-0.12.11, timeout-2.1.0, mock-3.6.1, repeat-0.9.1, rerunfailures-10.2, colcon-core-0.19.0, cov-3.0.0
+collected 3 items
+
+../../src/srdfdom/test/test.py ...                                       [100%]
+
+- generated xml file: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/test_results/srdfdom/self_parser_test.xunit.xml -
+============================== 3 passed in 0.16s ===============================
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/test_results/srdfdom/self_parser_test.xunit.xml'
+<end of output>
+Test time =   2.15 sec
+----------------------------------------------------------
+Test Passed.
+"self_parser_test" end time: Mar 24 23:26 EDT
+"self_parser_test" time elapsed: 00:00:02
+----------------------------------------------------------
+
+2/3 Testing: test_cpp_C
+2/3 Test: test_cpp_C
+Command: "/usr/bin/python3" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/test_results/srdfdom/test_cpp_C.gtest.xml" "--package-name" "srdfdom" "--output-file" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/ament_cmake_gtest/test_cpp_C.txt" "--env" "LC_ALL=C" "--command" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/test_cpp_C" "--gtest_output=xml:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/test_results/srdfdom/test_cpp_C.gtest.xml"
+Directory: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom
+"test_cpp_C" start time: Mar 24 23:26 EDT
+Output:
+----------------------------------------------------------
+-- run_test.py: extra environment variables:
+ - LC_ALL=C
+-- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom':
+ - /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/test_cpp_C --gtest_output=xml:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/test_results/srdfdom/test_cpp_C.gtest.xml
+Using locale: C
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from TestCpp
+[ RUN      ] TestCpp.testSimple
+[       OK ] TestCpp.testSimple (15 ms)
+[ RUN      ] TestCpp.testComplex
+Error:   Property defined for a joint 'made_up_joint' that is not known to the URDF. Ignoring.
+         at line 655 in /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/srdfdom/src/model.cpp
+[       OK ] TestCpp.testComplex (11 ms)
+[ RUN      ] TestCpp.testReadWrite
+Error:   Property defined for a joint 'made_up_joint' that is not known to the URDF. Ignoring.
+         at line 655 in /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/srdfdom/src/model.cpp
+[       OK ] TestCpp.testReadWrite (12 ms)
+[----------] 3 tests from TestCpp (38 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (38 ms total)
+[  PASSED  ] 3 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/test_results/srdfdom/test_cpp_C.gtest.xml'
+-- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/test_results/srdfdom/test_cpp_C.gtest.xml'
+<end of output>
+Test time =   0.27 sec
+----------------------------------------------------------
+Test Passed.
+"test_cpp_C" end time: Mar 24 23:26 EDT
+"test_cpp_C" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: test_cpp_nl_NL.UTF-8
+3/3 Test: test_cpp_nl_NL.UTF-8
+Command: "/usr/bin/python3" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/test_results/srdfdom/test_cpp_nl_NL.UTF-8.gtest.xml" "--package-name" "srdfdom" "--output-file" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/ament_cmake_gtest/test_cpp_nl_NL.UTF-8.txt" "--env" "LC_ALL=nl_NL.UTF-8" "--command" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/test_cpp_nl_NL.UTF-8" "--gtest_output=xml:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/test_results/srdfdom/test_cpp_nl_NL.UTF-8.gtest.xml"
+Directory: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom
+"test_cpp_nl_NL.UTF-8" start time: Mar 24 23:26 EDT
+Output:
+----------------------------------------------------------
+-- run_test.py: extra environment variables:
+ - LC_ALL=nl_NL.UTF-8
+-- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom':
+ - /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/test_cpp_nl_NL.UTF-8 --gtest_output=xml:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/test_results/srdfdom/test_cpp_nl_NL.UTF-8.gtest.xml
+Using locale: C
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from TestCpp
+[ RUN      ] TestCpp.testSimple
+[       OK ] TestCpp.testSimple (13 ms)
+[ RUN      ] TestCpp.testComplex
+Error:   Property defined for a joint 'made_up_joint' that is not known to the URDF. Ignoring.
+         at line 655 in /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/srdfdom/src/model.cpp
+[       OK ] TestCpp.testComplex (11 ms)
+[ RUN      ] TestCpp.testReadWrite
+Error:   Property defined for a joint 'made_up_joint' that is not known to the URDF. Ignoring.
+         at line 655 in /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/srdfdom/src/model.cpp
+[       OK ] TestCpp.testReadWrite (11 ms)
+[----------] 3 tests from TestCpp (36 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (36 ms total)
+[  PASSED  ] 3 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/test_results/srdfdom/test_cpp_nl_NL.UTF-8.gtest.xml'
+-- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/test_results/srdfdom/test_cpp_nl_NL.UTF-8.gtest.xml'
+<end of output>
+Test time =   0.28 sec
+----------------------------------------------------------
+Test Passed.
+"test_cpp_nl_NL.UTF-8" end time: Mar 24 23:26 EDT
+"test_cpp_nl_NL.UTF-8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 24 23:26 EDT
+
+gtest =   0.55 sec*proc
+
+pytest =   2.15 sec*proc
+

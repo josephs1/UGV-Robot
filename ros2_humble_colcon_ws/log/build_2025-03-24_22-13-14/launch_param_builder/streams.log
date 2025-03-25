@@ -1,0 +1,50 @@
+[2.397s] Invoking command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/launch_param_builder': PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/launch_param_builder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/launch_param_builder build --build-base /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/launch_param_builder/build install --record /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/launch_param_builder/install.log --single-version-externally-managed install_data
+[3.147s] running egg_info
+[3.149s] creating ../../build/launch_param_builder/launch_param_builder.egg-info
+[3.150s] writing ../../build/launch_param_builder/launch_param_builder.egg-info/PKG-INFO
+[3.150s] writing dependency_links to ../../build/launch_param_builder/launch_param_builder.egg-info/dependency_links.txt
+[3.151s] writing entry points to ../../build/launch_param_builder/launch_param_builder.egg-info/entry_points.txt
+[3.151s] writing requirements to ../../build/launch_param_builder/launch_param_builder.egg-info/requires.txt
+[3.151s] writing top-level names to ../../build/launch_param_builder/launch_param_builder.egg-info/top_level.txt
+[3.152s] writing manifest file '../../build/launch_param_builder/launch_param_builder.egg-info/SOURCES.txt'
+[3.164s] reading manifest file '../../build/launch_param_builder/launch_param_builder.egg-info/SOURCES.txt'
+[3.164s] adding license file 'LICENSE'
+[3.166s] writing manifest file '../../build/launch_param_builder/launch_param_builder.egg-info/SOURCES.txt'
+[3.166s] running build
+[3.166s] running build_py
+[3.167s] creating /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/launch_param_builder/build
+[3.167s] creating /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/launch_param_builder/build/lib
+[3.167s] creating /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/launch_param_builder/build/lib/launch_param_builder
+[3.168s] copying launch_param_builder/launch_param_builder.py -> /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/launch_param_builder/build/lib/launch_param_builder
+[3.168s] copying launch_param_builder/utils.py -> /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/launch_param_builder/build/lib/launch_param_builder
+[3.168s] copying launch_param_builder/__init__.py -> /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/launch_param_builder/build/lib/launch_param_builder
+[3.169s] running install
+[3.170s] running install_lib
+[3.172s] creating /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder
+[3.174s] copying /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/launch_param_builder/build/lib/launch_param_builder/launch_param_builder.py -> /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder
+[3.174s] copying /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/launch_param_builder/build/lib/launch_param_builder/utils.py -> /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder
+[3.174s] copying /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/launch_param_builder/build/lib/launch_param_builder/__init__.py -> /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder
+[3.175s] byte-compiling /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder/launch_param_builder.py to launch_param_builder.cpython-310.pyc
+[3.177s] byte-compiling /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder/utils.py to utils.cpython-310.pyc
+[3.179s] byte-compiling /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder/__init__.py to __init__.cpython-310.pyc
+[3.179s] running install_data
+[3.180s] creating /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/share/ament_index
+[3.180s] creating /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/share/ament_index/resource_index
+[3.180s] creating /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/share/ament_index/resource_index/packages
+[3.180s] copying resource/launch_param_builder -> /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/share/ament_index/resource_index/packages
+[3.181s] creating /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/share/launch_param_builder/launch
+[3.181s] copying example/launch_param_builder_example.launch.py -> /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/share/launch_param_builder/launch
+[3.181s] creating /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/share/launch_param_builder/config
+[3.182s] copying test/data/parameters_injection.yaml -> /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/share/launch_param_builder/config
+[3.182s] copying test/data/parameters.yaml -> /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/share/launch_param_builder/config
+[3.182s] copying test/data/param_file_to_inject.yaml -> /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/share/launch_param_builder/config
+[3.183s] copying test/data/parameter.xacro -> /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/share/launch_param_builder/config
+[3.183s] copying test/data/parameter_file -> /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/share/launch_param_builder/config
+[3.184s] copying package.xml -> /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/share/launch_param_builder
+[3.184s] creating /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/lib/launch_param_builder
+[3.185s] copying example/example_node.py -> /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/lib/launch_param_builder
+[3.185s] running install_egg_info
+[3.193s] Copying ../../build/launch_param_builder/launch_param_builder.egg-info to /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder-0.1.1-py3.10.egg-info
+[3.197s] running install_scripts
+[3.260s] writing list of installed files to '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/launch_param_builder/install.log'
+[3.475s] Invoked command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/launch_param_builder' returned '0': PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/launch_param_builder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/launch_param_builder build --build-base /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/launch_param_builder/build install --record /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/launch_param_builder/install.log --single-version-externally-managed install_data

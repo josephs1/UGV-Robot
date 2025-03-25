@@ -1,0 +1,28 @@
+-- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/robot_state':
+ - /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/robot_state/test_aabb --gtest_output=xml:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_aabb.gtest.xml
+
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from TestAABB
+[ RUN      ] TestAABB.TestPR2
+[INFO] [1742873221.224179990] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873221.230761868] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873221.230807287] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873221.304709387] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[       OK ] TestAABB.TestPR2 (104 ms)
+[ RUN      ] TestAABB.TestSimple
+[INFO] [1742873221.306685705] [moveit_robot_model.robot_model]: Loading robot model 'simple'...
+[       OK ] TestAABB.TestSimple (2 ms)
+[ RUN      ] TestAABB.TestComplex
+[INFO] [1742873221.307907408] [moveit_robot_model.robot_model]: Loading robot model 'complex'...
+[       OK ] TestAABB.TestComplex (1 ms)
+[----------] 3 tests from TestAABB (107 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (107 ms total)
+[  PASSED  ] 3 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_aabb.gtest.xml'
+-- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_aabb.gtest.xml'

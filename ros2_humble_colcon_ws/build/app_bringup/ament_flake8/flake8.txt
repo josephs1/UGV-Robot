@@ -1,0 +1,132 @@
+-- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/app_bringup':
+ - /opt/ros/humble/bin/ament_flake8 --xunit-file /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/test_results/app_bringup/flake8.xunit.xml
+
+def generate_launch_description():
+^
+	ld = LaunchDescription()
+^
+	publisher_node = Node(
+^
+		package = "py_pub_sub",
+^
+		package = "py_pub_sub",
+		       ^
+		package = "py_pub_sub",
+		         ^
+		package = "py_pub_sub",
+		          ^
+		executable = "py_pub"
+^
+		executable = "py_pub"
+		          ^
+		executable = "py_pub"
+		            ^
+		executable = "py_pub"
+		             ^
+	)
+^
+	subscriber_node = Node(
+^
+		package = "py_pub_sub",
+^
+		package = "py_pub_sub",
+		       ^
+		package = "py_pub_sub",
+		         ^
+		package = "py_pub_sub",
+		          ^
+		executable = "py_sub"
+^
+		executable = "py_sub"
+		          ^
+		executable = "py_sub"
+		            ^
+		executable = "py_sub"
+		             ^
+	)
+^
+	ld.add_action(publisher_node)
+^
+	ld.add_action(subscriber_node)
+^
+	
+^
+	
+^
+	return ld
+^
+8     E251 unexpected spaces around keyword / parameter equals
+1     E302 expected 2 blank lines, found 1
+4     Q000 Double quotes found but single quotes preferred
+13    W191 indentation contains tabs
+1     W293 blank line contains whitespace
+
+./launch/app.launch.py:4:1: E302 expected 2 blank lines, found 1
+
+./launch/app.launch.py:5:1: W191 indentation contains tabs
+
+./launch/app.launch.py:7:1: W191 indentation contains tabs
+
+./launch/app.launch.py:8:1: W191 indentation contains tabs
+
+./launch/app.launch.py:8:10: E251 unexpected spaces around keyword / parameter equals
+
+./launch/app.launch.py:8:12: E251 unexpected spaces around keyword / parameter equals
+
+./launch/app.launch.py:8:13: Q000 Double quotes found but single quotes preferred
+
+./launch/app.launch.py:9:1: W191 indentation contains tabs
+
+./launch/app.launch.py:9:13: E251 unexpected spaces around keyword / parameter equals
+
+./launch/app.launch.py:9:15: E251 unexpected spaces around keyword / parameter equals
+
+./launch/app.launch.py:9:16: Q000 Double quotes found but single quotes preferred
+
+./launch/app.launch.py:10:1: W191 indentation contains tabs
+
+./launch/app.launch.py:12:1: W191 indentation contains tabs
+
+./launch/app.launch.py:13:1: W191 indentation contains tabs
+
+./launch/app.launch.py:13:10: E251 unexpected spaces around keyword / parameter equals
+
+./launch/app.launch.py:13:12: E251 unexpected spaces around keyword / parameter equals
+
+./launch/app.launch.py:13:13: Q000 Double quotes found but single quotes preferred
+
+./launch/app.launch.py:14:1: W191 indentation contains tabs
+
+./launch/app.launch.py:14:13: E251 unexpected spaces around keyword / parameter equals
+
+./launch/app.launch.py:14:15: E251 unexpected spaces around keyword / parameter equals
+
+./launch/app.launch.py:14:16: Q000 Double quotes found but single quotes preferred
+
+./launch/app.launch.py:15:1: W191 indentation contains tabs
+
+./launch/app.launch.py:17:1: W191 indentation contains tabs
+
+./launch/app.launch.py:18:1: W191 indentation contains tabs
+
+./launch/app.launch.py:19:1: W191 indentation contains tabs
+
+./launch/app.launch.py:19:1: W293 blank line contains whitespace
+
+./launch/app.launch.py:20:1: W191 indentation contains tabs
+
+
+1 files checked
+27 errors
+
+'E'-type errors: 9
+'Q'-type errors: 4
+'W'-type errors: 14
+
+Checked files:
+
+* ./launch/app.launch.py
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/test_results/app_bringup/flake8.xunit.xml'

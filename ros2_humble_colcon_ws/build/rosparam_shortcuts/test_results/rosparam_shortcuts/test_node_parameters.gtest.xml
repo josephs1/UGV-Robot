@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.058" timestamp="2025-03-24T23:26:12" name="AllTests">
+  <testsuite name="TestNodeParameters" tests="1" failures="0" disabled="0" errors="0" time="0.057" timestamp="2025-03-24T23:26:12">
+    <testcase name="TestParameters" status="run" result="completed" time="0.056" timestamp="2025-03-24T23:26:12" classname="rosparam_shortcuts.TestNodeParameters" />
+  </testsuite>
+</testsuites>

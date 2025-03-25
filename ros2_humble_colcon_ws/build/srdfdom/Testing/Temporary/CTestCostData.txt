@@ -1,0 +1,4 @@
+self_parser_test 1 2.14624
+test_cpp_C 1 0.270662
+test_cpp_nl_NL.UTF-8 1 0.275754
+---

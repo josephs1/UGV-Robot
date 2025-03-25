@@ -1,0 +1,24 @@
+-- run_test.py: extra environment variables to append:
+ - LD_LIBRARY_PATH+=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/collision_detection
+ - LD_LIBRARY_PATH+=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/collision_detection/../robot_model
+ - LD_LIBRARY_PATH+=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/collision_detection/../utils
+-- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/collision_detection':
+ - /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/collision_detection/test_all_valid --gtest_output=xml:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_all_valid.gtest.xml
+
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AllValid
+[ RUN      ] AllValid.Instantiate
+[INFO] [1742873226.790736746] [moveit_robot_model.robot_model]: Loading robot model ''...
+[WARN] [1742873226.790804218] [moveit_robot_model.robot_model]: No root link found
+[       OK ] AllValid.Instantiate (0 ms)
+[----------] 1 test from AllValid (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_all_valid.gtest.xml'
+-- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_all_valid.gtest.xml'

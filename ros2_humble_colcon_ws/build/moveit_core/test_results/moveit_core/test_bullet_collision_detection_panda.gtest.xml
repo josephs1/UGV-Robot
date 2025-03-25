@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="8" failures="0" disabled="0" errors="0" time="0.208" timestamp="2025-03-24T23:27:11" name="AllTests">
+  <testsuite name="BulletCollisionCheckPanda/CollisionDetectorPandaTest/0" tests="8" failures="0" disabled="0" errors="0" time="0.208" timestamp="2025-03-24T23:27:11">
+    <testcase name="InitOK" type_param="collision_detection::CollisionDetectorAllocatorBullet" status="run" result="completed" time="0.033" timestamp="2025-03-24T23:27:11" classname="moveit_core.BulletCollisionCheckPanda/CollisionDetectorPandaTest/0" />
+    <testcase name="DefaultNotInCollision" type_param="collision_detection::CollisionDetectorAllocatorBullet" status="run" result="completed" time="0.029" timestamp="2025-03-24T23:27:11" classname="moveit_core.BulletCollisionCheckPanda/CollisionDetectorPandaTest/0" />
+    <testcase name="LinksInCollision" type_param="collision_detection::CollisionDetectorAllocatorBullet" status="run" result="completed" time="0.024" timestamp="2025-03-24T23:27:11" classname="moveit_core.BulletCollisionCheckPanda/CollisionDetectorPandaTest/0" />
+    <testcase name="RobotWorldCollision_1" type_param="collision_detection::CollisionDetectorAllocatorBullet" status="run" result="completed" time="0.024" timestamp="2025-03-24T23:27:11" classname="moveit_core.BulletCollisionCheckPanda/CollisionDetectorPandaTest/0" />
+    <testcase name="RobotWorldCollision_2" type_param="collision_detection::CollisionDetectorAllocatorBullet" status="run" result="completed" time="0.024" timestamp="2025-03-24T23:27:11" classname="moveit_core.BulletCollisionCheckPanda/CollisionDetectorPandaTest/0" />
+    <testcase name="PaddingTest" type_param="collision_detection::CollisionDetectorAllocatorBullet" status="run" result="completed" time="0.026" timestamp="2025-03-24T23:27:11" classname="moveit_core.BulletCollisionCheckPanda/CollisionDetectorPandaTest/0" />
+    <testcase name="DistanceSelf" type_param="collision_detection::CollisionDetectorAllocatorBullet" status="run" result="completed" time="0.024" timestamp="2025-03-24T23:27:11" classname="moveit_core.BulletCollisionCheckPanda/CollisionDetectorPandaTest/0" />
+    <testcase name="DistanceWorld" type_param="collision_detection::CollisionDetectorAllocatorBullet" status="run" result="completed" time="0.024" timestamp="2025-03-24T23:27:11" classname="moveit_core.BulletCollisionCheckPanda/CollisionDetectorPandaTest/0" />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,86 @@
+[0.056s] Invoking command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_visual_tools': AMENT_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_configs_utils:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/bin:${PATH} PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_configs_utils/lib/python3.10/site-packages:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/local/lib/python3.10/dist-packages:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/moveit_visual_tools -DCMAKE_INSTALL_PREFIX=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_visual_tools
+[6.507s] -- The C compiler identification is GNU 11.4.0
+[6.508s] -- The CXX compiler identification is GNU 11.4.0
+[6.508s] -- Detecting C compiler ABI info
+[6.508s] -- Detecting C compiler ABI info - done
+[6.508s] -- Check for working C compiler: /usr/bin/cc - skipped
+[6.508s] -- Detecting C compile features
+[6.509s] -- Detecting C compile features - done
+[6.509s] -- Detecting CXX compiler ABI info
+[6.509s] -- Detecting CXX compiler ABI info - done
+[6.509s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[6.509s] -- Detecting CXX compile features
+[6.509s] -- Detecting CXX compile features - done
+[6.509s] -- Found moveit_common: 2.5.8 (/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common/share/moveit_common/cmake)
+[6.510s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[6.510s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[6.510s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system 
+[6.510s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[6.510s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[6.510s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[6.511s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[6.511s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.511s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.511s] -- Found graph_msgs: 0.2.0 (/opt/ros/humble/share/graph_msgs/cmake)
+[6.511s] -- Found moveit_core: 2.5.8 (/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/share/moveit_core/cmake)
+[6.511s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[6.511s] -- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[6.511s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[6.512s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[6.512s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[6.512s] -- Found FastRTPS: /opt/ros/humble/include  
+[6.512s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.512s] -- Found Threads: TRUE  
+[6.512s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[6.512s] -- Found rclcpp_lifecycle: 16.0.11 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[6.513s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[6.513s] -- library: /usr/lib/aarch64-linux-gnu/libcurl.so
+[6.513s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[6.513s] -- Found moveit_ros_planning: 2.5.8 (/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/cmake)
+[6.513s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[6.513s] -- Found rviz_visual_tools: 4.1.4 (/opt/ros/humble/share/rviz_visual_tools/cmake)
+[6.513s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[6.513s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[6.514s] -- Found OGRE
+[6.514s] --   static     : OFF
+[6.514s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[6.514s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[6.514s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[6.514s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[6.514s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[6.515s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[6.515s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[6.515s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[6.515s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[6.515s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[6.515s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[6.515s] -- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.2.11") 
+[6.516s] -- Found OpenGL: /usr/lib/aarch64-linux-gnu/libOpenGL.so   
+[6.516s] -- Found X11: /usr/include   
+[6.516s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so
+[6.516s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so - found
+[6.516s] -- Looking for gethostbyname
+[6.523s] [0mmoveit_visual_tools: You did not request a specific build type: Choosing 'Release' for maximum performance[0m
+[6.698s] -- Looking for gethostbyname - found
+[6.699s] -- Looking for connect
+[7.913s] -- Looking for connect - found
+[7.914s] -- Looking for remove
+[8.938s] -- Looking for remove - found
+[8.939s] -- Looking for shmat
+[10.322s] -- Looking for shmat - found
+[10.323s] -- Looking for IceConnectionNumber in ICE
+[12.628s] -- Looking for IceConnectionNumber in ICE - found
+[13.826s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[13.988s] -- Added test 'copyright' to check source files copyright and LICENSE
+[14.032s] -- Added test 'flake8' to check Python code syntax and style conventions
+[14.037s] -- Added test 'lint_cmake' to check CMake code style
+[14.062s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[14.065s] -- Added test 'xmllint' to check XML markup files
+[14.101s] -- Configuring done
+[14.850s] -- Generating done
+[15.086s] -- Build files have been written to: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_visual_tools
+[15.515s] Invoked command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_visual_tools' returned '0': AMENT_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_configs_utils:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/bin:${PATH} PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_configs_utils/lib/python3.10/site-packages:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/local/lib/python3.10/dist-packages:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/moveit_visual_tools -DCMAKE_INSTALL_PREFIX=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_visual_tools
+[15.540s] Invoking command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_visual_tools': AMENT_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_configs_utils:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/bin:${PATH} PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_configs_utils/lib/python3.10/site-packages:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/local/lib/python3.10/dist-packages:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_visual_tools -- -j6 -l6
+[16.522s] [ 16%] [32mBuilding CXX object CMakeFiles/moveit_visual_tools.dir/src/moveit_visual_tools.cpp.o[0m
+[16.544s] [ 33%] [32mBuilding CXX object CMakeFiles/moveit_visual_tools.dir/src/imarker_robot_state.cpp.o[0m
+[16.545s] [ 50%] [32mBuilding CXX object CMakeFiles/moveit_visual_tools.dir/src/imarker_end_effector.cpp.o[0m

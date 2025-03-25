@@ -1,0 +1,166 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-4585e600ea676ef81050.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				},
+				{
+					"build" : "gtest",
+					"jsonFile" : "directory-gtest-Release-a2408fe1a73b92c5e636.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "/opt/ros/humble/src/gtest_vendor",
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "srdfdom",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "gtest",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_srdfdom_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_srdfdom_egg-Release-c754d192215c15ec74df.json",
+					"name" : "ament_cmake_python_build_srdfdom_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_srdfdom::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_srdfdom-Release-0a3465dfd3ed76910247.json",
+					"name" : "ament_cmake_python_copy_srdfdom",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gtest::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest-Release-bfa29ef01086446a4875.json",
+					"name" : "gtest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gtest_main::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest_main-Release-85468f7f4fe85a87b51d.json",
+					"name" : "gtest_main",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "srdfdom::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-srdfdom-Release-87b5d6d0f2d09a1997c5.json",
+					"name" : "srdfdom",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "srdfdom_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-srdfdom_uninstall-Release-b8615c1b141e45bc5855.json",
+					"name" : "srdfdom_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_cpp_C::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_cpp_C-Release-58ba9a0a0ce863b268c4.json",
+					"name" : "test_cpp_C",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_cpp_nl_NL.UTF-8::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_cpp_nl_NL.UTF-8-Release-807e10d1b898a52fbdfb.json",
+					"name" : "test_cpp_nl_NL.UTF-8",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-b16d57f478e18b983e27.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom",
+		"source" : "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/srdfdom"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

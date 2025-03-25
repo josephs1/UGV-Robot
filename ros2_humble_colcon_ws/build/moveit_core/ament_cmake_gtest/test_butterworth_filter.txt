@@ -1,0 +1,21 @@
+-- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/online_signal_smoothing':
+ - /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/online_signal_smoothing/test_butterworth_filter --gtest_output=xml:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_butterworth_filter.gtest.xml
+
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from SMOOTHING_PLUGINS
+[ RUN      ] SMOOTHING_PLUGINS.FilterConverge
+[       OK ] SMOOTHING_PLUGINS.FilterConverge (0 ms)
+[ RUN      ] SMOOTHING_PLUGINS.FilterReset
+[       OK ] SMOOTHING_PLUGINS.FilterReset (0 ms)
+[----------] 2 tests from SMOOTHING_PLUGINS (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 2 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_butterworth_filter.gtest.xml'
+-- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_butterworth_filter.gtest.xml'

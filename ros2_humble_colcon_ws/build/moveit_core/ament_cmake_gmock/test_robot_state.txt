@@ -1,0 +1,76 @@
+-- run_test.py: extra environment variables to append:
+ - LD_LIBRARY_PATH+=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/robot_state
+ - LD_LIBRARY_PATH+=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/robot_state/../utils
+-- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/robot_state':
+ - /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/robot_state/test_robot_state --gtest_output=xml:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_robot_state.gtest.xml
+
+[==========] Running 6 tests from 3 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from Loading
+[ RUN      ] Loading.SimpleRobot
+[INFO] [1742873216.059336605] [moveit_robot_model.robot_model]: Loading robot model 'myrobot'...
+[WARN] [1742873216.059588028] [moveit_robot_model.robot_model]: No geometry is associated to any robot links
+[       OK ] Loading.SimpleRobot (1 ms)
+[----------] 1 test from Loading (1 ms total)
+
+[----------] 1 test from LoadingAndFK
+[ RUN      ] LoadingAndFK.SimpleRobot
+[INFO] [1742873216.060112190] [moveit_robot_model.robot_model]: Loading robot model 'myrobot'...
+[       OK ] LoadingAndFK.SimpleRobot (1 ms)
+[----------] 1 test from LoadingAndFK (1 ms total)
+
+[----------] 4 tests from OneRobot
+[ RUN      ] OneRobot.FK
+Error:   Group 'base_with_bad_subgroups' has unsatisfied subgroups
+         at line 304 in /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/srdfdom/src/model.cpp
+[INFO] [1742873216.061403903] [moveit_robot_model.robot_model]: Loading robot model 'one_robot'...
+[ERROR] [1742873216.061621749] [moveit_robot_model.robot_model]: Group 'base_with_bad_subgroups' not found in model 'one_robot'
+[       OK ] OneRobot.FK (1 ms)
+[ RUN      ] OneRobot.testPrintCurrentPositionWithJointLimits
+Error:   Group 'base_with_bad_subgroups' has unsatisfied subgroups
+         at line 304 in /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/srdfdom/src/model.cpp
+[INFO] [1742873216.062525942] [moveit_robot_model.robot_model]: Loading robot model 'one_robot'...
+
+Visual inspection should show NO joints out of bounds:
+   -3.14159	-----------|-------- 	3.14159  	joint_a current: 0.00000
+   0.00000	-|------------------ 	0.08900  	joint_c current: 0.00000
+   0.00000	-|------------------ 	0.19000  	joint_f current: 0.00000
+
+Visual inspection should show ONE joint out of bounds:
+   -3.14159	-----------|-------- 	3.14159  	joint_a current: 0.00000
+[91m   0.00000	|------------------- 	0.08900  	joint_c current: -1.00000
+[0m   0.00000	-|------------------ 	0.19000  	joint_f current: 0.00000
+
+Visual inspection should show TWO joint out of bounds:
+   -3.14159	-----------|-------- 	3.14159  	joint_a current: 0.00000
+[91m   0.00000	|------------------- 	0.08900  	joint_c current: -1.00000
+[0m[91m   0.00000	--------------------| 	0.19000  	joint_f current: 1.00000
+[0m
+Visual inspection should show ONE joint out of bounds:
+   -3.14159	-----------|-------- 	3.14159  	joint_a current: 0.00000
+[91m   0.00000	|------------------- 	0.08900  	joint_c current: -1.00000
+[0m   0.00000	--------------------| 	0.19000  	joint_f current: 0.19000
+[       OK ] OneRobot.testPrintCurrentPositionWithJointLimits (1 ms)
+[ RUN      ] OneRobot.testInterpolation
+Error:   Group 'base_with_bad_subgroups' has unsatisfied subgroups
+         at line 304 in /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/srdfdom/src/model.cpp
+[INFO] [1742873216.063377482] [moveit_robot_model.robot_model]: Loading robot model 'one_robot'...
+[ERROR] [1742873216.063655535] [moveit_exceptions.exceptions]: Interpolation parameter is NaN or inf.
+Exception thrown.
+Caught expected exception: Interpolation parameter is NaN or inf.
+[       OK ] OneRobot.testInterpolation (1 ms)
+[ RUN      ] OneRobot.rigidlyConnectedParent
+Error:   Group 'base_with_bad_subgroups' has unsatisfied subgroups
+         at line 304 in /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/srdfdom/src/model.cpp
+[INFO] [1742873216.064443731] [moveit_robot_model.robot_model]: Loading robot model 'one_robot'...
+[       OK ] OneRobot.rigidlyConnectedParent (1 ms)
+[----------] 4 tests from OneRobot (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 3 test suites ran. (6 ms total)
+[  PASSED  ] 6 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_robot_state.gtest.xml'
+-- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_robot_state.gtest.xml'

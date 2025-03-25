@@ -1,0 +1,49 @@
+-- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/robot_trajectory':
+ - /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/robot_trajectory/test_robot_trajectory --gtest_output=xml:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_robot_trajectory.gtest.xml
+
+[==========] Running 11 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 11 tests from RobotTrajectoryTestFixture
+[ RUN      ] RobotTrajectoryTestFixture.ModifyFirstWaypointByPtr
+[INFO] [1742873221.837412352] [moveit_robot_model.robot_model]: Loading robot model 'panda'...
+[       OK ] RobotTrajectoryTestFixture.ModifyFirstWaypointByPtr (14 ms)
+[ RUN      ] RobotTrajectoryTestFixture.ModifyFirstWaypointByValue
+[INFO] [1742873221.849699831] [moveit_robot_model.robot_model]: Loading robot model 'panda'...
+[       OK ] RobotTrajectoryTestFixture.ModifyFirstWaypointByValue (11 ms)
+[ RUN      ] RobotTrajectoryTestFixture.DoubleReverse
+[INFO] [1742873221.860193309] [moveit_robot_model.robot_model]: Loading robot model 'panda'...
+[       OK ] RobotTrajectoryTestFixture.DoubleReverse (10 ms)
+[ RUN      ] RobotTrajectoryTestFixture.ChainEdits
+[INFO] [1742873221.870704935] [moveit_robot_model.robot_model]: Loading robot model 'panda'...
+[       OK ] RobotTrajectoryTestFixture.ChainEdits (11 ms)
+[ RUN      ] RobotTrajectoryTestFixture.Append
+[INFO] [1742873221.881349169] [moveit_robot_model.robot_model]: Loading robot model 'panda'...
+[       OK ] RobotTrajectoryTestFixture.Append (10 ms)
+[ RUN      ] RobotTrajectoryTestFixture.RobotTrajectoryShallowCopy
+[INFO] [1742873221.891756450] [moveit_robot_model.robot_model]: Loading robot model 'panda'...
+[       OK ] RobotTrajectoryTestFixture.RobotTrajectoryShallowCopy (11 ms)
+[ RUN      ] RobotTrajectoryTestFixture.RobotTrajectoryDeepCopy
+[INFO] [1742873221.902079391] [moveit_robot_model.robot_model]: Loading robot model 'panda'...
+[       OK ] RobotTrajectoryTestFixture.RobotTrajectoryDeepCopy (10 ms)
+[ RUN      ] RobotTrajectoryTestFixture.RobotTrajectoryIterator
+[INFO] [1742873221.912329834] [moveit_robot_model.robot_model]: Loading robot model 'panda'...
+[       OK ] RobotTrajectoryTestFixture.RobotTrajectoryIterator (10 ms)
+[ RUN      ] RobotTrajectoryTestFixture.RobotTrajectoryLength
+[INFO] [1742873221.922613533] [moveit_robot_model.robot_model]: Loading robot model 'panda'...
+[       OK ] RobotTrajectoryTestFixture.RobotTrajectoryLength (10 ms)
+[ RUN      ] RobotTrajectoryTestFixture.RobotTrajectorySmoothness
+[INFO] [1742873221.933019310] [moveit_robot_model.robot_model]: Loading robot model 'panda'...
+[       OK ] RobotTrajectoryTestFixture.RobotTrajectorySmoothness (10 ms)
+[ RUN      ] RobotTrajectoryTestFixture.RobotTrajectoryDensity
+[INFO] [1742873221.943237137] [moveit_robot_model.robot_model]: Loading robot model 'panda'...
+[       OK ] RobotTrajectoryTestFixture.RobotTrajectoryDensity (10 ms)
+[----------] 11 tests from RobotTrajectoryTestFixture (118 ms total)
+
+[----------] Global test environment tear-down
+[==========] 11 tests from 1 test suite ran. (118 ms total)
+[  PASSED  ] 11 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_robot_trajectory.gtest.xml'
+-- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_robot_trajectory.gtest.xml'

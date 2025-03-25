@@ -1,0 +1,170 @@
+-- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/constraint_samplers':
+ - /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/constraint_samplers/test_constraint_samplers --gtest_output=xml:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_constraint_samplers.gtest.xml
+
+[==========] Running 12 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 12 tests from LoadPlanningModelsPr2
+[ RUN      ] LoadPlanningModelsPr2.JointConstraintsSamplerSimple
+[INFO] [1742873188.218725691] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873188.225809244] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873188.225865809] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873188.304001418] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[WARN] [1742873188.304156997] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873188.304536885] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[WARN] [1742873188.305112624] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873188.305141979] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[ERROR] [1742873188.305430664] [moveit_robot_model.joint_model_group]: IK solver computes joint values for joint 'l_shoulder_pan_joint' but group 'base' does not contain such a joint.
+[ERROR] [1742873188.486126064] [moveit_robot_model.robot_model]: Joint '' not found in model 'pr2'
+[WARN] [1742873188.486416510] [moveit_constraint_samplers.default_constraint_samplers]: No valid joint constraints
+[ERROR] [1742873188.486657914] [moveit_constraint_samplers.default_constraint_samplers]: The constraints for joint 'r_shoulder_pan_joint' are such that there are no possible values for the joint: min_bound: 0.53, max_bound: 0.43. Failing.
+
+[WARN] [1742873188.486691271] [moveit_constraint_samplers.default_constraint_samplers]: JointConstraintSampler not configured, won't sample
+[ERROR] [1742873188.486718865] [moveit_constraint_samplers.default_constraint_samplers]: The constraints for joint 'r_shoulder_pan_joint' are such that there are no possible values for the joint: min_bound: 0.53, max_bound: 0.43. Failing.
+
+[WARN] [1742873188.486728117] [moveit_constraint_samplers.default_constraint_samplers]: JointConstraintSampler not configured, won't sample
+[WARN] [1742873188.486740249] [moveit_constraint_samplers.default_constraint_samplers]: No valid joint constraints
+[WARN] [1742873188.486782313] [moveit_kinematic_constraints.kinematic_constraints]: Joint r_shoulder_pan_joint is constrained to be below the minimum bounds. Assuming minimum bounds instead.
+[       OK ] LoadPlanningModelsPr2.JointConstraintsSamplerSimple (329 ms)
+[ RUN      ] LoadPlanningModelsPr2.IKConstraintsSamplerSimple
+[INFO] [1742873188.527109972] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873188.533464287] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873188.533517011] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873188.610149906] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[WARN] [1742873188.610256538] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873188.610431357] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[WARN] [1742873188.610870627] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873188.610893196] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[ERROR] [1742873188.611183994] [moveit_robot_model.joint_model_group]: IK solver computes joint values for joint 'l_shoulder_pan_joint' but group 'base' does not contain such a joint.
+[WARN] [1742873188.789422045] [moveit_kinematic_constraints.kinematic_constraints]: No frame specified for position constraint on link 'l_wrist_roll_link'!
+[ERROR] [1742873188.789555280] [moveit_robot_model.robot_model]: Group 'l_arm' not found in model 'pr2'
+[ERROR] [1742873188.789570614] [moveit_constraint_samplers.constraint_sampler]: A JointModelGroup should have been specified for the constraint sampler
+[WARN] [1742873188.789610565] [moveit_constraint_samplers.default_constraint_samplers]: No enabled constraints in sampling pose
+[ERROR] [1742873188.789803150] [moveit_constraint_samplers.default_constraint_samplers]: IK cannot be performed for link 'l_wrist_roll_link'. The solver can report IK solutions for link 'r_wrist_roll_link'.
+[ERROR] [1742873188.789823158] [moveit_constraint_samplers.default_constraint_samplers]: IK cannot be performed for link 'l_shoulder_pan_link'. The solver can report IK solutions for link 'l_wrist_roll_link'.
+[WARN] [1742873188.789836443] [moveit_constraint_samplers.default_constraint_samplers]: No solver instance in setup
+[       OK ] LoadPlanningModelsPr2.IKConstraintsSamplerSimple (300 ms)
+[ RUN      ] LoadPlanningModelsPr2.OrientationConstraintsSampler
+[INFO] [1742873188.827112607] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873188.833526977] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873188.833581846] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873188.910672770] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[WARN] [1742873188.910782700] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873188.910825661] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[WARN] [1742873188.911250046] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873188.911276712] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[ERROR] [1742873188.911574329] [moveit_robot_model.joint_model_group]: IK solver computes joint values for joint 'l_shoulder_pan_joint' but group 'base' does not contain such a joint.
+[       OK ] LoadPlanningModelsPr2.OrientationConstraintsSampler (339 ms)
+[ RUN      ] LoadPlanningModelsPr2.IKConstraintsSamplerValid
+[INFO] [1742873189.166152222] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873189.172496648] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873189.172548571] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873189.249364143] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[WARN] [1742873189.249476216] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873189.249517159] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[WARN] [1742873189.249990774] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873189.250012286] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[ERROR] [1742873189.250283554] [moveit_robot_model.joint_model_group]: IK solver computes joint values for joint 'l_shoulder_pan_joint' but group 'base' does not contain such a joint.
+[       OK ] LoadPlanningModelsPr2.IKConstraintsSamplerValid (336 ms)
+[ RUN      ] LoadPlanningModelsPr2.UnionConstraintSampler
+[INFO] [1742873189.502417232] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873189.508984300] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873189.509038592] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873189.585823624] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[WARN] [1742873189.585943540] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873189.585985124] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[WARN] [1742873189.586435114] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873189.586456850] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[ERROR] [1742873189.586735129] [moveit_robot_model.joint_model_group]: IK solver computes joint values for joint 'l_shoulder_pan_joint' but group 'base' does not contain such a joint.
+[       OK ] LoadPlanningModelsPr2.UnionConstraintSampler (308 ms)
+[ RUN      ] LoadPlanningModelsPr2.PoseConstraintSamplerManager
+[INFO] [1742873189.810183928] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873189.816507834] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873189.816558637] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873189.893488074] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[WARN] [1742873189.893733061] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873189.893781687] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[WARN] [1742873189.894226331] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873189.894244930] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[ERROR] [1742873189.894520200] [moveit_robot_model.joint_model_group]: IK solver computes joint values for joint 'l_shoulder_pan_joint' but group 'base' does not contain such a joint.
+[INFO] [1742873190.088690297] [test_constraint_samplers]: Success rate for IK Constraint Sampler with position & orientation constraints for one arm: 1.000000
+[       OK ] LoadPlanningModelsPr2.PoseConstraintSamplerManager (317 ms)
+[ RUN      ] LoadPlanningModelsPr2.JointVersusPoseConstraintSamplerManager
+[INFO] [1742873190.126902284] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873190.133369192] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873190.133417913] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873190.210440694] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[WARN] [1742873190.210563010] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873190.210607218] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[WARN] [1742873190.211051666] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873190.211074747] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[ERROR] [1742873190.211354015] [moveit_robot_model.joint_model_group]: IK solver computes joint values for joint 'l_shoulder_pan_joint' but group 'base' does not contain such a joint.
+[ERROR] [1742873190.385557598] [moveit_constraint_samplers.default_constraint_samplers]: IK cannot be performed for link 'r_wrist_roll_link'. The solver can report IK solutions for link 'l_wrist_roll_link'.
+[ERROR] [1742873190.385901209] [moveit_constraint_samplers.default_constraint_samplers]: IK cannot be performed for link 'r_wrist_roll_link'. The solver can report IK solutions for link 'l_wrist_roll_link'.
+[ERROR] [1742873190.386047726] [moveit_constraint_samplers.default_constraint_samplers]: IK cannot be performed for link 'r_wrist_roll_link'. The solver can report IK solutions for link 'l_wrist_roll_link'.
+[       OK ] LoadPlanningModelsPr2.JointVersusPoseConstraintSamplerManager (297 ms)
+[ RUN      ] LoadPlanningModelsPr2.MixedJointAndIkSamplerManager
+[INFO] [1742873190.423946096] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873190.430286142] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873190.430341682] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873190.507190032] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[WARN] [1742873190.507304569] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873190.507345864] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[WARN] [1742873190.507796586] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873190.507816113] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[ERROR] [1742873190.508094486] [moveit_robot_model.joint_model_group]: IK solver computes joint values for joint 'l_shoulder_pan_joint' but group 'base' does not contain such a joint.
+[       OK ] LoadPlanningModelsPr2.MixedJointAndIkSamplerManager (297 ms)
+[ RUN      ] LoadPlanningModelsPr2.SubgroupJointConstraintsSamplerManager
+[INFO] [1742873190.721702420] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873190.728021019] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873190.728075950] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873190.805325757] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[WARN] [1742873190.805445768] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873190.805490809] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[WARN] [1742873190.805936409] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873190.805959746] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[ERROR] [1742873190.806239687] [moveit_robot_model.joint_model_group]: IK solver computes joint values for joint 'l_shoulder_pan_joint' but group 'base' does not contain such a joint.
+[       OK ] LoadPlanningModelsPr2.SubgroupJointConstraintsSamplerManager (297 ms)
+[ RUN      ] LoadPlanningModelsPr2.SubgroupPoseConstraintsSampler
+[INFO] [1742873191.018544568] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873191.025011389] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873191.025071090] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873191.102527184] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[WARN] [1742873191.102769605] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873191.102818486] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[WARN] [1742873191.103311012] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873191.103332491] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[ERROR] [1742873191.103616143] [moveit_robot_model.joint_model_group]: IK solver computes joint values for joint 'l_shoulder_pan_joint' but group 'base' does not contain such a joint.
+[INFO] [1742873191.317953248] [pr2_arm_kinematics_plugin]: Success rate for IK Constraint Sampler with position & orientation constraints for both arms: 1.000000
+[       OK ] LoadPlanningModelsPr2.SubgroupPoseConstraintsSampler (338 ms)
+[ RUN      ] LoadPlanningModelsPr2.JointConstraintsSamplerSeeded
+[INFO] [1742873191.356409023] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873191.362790341] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873191.362843896] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873191.440149569] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[WARN] [1742873191.440272364] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873191.440314203] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[WARN] [1742873191.440810346] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873191.440836947] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[ERROR] [1742873191.441132443] [moveit_robot_model.joint_model_group]: IK solver computes joint values for joint 'l_shoulder_pan_joint' but group 'base' does not contain such a joint.
+[       OK ] LoadPlanningModelsPr2.JointConstraintsSamplerSeeded (297 ms)
+[ RUN      ] LoadPlanningModelsPr2.IKConstraintsSamplerSeeded
+[INFO] [1742873191.653247773] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873191.659566830] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873191.659617311] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873191.736767410] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[WARN] [1742873191.736877753] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873191.736921448] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[WARN] [1742873191.737469737] [moveit_kinematics_base.kinematics_base]: Loading KDL Tree
+[WARN] [1742873191.737492401] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[ERROR] [1742873191.737774804] [moveit_robot_model.joint_model_group]: IK solver computes joint values for joint 'l_shoulder_pan_joint' but group 'base' does not contain such a joint.
+[       OK ] LoadPlanningModelsPr2.IKConstraintsSamplerSeeded (298 ms)
+[----------] 12 tests from LoadPlanningModelsPr2 (3754 ms total)
+
+[----------] Global test environment tear-down
+[==========] 12 tests from 1 test suite ran. (3754 ms total)
+[  PASSED  ] 12 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_constraint_samplers.gtest.xml'
+-- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_constraint_samplers.gtest.xml'

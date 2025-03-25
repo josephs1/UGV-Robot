@@ -1,0 +1,18 @@
+-- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom':
+ - /usr/bin/python3 -u -m pytest /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/srdfdom/test/test.py -o cache_dir=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/ament_cmake_pytest/self_parser_test/.cache --junit-xml=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/test_results/srdfdom/self_parser_test.xunit.xml --junit-prefix=srdfdom
+
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+cachedir: build/srdfdom/ament_cmake_pytest/self_parser_test/.cache
+rootdir: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws
+plugins: ament-flake8-0.12.11, launch-testing-ros-0.19.8, launch-testing-1.0.7, ament-xmllint-0.12.11, ament-pep257-0.12.11, ament-copyright-0.12.11, ament-lint-0.12.11, timeout-2.1.0, mock-3.6.1, repeat-0.9.1, rerunfailures-10.2, colcon-core-0.19.0, cov-3.0.0
+collected 3 items
+
+../../src/srdfdom/test/test.py ...                                       [100%]
+
+- generated xml file: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/test_results/srdfdom/self_parser_test.xunit.xml -
+============================== 3 passed in 0.16s ===============================
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/srdfdom/test_results/srdfdom/self_parser_test.xunit.xml'

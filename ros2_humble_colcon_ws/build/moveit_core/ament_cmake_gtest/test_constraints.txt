@@ -1,0 +1,154 @@
+-- run_test.py: extra environment variables to append:
+ - LD_LIBRARY_PATH+=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/kinematic_constraints
+ - LD_LIBRARY_PATH+=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/kinematic_constraints/../utils
+ - LD_LIBRARY_PATH+=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/kinematic_constraints/../robot_model
+ - LD_LIBRARY_PATH+=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/kinematic_constraints/../robot_state
+ - LD_LIBRARY_PATH+=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/kinematic_constraints/../collision_detection_fcl
+-- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/kinematic_constraints':
+ - /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/kinematic_constraints/test_constraints --gtest_output=xml:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_constraints.gtest.xml
+
+[==========] Running 11 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 11 tests from LoadPlanningModelsPr2
+[ RUN      ] LoadPlanningModelsPr2.JointConstraintsSimple
+[INFO] [1742873207.490760020] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873207.497597378] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873207.497650193] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873207.571700851] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[WARN] [1742873207.571882083] [moveit_kinematic_constraints.kinematic_constraints]: The weight on constraint for joint 'head_pan_joint' is very near zero.  Setting to 1.0.
+[WARN] [1742873207.571897928] [moveit_kinematic_constraints.kinematic_constraints]: The weight on constraint for joint 'head_pan_joint' is very near zero.  Setting to 1.0.
+[WARN] [1742873207.571906346] [moveit_kinematic_constraints.kinematic_constraints]: JointConstraint tolerance values must be positive.
+[WARN] [1742873207.571911211] [moveit_kinematic_constraints.kinematic_constraints]: The weight on constraint for joint 'head_pan_joint' is very near zero.  Setting to 1.0.
+[WARN] [1742873207.571917453] [moveit_kinematic_constraints.kinematic_constraints]: The weight on constraint for joint 'head_pan_joint' is very near zero.  Setting to 1.0.
+[WARN] [1742873207.571923823] [moveit_kinematic_constraints.kinematic_constraints]: The weight on constraint for joint 'head_tilt_joint' is very near zero.  Setting to 1.0.
+[WARN] [1742873207.571927344] [moveit_kinematic_constraints.kinematic_constraints]: The weight on constraint for joint 'head_pan_joint' is very near zero.  Setting to 1.0.
+[ERROR] [1742873207.571935250] [moveit_robot_model.robot_model]: Joint '' not found in model 'pr2'
+[ERROR] [1742873207.571942100] [moveit_kinematic_constraints.kinematic_constraints]: Joint 'base_footprint_joint' has no parameters to constrain
+[WARN] [1742873207.571946389] [moveit_kinematic_constraints.kinematic_constraints]: The weight on constraint for joint 'head_pan_joint' is very near zero.  Setting to 1.0.
+[       OK ] LoadPlanningModelsPr2.JointConstraintsSimple (105 ms)
+[ RUN      ] LoadPlanningModelsPr2.JointConstraintsCont
+[INFO] [1742873207.592084026] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873207.597738282] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873207.597768498] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873207.670258737] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[       OK ] LoadPlanningModelsPr2.JointConstraintsCont (99 ms)
+[ RUN      ] LoadPlanningModelsPr2.JointConstraintsMultiDOF
+[INFO] [1742873207.690353707] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873207.695793505] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873207.695825642] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873207.767854701] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[ERROR] [1742873207.767926816] [moveit_kinematic_constraints.kinematic_constraints]: Joint 'world_joint' has more than one parameter to constrain. This type of constraint is not supported.
+[       OK ] LoadPlanningModelsPr2.JointConstraintsMultiDOF (97 ms)
+[ RUN      ] LoadPlanningModelsPr2.PositionConstraintsFixed
+[INFO] [1742873207.787951719] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873207.793486455] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873207.793515679] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873207.865753146] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[ERROR] [1742873207.865871193] [moveit_robot_model.robot_model]: Link '' not found in model 'pr2'
+[WARN] [1742873207.865885981] [moveit_kinematic_constraints.kinematic_constraints]: Position constraint link model  not found in kinematic model. Constraint invalid.
+[WARN] [1742873207.865894464] [moveit_kinematic_constraints.kinematic_constraints]: No frame specified for position constraint on link 'l_wrist_roll_link'!
+[WARN] [1742873207.865901057] [moveit_kinematic_constraints.kinematic_constraints]: No frame specified for position constraint on link 'l_wrist_roll_link'!
+[WARN] [1742873207.865906563] [moveit_kinematic_constraints.kinematic_constraints]: No frame specified for position constraint on link 'l_wrist_roll_link'!
+[       OK ] LoadPlanningModelsPr2.PositionConstraintsFixed (98 ms)
+[ RUN      ] LoadPlanningModelsPr2.PositionConstraintsMobile
+[INFO] [1742873207.885964051] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873207.891508133] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873207.891539438] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873207.963602586] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[       OK ] LoadPlanningModelsPr2.PositionConstraintsMobile (98 ms)
+[ RUN      ] LoadPlanningModelsPr2.PositionConstraintsEquality
+[INFO] [1742873207.983900906] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873207.989483815] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873207.989513487] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873208.061751270] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[       OK ] LoadPlanningModelsPr2.PositionConstraintsEquality (98 ms)
+[ RUN      ] LoadPlanningModelsPr2.OrientationConstraintsSimple
+[INFO] [1742873208.081718276] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873208.087251075] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873208.087280907] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873208.159601261] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[ERROR] [1742873208.159707273] [moveit_robot_model.robot_model]: Link '' not found in model 'pr2'
+[WARN] [1742873208.159723469] [moveit_kinematic_constraints.kinematic_constraints]: Could not find link model for link name 
+[WARN] [1742873208.159731215] [moveit_kinematic_constraints.kinematic_constraints]: No frame specified for position constraint on link 'r_wrist_roll_link'!
+[WARN] [1742873208.159809508] [moveit_kinematic_constraints.kinematic_constraints]: The weight on orientation constraint for link 'r_wrist_roll_link' is near zero.  Setting to 1.0.
+[WARN] [1742873208.159815654] [moveit_kinematic_constraints.kinematic_constraints]: Near-zero value for absolute_x_axis_tolerance
+[WARN] [1742873208.159819431] [moveit_kinematic_constraints.kinematic_constraints]: Near-zero value for absolute_y_axis_tolerance
+[WARN] [1742873208.159822920] [moveit_kinematic_constraints.kinematic_constraints]: Near-zero value for absolute_z_axis_tolerance
+[       OK ] LoadPlanningModelsPr2.OrientationConstraintsSimple (98 ms)
+[ RUN      ] LoadPlanningModelsPr2.VisibilityConstraintsSimple
+[INFO] [1742873208.179853015] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873208.185484016] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873208.185514296] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873208.257789357] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[WARN] [1742873208.439089413] [moveit_kinematic_constraints.kinematic_constraints]: The radius of the target disc that must be visible should be strictly positive
+[WARN] [1742873208.439171323] [moveit_kinematic_constraints.kinematic_constraints]: The number of sides for the visibility region must be 3 or more. Assuming 3 sides instead of the specified 0
+[WARN] [1742873208.439205604] [moveit_kinematic_constraints.kinematic_constraints]: The weight of visibility constraint is near zero.  Setting to 1.0.
+[INFO] [1742873208.439745108] [moveit_kinematic_constraints.kinematic_constraints]: Visibility constraint satisfied. Visibility cone approximation:
+ Mesh[vertices=12, triangles=20]
+
+[INFO] [1742873208.439944265] [moveit_kinematic_constraints.kinematic_constraints]: Visibility constraint satisfied. Visibility cone approximation:
+ Mesh[vertices=12, triangles=20]
+
+[INFO] [1742873208.440089935] [moveit_kinematic_constraints.kinematic_constraints]: Visibility constraint satisfied. Visibility cone approximation:
+ Mesh[vertices=12, triangles=20]
+
+[INFO] [1742873208.440106100] [moveit_kinematic_constraints.kinematic_constraints]: Visibility constraint is violated because the view angle is 0.120072 (above the maximum allowed of 0.100000)
+[       OK ] LoadPlanningModelsPr2.VisibilityConstraintsSimple (281 ms)
+[ RUN      ] LoadPlanningModelsPr2.VisibilityConstraintsPR2
+[INFO] [1742873208.461535543] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873208.467571804] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873208.467605285] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873208.540957048] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[WARN] [1742873208.717112152] [moveit_kinematic_constraints.kinematic_constraints]: The radius of the target disc that must be visible should be strictly positive
+[INFO] [1742873208.718154445] [moveit_kinematic_constraints.kinematic_constraints]: Visibility constraint satisfied. Visibility cone approximation:
+ Mesh[vertices=12, triangles=20]
+
+[INFO] [1742873208.719158232] [moveit_collision_detection_fcl.collision_common]: Found 95 contacts between 'cone' and 'r_forearm_link'. These contacts will be evaluated to check if they are accepted or not
+[INFO] [1742873208.719228811] [moveit_collision_detection_fcl.collision_common]: Found unacceptable contact between 'cone' and 'r_forearm_link'. Contact was stored.
+[INFO] [1742873208.719237901] [moveit_collision_detection_fcl.collision_common]: Collision checking is considered complete (collision was found and 1 contacts are stored)
+[INFO] [1742873208.719258195] [moveit_kinematic_constraints.kinematic_constraints]: Visibility constraint not satisfied. Visibility cone approximation:
+ Mesh[vertices=12, triangles=20]
+
+[INFO] [1742873208.719506965] [moveit_kinematic_constraints.kinematic_constraints]: Visibility constraint satisfied. Visibility cone approximation:
+ Mesh[vertices=12, triangles=20]
+
+[INFO] [1742873208.719741075] [moveit_kinematic_constraints.kinematic_constraints]: Visibility constraint satisfied. Visibility cone approximation:
+ Mesh[vertices=12, triangles=20]
+
+[INFO] [1742873208.719953868] [moveit_kinematic_constraints.kinematic_constraints]: Visibility constraint satisfied. Visibility cone approximation:
+ Mesh[vertices=12, triangles=20]
+
+[INFO] [1742873208.720338578] [moveit_collision_detection_fcl.collision_common]: Found 32 contacts between 'cone' and 'l_gripper_r_finger_tip_link'. These contacts will be evaluated to check if they are accepted or not
+[INFO] [1742873208.720368634] [moveit_kinematic_constraints.kinematic_constraints]: Visibility constraint satisfied. Visibility cone approximation:
+ Mesh[vertices=12, triangles=20]
+
+[INFO] [1742873208.720630720] [moveit_collision_detection_fcl.collision_common]: Found 32 contacts between 'cone' and 'l_gripper_l_finger_link'. These contacts will be evaluated to check if they are accepted or not
+[INFO] [1742873208.720643747] [moveit_collision_detection_fcl.collision_common]: Found unacceptable contact between 'cone' and 'l_gripper_l_finger_link'. Contact was stored.
+[INFO] [1742873208.720649221] [moveit_collision_detection_fcl.collision_common]: Collision checking is considered complete (collision was found and 1 contacts are stored)
+[INFO] [1742873208.720662344] [moveit_kinematic_constraints.kinematic_constraints]: Visibility constraint not satisfied. Visibility cone approximation:
+ Mesh[vertices=12, triangles=20]
+
+[       OK ] LoadPlanningModelsPr2.VisibilityConstraintsPR2 (281 ms)
+[ RUN      ] LoadPlanningModelsPr2.TestKinematicConstraintSet
+[INFO] [1742873208.742124532] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873208.748202180] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873208.748233581] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873208.821511885] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[ERROR] [1742873208.821680377] [moveit_robot_model.robot_model]: Joint 'no_joint' not found in model 'pr2'
+[       OK ] LoadPlanningModelsPr2.TestKinematicConstraintSet (100 ms)
+[ RUN      ] LoadPlanningModelsPr2.TestKinematicConstraintSetEquality
+[INFO] [1742873208.842012953] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873208.847555963] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873208.847587107] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873208.920171083] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[       OK ] LoadPlanningModelsPr2.TestKinematicConstraintSetEquality (99 ms)
+[----------] 11 tests from LoadPlanningModelsPr2 (1454 ms total)
+
+[----------] Global test environment tear-down
+[==========] 11 tests from 1 test suite ran. (1455 ms total)
+[  PASSED  ] 11 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_constraints.gtest.xml'
+-- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_constraints.gtest.xml'

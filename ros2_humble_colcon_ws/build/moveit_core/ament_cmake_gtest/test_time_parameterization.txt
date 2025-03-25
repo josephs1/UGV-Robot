@@ -1,0 +1,79 @@
+-- run_test.py: extra environment variables to append:
+ - LD_LIBRARY_PATH+=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/trajectory_processing
+ - LD_LIBRARY_PATH+=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/trajectory_processing/../robot_trajectory
+ - LD_LIBRARY_PATH+=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/trajectory_processing/../utils
+-- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/trajectory_processing':
+ - /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/trajectory_processing/test_time_parameterization --gtest_output=xml:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_time_parameterization.gtest.xml
+
+[INFO] [1742873222.273288003] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873222.279997647] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873222.280050556] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873222.354637695] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from TestTimeParameterization
+[ RUN      ] TestTimeParameterization.TestIterativeParabolic
+IterativeParabolicTimeParameterization  took 1199904
+Trajectory has 11 points over 2.849 seconds
+  waypoint   0 time 0.000 pos  0.000 vel  0.000 acc  0.990 
+  waypoint   1 time 0.636 pos  0.200 vel  0.539 acc  1.002 
+  waypoint   2 time 0.897 pos  0.400 vel  0.877 acc  0.973 
+  waypoint   3 time 1.099 pos  0.600 vel  1.075 acc  0.913 
+  waypoint   4 time 1.272 pos  0.800 vel  1.234 acc  0.905 
+  waypoint   5 time 1.425 pos  1.000 vel  1.308 acc  0.000 
+  waypoint   6 time 1.578 pos  1.200 vel  1.234 acc -0.905 
+  waypoint   7 time 1.750 pos  1.400 vel  1.075 acc -0.913 
+  waypoint   8 time 1.952 pos  1.600 vel  0.877 acc -0.973 
+  waypoint   9 time 2.214 pos  1.800 vel  0.539 acc -1.002 
+  waypoint  10 time 2.849 pos  2.000 vel  0.000 acc -0.990 
+[       OK ] TestTimeParameterization.TestIterativeParabolic (2 ms)
+[ RUN      ] TestTimeParameterization.TestIterativeSpline
+IterativeSplineParameterization took 231768
+Trajectory has 11 points over 2.834 seconds
+  waypoint   0 time 0.000 pos  0.000 vel  0.000 acc  1.000 
+  waypoint   1 time 0.632 pos  0.200 vel  0.632 acc  1.000 
+  waypoint   2 time 0.894 pos  0.400 vel  0.894 acc  1.000 
+  waypoint   3 time 1.095 pos  0.600 vel  1.095 acc  1.000 
+  waypoint   4 time 1.265 pos  0.800 vel  1.265 acc  0.999 
+  waypoint   5 time 1.417 pos  1.000 vel  1.341 acc -0.000 
+  waypoint   6 time 1.569 pos  1.200 vel  1.265 acc -0.999 
+  waypoint   7 time 1.739 pos  1.400 vel  1.095 acc -1.000 
+  waypoint   8 time 1.940 pos  1.600 vel  0.894 acc -1.000 
+  waypoint   9 time 2.202 pos  1.800 vel  0.632 acc -1.000 
+  waypoint  10 time 2.834 pos  2.000 vel  0.000 acc -1.000 
+[       OK ] TestTimeParameterization.TestIterativeSpline (1 ms)
+[ RUN      ] TestTimeParameterization.TestIterativeSplineAddPoints
+IterativeSplineParameterization with added points took 553093
+Trajectory has 13 points over 2.965 seconds
+  waypoint   0 time 0.000 pos  0.000 vel  0.000 acc  0.000 
+  waypoint   1 time 0.067 pos  0.001 vel  0.033 acc  1.000 
+  waypoint   2 time 0.665 pos  0.200 vel  0.632 acc  1.000 
+  waypoint   3 time 0.928 pos  0.400 vel  0.894 acc  0.999 
+  waypoint   4 time 1.133 pos  0.600 vel  1.032 acc  0.344 
+  waypoint   5 time 1.317 pos  0.800 vel  1.156 acc  0.996 
+  waypoint   6 time 1.483 pos  1.000 vel  1.238 acc -0.000 
+  waypoint   7 time 1.648 pos  1.200 vel  1.156 acc -0.996 
+  waypoint   8 time 1.832 pos  1.400 vel  1.032 acc -0.344 
+  waypoint   9 time 2.038 pos  1.600 vel  0.894 acc -0.999 
+  waypoint  10 time 2.300 pos  1.800 vel  0.632 acc -1.000 
+  waypoint  11 time 2.899 pos  1.999 vel  0.033 acc -1.000 
+  waypoint  12 time 2.965 pos  2.000 vel  0.000 acc -0.000 
+[       OK ] TestTimeParameterization.TestIterativeSplineAddPoints (1 ms)
+[ RUN      ] TestTimeParameterization.TestRepeatedPoint
+Trajectory has 5 points over 0.000 seconds
+  waypoint   0 time 0.000 pos  1.000 vel  0.000 acc  0.000 
+  waypoint   1 time 0.000 pos  1.000 vel  0.000 acc  0.000 
+  waypoint   2 time 0.000 pos  1.000 vel  0.000 acc  0.000 
+  waypoint   3 time 0.000 pos  1.000 vel  0.000 acc  0.000 
+  waypoint   4 time 0.000 pos  1.000 vel  0.000 acc  0.000 
+[       OK ] TestTimeParameterization.TestRepeatedPoint (0 ms)
+[----------] 4 tests from TestTimeParameterization (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (4 ms total)
+[  PASSED  ] 4 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_time_parameterization.gtest.xml'
+-- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_time_parameterization.gtest.xml'

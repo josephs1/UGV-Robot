@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="6" failures="0" disabled="0" errors="0" time="0.006" timestamp="2025-03-24T23:26:56" name="AllTests">
+  <testsuite name="Loading" tests="1" failures="0" disabled="0" errors="0" time="0.001" timestamp="2025-03-24T23:26:56">
+    <testcase name="SimpleRobot" status="run" result="completed" time="0.001" timestamp="2025-03-24T23:26:56" classname="moveit_core.Loading" />
+  </testsuite>
+  <testsuite name="LoadingAndFK" tests="1" failures="0" disabled="0" errors="0" time="0.001" timestamp="2025-03-24T23:26:56">
+    <testcase name="SimpleRobot" status="run" result="completed" time="0.001" timestamp="2025-03-24T23:26:56" classname="moveit_core.LoadingAndFK" />
+  </testsuite>
+  <testsuite name="OneRobot" tests="4" failures="0" disabled="0" errors="0" time="0.004" timestamp="2025-03-24T23:26:56">
+    <testcase name="FK" status="run" result="completed" time="0.001" timestamp="2025-03-24T23:26:56" classname="moveit_core.OneRobot" />
+    <testcase name="testPrintCurrentPositionWithJointLimits" status="run" result="completed" time="0.001" timestamp="2025-03-24T23:26:56" classname="moveit_core.OneRobot" />
+    <testcase name="testInterpolation" status="run" result="completed" time="0.001" timestamp="2025-03-24T23:26:56" classname="moveit_core.OneRobot" />
+    <testcase name="rigidlyConnectedParent" status="run" result="completed" time="0.001" timestamp="2025-03-24T23:26:56" classname="moveit_core.OneRobot" />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,98 @@
+[0.824s] Invoking command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts': AMENT_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts LD_LIBRARY_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/lib:${LD_LIBRARY_PATH} /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.853s] UpdateCTestConfiguration  from :/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/CTestConfiguration.ini
+[0.854s] Parse Config file:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/CTestConfiguration.ini
+[0.854s]    Site: UGV-C7-Jetson
+[0.854s]    Build name: (empty)
+[0.854s]  Add coverage exclude regular expressions.
+[0.855s] Create new tag: 20250325-0326 - Experimental
+[0.855s] UpdateCTestConfiguration  from :/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/CTestConfiguration.ini
+[0.855s] Parse Config file:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/CTestConfiguration.ini
+[0.855s] Test project /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts
+[0.855s] Constructing a list of tests
+[0.855s] Done constructing a list of tests
+[0.855s] Updating test list for fixtures
+[0.855s] Added 0 tests to meet fixture requirements
+[0.856s] Checking test dependency graph...
+[0.856s] Checking test dependency graph end
+[0.856s] test 1
+[0.856s]     Start 1: test_node_parameters
+[0.856s] 
+[0.857s] 1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/test_node_parameters.gtest.xml" "--package-name" "rosparam_shortcuts" "--output-file" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/ament_cmake_gtest/test_node_parameters.txt" "--command" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_node_parameters" "--gtest_output=xml:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/test_node_parameters.gtest.xml"
+[0.857s] 1: Test timeout computed to be: 60
+[1.012s] 1: -- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts':
+[1.013s] 1:  - /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_node_parameters --gtest_output=xml:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/test_node_parameters.gtest.xml
+[1.233s] 1: [==========] Running 1 test from 1 test suite.
+[1.234s] 1: [----------] Global test environment set-up.
+[1.234s] 1: [----------] 1 test from TestNodeParameters
+[1.234s] 1: [ RUN      ] TestNodeParameters.TestParameters
+[1.291s] 1: [       OK ] TestNodeParameters.TestParameters (56 ms)
+[1.291s] 1: [----------] 1 test from TestNodeParameters (57 ms total)
+[1.291s] 1: 
+[1.292s] 1: [----------] Global test environment tear-down
+[1.293s] 1: [==========] 1 test from 1 test suite ran. (58 ms total)
+[1.293s] 1: [  PASSED  ] 1 test.
+[1.398s] 1: -- run_test.py: return code 0
+[1.399s] 1: -- run_test.py: inject classname prefix into gtest result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/test_node_parameters.gtest.xml'
+[1.399s] 1: -- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/test_node_parameters.gtest.xml'
+[1.443s] 1/5 Test #1: test_node_parameters .............   Passed    0.59 sec
+[1.443s] test 2
+[1.443s]     Start 2: copyright
+[1.443s] 
+[1.443s] 2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/copyright.xunit.xml" "--package-name" "rosparam_shortcuts" "--output-file" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/ament_copyright/copyright.txt" "--command" "/opt/ros/humble/bin/ament_copyright" "--xunit-file" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/copyright.xunit.xml"
+[1.444s] 2: Test timeout computed to be: 200
+[1.587s] 2: -- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/rosparam_shortcuts':
+[1.588s] 2:  - /opt/ros/humble/bin/ament_copyright --xunit-file /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/copyright.xunit.xml
+[2.659s] 2: No problems found, checked 10 files
+[2.717s] 2: -- run_test.py: return code 0
+[2.718s] 2: -- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/copyright.xunit.xml'
+[2.760s] 2/5 Test #2: copyright ........................   Passed    1.32 sec
+[2.761s] test 3
+[2.761s]     Start 3: lint_cmake
+[2.761s] 
+[2.761s] 3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/lint_cmake.xunit.xml" "--package-name" "rosparam_shortcuts" "--output-file" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/lint_cmake.xunit.xml"
+[2.761s] 3: Test timeout computed to be: 60
+[2.917s] 3: -- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/rosparam_shortcuts':
+[2.918s] 3:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/lint_cmake.xunit.xml
+[3.088s] 3: 
+[3.089s] 3: No problems found
+[3.128s] 3: -- run_test.py: return code 0
+[3.128s] 3: -- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/lint_cmake.xunit.xml'
+[3.165s] 3/5 Test #3: lint_cmake .......................   Passed    0.40 sec
+[3.166s] test 4
+[3.166s]     Start 4: pep257
+[3.166s] 
+[3.166s] 4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/pep257.xunit.xml" "--package-name" "rosparam_shortcuts" "--output-file" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/ament_pep257/pep257.txt" "--command" "/opt/ros/humble/bin/ament_pep257" "--xunit-file" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/pep257.xunit.xml"
+[3.167s] 4: Test timeout computed to be: 60
+[3.306s] 4: -- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/rosparam_shortcuts':
+[3.306s] 4:  - /opt/ros/humble/bin/ament_pep257 --xunit-file /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/pep257.xunit.xml
+[3.584s] 4: checking ./launch/example.launch.py
+[3.584s] 4: No problems found
+[3.657s] 4: -- run_test.py: return code 0
+[3.658s] 4: -- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/pep257.xunit.xml'
+[3.697s] 4/5 Test #4: pep257 ...........................   Passed    0.53 sec
+[3.697s] test 5
+[3.698s]     Start 5: xmllint
+[3.698s] 
+[3.698s] 5: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/xmllint.xunit.xml" "--package-name" "rosparam_shortcuts" "--output-file" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/xmllint.xunit.xml"
+[3.698s] 5: Test timeout computed to be: 60
+[3.857s] 5: -- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/rosparam_shortcuts':
+[3.858s] 5:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/xmllint.xunit.xml
+[4.034s] 5: File 'package.xml' is valid
+[4.035s] 5: 
+[4.035s] 5: No problems found
+[4.077s] 5: -- run_test.py: return code 0
+[4.078s] 5: -- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/xmllint.xunit.xml'
+[4.118s] 5/5 Test #5: xmllint ..........................   Passed    0.42 sec
+[4.119s] 
+[4.120s] [0;32m100% tests passed[0;0m, 0 tests failed[0;0m out of 5
+[4.120s] 
+[4.121s] Label Time Summary:
+[4.121s] copyright     =   1.32 sec*proc (1 test)
+[4.121s] gtest         =   0.59 sec*proc (1 test)
+[4.121s] lint_cmake    =   0.40 sec*proc (1 test)
+[4.121s] linter        =   2.67 sec*proc (4 tests)
+[4.121s] pep257        =   0.53 sec*proc (1 test)
+[4.121s] xmllint       =   0.42 sec*proc (1 test)
+[4.121s] 
+[4.122s] Total Test time (real) =   3.27 sec
+[4.128s] Invoked command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts' returned '0': AMENT_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts LD_LIBRARY_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/lib:${LD_LIBRARY_PATH} /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

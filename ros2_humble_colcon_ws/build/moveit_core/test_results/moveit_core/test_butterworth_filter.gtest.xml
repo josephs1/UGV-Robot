@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="0" disabled="0" errors="0" time="0" timestamp="2025-03-24T23:26:49" name="AllTests">
+  <testsuite name="SMOOTHING_PLUGINS" tests="2" failures="0" disabled="0" errors="0" time="0" timestamp="2025-03-24T23:26:49">
+    <testcase name="FilterConverge" status="run" result="completed" time="0" timestamp="2025-03-24T23:26:49" classname="moveit_core.SMOOTHING_PLUGINS" />
+    <testcase name="FilterReset" status="run" result="completed" time="0" timestamp="2025-03-24T23:26:49" classname="moveit_core.SMOOTHING_PLUGINS" />
+  </testsuite>
+</testsuites>

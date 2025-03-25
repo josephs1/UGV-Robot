@@ -1,0 +1,320 @@
+[0.055s] Invoking command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_ros_planning': AMENT_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_configs_utils:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/bin:${PATH} PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_configs_utils/lib/python3.10/site-packages:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/local/lib/python3.10/dist-packages:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/moveit2/moveit_ros/planning -DCMAKE_INSTALL_PREFIX=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning
+[0.217s] -- The C compiler identification is GNU 11.4.0
+[0.375s] -- The CXX compiler identification is GNU 11.4.0
+[0.397s] -- Detecting C compiler ABI info
+[0.616s] -- Detecting C compiler ABI info - done
+[0.632s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.632s] -- Detecting C compile features
+[0.633s] -- Detecting C compile features - done
+[0.640s] -- Detecting CXX compiler ABI info
+[0.874s] -- Detecting CXX compiler ABI info - done
+[0.890s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.891s] -- Detecting CXX compile features
+[0.891s] -- Detecting CXX compile features - done
+[0.896s] -- Found moveit_common: 2.5.8 (/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common/share/moveit_common/cmake)
+[0.903s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.392s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.889s] [0mmoveit_ros_planning: You did not request a specific build type: Choosing 'Release' for maximum performance[0m
+[1.893s] -- Found moveit_msgs: 2.2.1 (/opt/ros/humble/share/moveit_msgs/cmake)
+[1.992s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.005s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.030s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.069s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.116s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.566s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[2.637s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[2.736s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.745s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.815s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.937s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.946s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.988s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.996s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[3.019s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[3.049s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.073s] -- Looking for pthread.h
+[3.386s] -- Looking for pthread.h - found
+[3.386s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.709s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.712s] -- Found Threads: TRUE  
+[3.812s] -- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)
+[3.820s] -- Found srdfdom: 2.0.7 (/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/share/srdfdom/cmake)
+[3.856s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[3.869s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[3.908s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.911s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.912s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.065s] -- Found tf2_eigen: 0.25.12 (/opt/ros/humble/share/tf2_eigen/cmake)
+[4.076s] -- Found moveit_core: 2.5.8 (/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/share/moveit_core/cmake)
+[4.166s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[4.273s] -- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[4.312s] -- Found rclcpp_lifecycle: 16.0.11 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[4.385s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[4.582s] -- library: /usr/lib/aarch64-linux-gnu/libcurl.so
+[4.705s] -- Found moveit_ros_occupancy_map_monitor: 2.5.8 (/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor/share/moveit_ros_occupancy_map_monitor/cmake)
+[4.741s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[4.853s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+[5.170s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+[5.171s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+[5.492s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+[5.492s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+[5.813s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+[5.897s] -- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[5.904s] -- Found ament_cmake_gmock: 1.3.11 (/opt/ros/humble/share/ament_cmake_gmock/cmake)
+[5.916s] -- Found ros_testing: 0.4.0 (/opt/ros/humble/share/ros_testing/cmake)
+[5.924s] -- Found launch_testing_ament_cmake: 1.0.7 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+[5.932s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[5.995s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[6.017s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[6.017s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.017s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[6.018s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[6.078s] -- Found PythonExtra: .so  
+[6.090s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[6.107s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[6.220s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[6.276s] -- Found launch_testing_ament_cmake: 1.0.7 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+[6.277s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[6.343s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.343s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[6.343s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[6.404s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.405s] -- Configured cppcheck include dirs: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/moveit2/moveit_ros/planning/rdf_loader/include;/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/moveit2/moveit_ros/planning/kinematics_plugin_loader/include;/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/moveit2/moveit_ros/planning/robot_model_loader/include;/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/moveit2/moveit_ros/planning/constraint_sampler_manager_loader/include;/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/moveit2/moveit_ros/planning/planning_pipeline/include;/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/moveit2/moveit_ros/planning/planning_scene_monitor/include;/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/moveit2/moveit_ros/planning/trajectory_execution_manager/include;/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/moveit2/moveit_ros/planning/plan_execution/include;/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/moveit2/moveit_ros/planning/collision_plugin_loader/include;/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/moveit2/moveit_ros/planning/moveit_cpp/include
+[6.405s] -- Configured cppcheck exclude dirs and/or files: 
+[6.413s] -- Added test 'lint_cmake' to check CMake code style
+[6.417s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[6.421s] -- Added test 'xmllint' to check XML markup files
+[6.429s] -- Configuring done
+[7.430s] -- Generating done
+[7.689s] -- Build files have been written to: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_ros_planning
+[7.833s] Invoked command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_ros_planning' returned '0': AMENT_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_configs_utils:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/bin:${PATH} PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_configs_utils/lib/python3.10/site-packages:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/local/lib/python3.10/dist-packages:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/moveit2/moveit_ros/planning -DCMAKE_INSTALL_PREFIX=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning
+[7.837s] Invoking command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_ros_planning': AMENT_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_configs_utils:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/bin:${PATH} PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_configs_utils/lib/python3.10/site-packages:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/local/lib/python3.10/dist-packages:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_ros_planning -- -j6 -l6
+[7.994s] [  2%] [32mBuilding CXX object rdf_loader/CMakeFiles/moveit_rdf_loader.dir/src/rdf_loader.cpp.o[0m
+[7.995s] [  2%] [32mBuilding CXX object planning_pipeline/CMakeFiles/moveit_planning_pipeline.dir/src/planning_pipeline.cpp.o[0m
+[8.009s] [  4%] [32mBuilding CXX object collision_plugin_loader/CMakeFiles/moveit_collision_plugin_loader.dir/src/collision_plugin_loader.cpp.o[0m
+[9.149s] [  5%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[10.279s] [  7%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_list_request_adapter_plugins.dir/src/list.cpp.o[0m
+[11.344s] [  8%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_default_planning_request_adapter_plugins.dir/src/empty.cpp.o[0m
+[15.155s] [ 10%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[15.612s] [ 10%] Built target gmock_main
+[27.195s] [ 11%] [32mBuilding CXX object rdf_loader/CMakeFiles/moveit_rdf_loader.dir/src/synchronized_string_parameter.cpp.o[0m
+[43.559s] [ 13%] [32m[1mLinking CXX shared library libmoveit_collision_plugin_loader.so[0m
+[44.447s] [ 13%] Built target moveit_collision_plugin_loader
+[46.541s] [ 14%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_default_planning_request_adapter_plugins.dir/src/fix_start_state_bounds.cpp.o[0m
+[64.766s] [ 16%] [32m[1mLinking CXX executable moveit_list_request_adapter_plugins[0m
+[65.419s] [ 16%] Built target moveit_list_request_adapter_plugins
+[74.134s] [ 17%] [32m[1mLinking CXX shared library libmoveit_rdf_loader.so[0m
+[74.985s] [ 17%] Built target moveit_rdf_loader
+[76.015s] [ 19%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_default_planning_request_adapter_plugins.dir/src/fix_start_state_path_constraints.cpp.o[0m
+[76.048s] [ 20%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[78.087s] [ 22%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[78.097s] [ 23%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_default_planning_request_adapter_plugins.dir/src/fix_start_state_collision.cpp.o[0m
+[79.135s] [ 25%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[79.635s] [ 25%] Built target gtest_main
+[79.690s] [ 26%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_default_planning_request_adapter_plugins.dir/src/fix_workspace_bounds.cpp.o[0m
+[85.392s] [ 27%] [32m[1mLinking CXX shared library libmoveit_planning_pipeline.so[0m
+[86.230s] [ 27%] Built target moveit_planning_pipeline
+[90.345s] [ 29%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_default_planning_request_adapter_plugins.dir/src/add_time_parameterization.cpp.o[0m
+[104.266s] [ 32%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_default_planning_request_adapter_plugins.dir/src/add_ruckig_traj_smoothing.cpp.o[0m
+[104.266s] [ 32%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[112.751s] [ 33%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_default_planning_request_adapter_plugins.dir/src/add_iterative_spline_parameterization.cpp.o[0m
+[113.061s] [ 35%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_default_planning_request_adapter_plugins.dir/src/add_time_optimal_parameterization.cpp.o[0m
+[114.117s] [ 36%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_default_planning_request_adapter_plugins.dir/src/resolve_constraint_frames.cpp.o[0m
+[115.269s] [ 38%] [32m[1mLinking CXX static library libgmock.a[0m
+[115.523s] [ 38%] Built target gmock
+[115.594s] [ 39%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[140.534s] [ 41%] [32m[1mLinking CXX static library libgtest.a[0m
+[140.739s] [ 41%] Built target gtest
+[140.798s] [ 44%] [32mBuilding CXX object kinematics_plugin_loader/CMakeFiles/moveit_kinematics_plugin_loader.dir/src/kinematics_plugin_loader.cpp.o[0m
+[140.798s] [ 44%] [32mBuilding CXX object constraint_sampler_manager_loader/CMakeFiles/moveit_constraint_sampler_manager_loader.dir/src/constraint_sampler_manager_loader.cpp.o[0m
+[146.424s] [ 45%] [32m[1mLinking CXX shared library libmoveit_default_planning_request_adapter_plugins.so[0m
+[147.063s] [ 45%] Built target moveit_default_planning_request_adapter_plugins
+[178.736s] [ 47%] [32m[1mLinking CXX shared library libmoveit_kinematics_plugin_loader.so[0m
+[179.308s] [ 47%] Built target moveit_kinematics_plugin_loader
+[179.364s] [ 48%] [32mBuilding CXX object robot_model_loader/CMakeFiles/moveit_robot_model_loader.dir/src/robot_model_loader.cpp.o[0m
+[179.830s] [ 50%] [32m[1mLinking CXX shared library libmoveit_constraint_sampler_manager_loader.so[0m
+[180.586s] [ 50%] Built target moveit_constraint_sampler_manager_loader
+[199.458s] [ 51%] [32m[1mLinking CXX shared library libmoveit_robot_model_loader.so[0m
+[199.995s] [ 51%] Built target moveit_robot_model_loader
+[200.055s] [ 57%] [32mBuilding CXX object planning_scene_monitor/CMakeFiles/moveit_planning_scene_monitor.dir/src/planning_scene_monitor.cpp.o[0m
+[200.056s] [ 57%] [32mBuilding CXX object planning_scene_monitor/CMakeFiles/moveit_planning_scene_monitor.dir/src/current_state_monitor.cpp.o[0m
+[200.056s] [ 57%] [32mBuilding CXX object planning_components_tools/CMakeFiles/moveit_print_planning_model_info.dir/src/print_planning_model_info.cpp.o[0m
+[200.056s] [ 57%] [32mBuilding CXX object planning_scene_monitor/CMakeFiles/moveit_planning_scene_monitor.dir/src/trajectory_monitor.cpp.o[0m
+[200.059s] [ 58%] [32mBuilding CXX object planning_scene_monitor/CMakeFiles/moveit_planning_scene_monitor.dir/src/trajectory_monitor_middleware_handle.cpp.o[0m
+[200.064s] [ 60%] [32mBuilding CXX object planning_scene_monitor/CMakeFiles/moveit_planning_scene_monitor.dir/src/current_state_monitor_middleware_handle.cpp.o[0m
+[221.947s] [ 61%] [32m[1mLinking CXX executable moveit_print_planning_model_info[0m
+[222.981s] [ 61%] Built target moveit_print_planning_model_info
+[305.838s] [ 63%] [32m[1mLinking CXX shared library libmoveit_planning_scene_monitor.so[0m
+[307.331s] [ 63%] Built target moveit_planning_scene_monitor
+[307.398s] [ 72%] [32mBuilding CXX object planning_scene_monitor/CMakeFiles/planning_scene_monitor_test.dir/test/planning_scene_monitor_test.cpp.o[0m
+[307.398s] [ 72%] [32mBuilding CXX object planning_scene_monitor/CMakeFiles/demo_scene.dir/demos/demo_scene.cpp.o[0m
+[307.399s] [ 72%] [32mBuilding CXX object planning_components_tools/CMakeFiles/moveit_print_planning_scene_info.dir/src/print_planning_scene_info.cpp.o[0m
+[307.399s] [ 72%] [32mBuilding CXX object planning_scene_monitor/CMakeFiles/trajectory_monitor_tests.dir/test/trajectory_monitor_tests.cpp.o[0m
+[307.399s] [ 72%] [32mBuilding CXX object planning_components_tools/CMakeFiles/moveit_display_random_state.dir/src/display_random_state.cpp.o[0m
+[307.399s] [ 72%] [32mBuilding CXX object planning_scene_monitor/CMakeFiles/current_state_monitor_tests.dir/test/current_state_monitor_tests.cpp.o[0m
+[345.387s] [ 73%] [32m[1mLinking CXX executable moveit_print_planning_scene_info[0m
+[346.670s] [ 73%] Built target moveit_print_planning_scene_info
+[346.749s] [ 75%] [32mBuilding CXX object planning_components_tools/CMakeFiles/moveit_visualize_robot_collision_volume.dir/src/visualize_robot_collision_volume.cpp.o[0m
+[348.757s] [ 76%] [32m[1mLinking CXX executable current_state_monitor_tests[0m
+[350.505s] [ 76%] Built target current_state_monitor_tests
+[350.580s] [ 77%] [32mBuilding CXX object planning_components_tools/CMakeFiles/moveit_evaluate_collision_checking_speed.dir/src/evaluate_collision_checking_speed.cpp.o[0m
+[351.629s] [ 79%] [32m[1mLinking CXX executable trajectory_monitor_tests[0m
+[352.318s] [ 80%] [32m[1mLinking CXX executable moveit_display_random_state[0m
+[353.117s] [ 82%] [32m[1mLinking CXX executable planning_scene_monitor_test[0m
+[353.318s] [ 82%] Built target trajectory_monitor_tests
+[353.402s] [ 83%] [32mBuilding CXX object planning_components_tools/CMakeFiles/moveit_publish_scene_from_text.dir/src/publish_scene_from_text.cpp.o[0m
+[353.722s] [ 83%] Built target moveit_display_random_state
+[353.792s] [ 85%] [32mBuilding CXX object trajectory_execution_manager/CMakeFiles/moveit_trajectory_execution_manager.dir/src/trajectory_execution_manager.cpp.o[0m
+[354.382s] [ 85%] Built target planning_scene_monitor_test
+[355.087s] [ 86%] [32m[1mLinking CXX executable demo_scene[0m
+[355.736s] [ 86%] Built target demo_scene
+[389.564s] [ 88%] [32m[1mLinking CXX executable moveit_evaluate_collision_checking_speed[0m
+[389.931s] [ 89%] [32m[1mLinking CXX executable moveit_visualize_robot_collision_volume[0m
+[390.772s] [ 89%] Built target moveit_evaluate_collision_checking_speed
+[391.168s] [ 89%] Built target moveit_visualize_robot_collision_volume
+[397.295s] [ 91%] [32m[1mLinking CXX executable moveit_publish_scene_from_text[0m
+[398.386s] [ 91%] Built target moveit_publish_scene_from_text
+[436.004s] [ 92%] [32m[1mLinking CXX shared library libmoveit_trajectory_execution_manager.so[0m
+[436.915s] [ 92%] Built target moveit_trajectory_execution_manager
+[436.973s] [ 97%] [32mBuilding CXX object moveit_cpp/CMakeFiles/moveit_cpp.dir/src/moveit_cpp.cpp.o[0m
+[436.974s] [ 97%] [32mBuilding CXX object plan_execution/CMakeFiles/moveit_plan_execution.dir/src/plan_execution.cpp.o[0m
+[436.974s] [ 97%] [32mBuilding CXX object moveit_cpp/CMakeFiles/moveit_cpp.dir/src/planning_component.cpp.o[0m
+[473.956s] [ 98%] [32m[1mLinking CXX shared library libmoveit_plan_execution.so[0m
+[474.745s] [ 98%] Built target moveit_plan_execution
+[487.772s] [100%] [32m[1mLinking CXX shared library libmoveit_cpp.so[0m
+[488.580s] [100%] Built target moveit_cpp
+[488.613s] Invoked command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_ros_planning' returned '0': AMENT_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_configs_utils:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/bin:${PATH} PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_configs_utils/lib/python3.10/site-packages:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/local/lib/python3.10/dist-packages:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_ros_planning -- -j6 -l6
+[488.619s] Invoking command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_ros_planning': AMENT_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_configs_utils:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/bin:${PATH} PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_configs_utils/lib/python3.10/site-packages:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/local/lib/python3.10/dist-packages:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_ros_planning
+[488.647s] -- Install configuration: "Release"
+[488.648s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include
+[488.648s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit
+[488.648s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/rdf_loader
+[488.649s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/rdf_loader/synchronized_string_parameter.h
+[488.649s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/rdf_loader/rdf_loader.h
+[488.649s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/rdf_loader/test/data
+[488.649s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/rdf_loader/test/data/gonzo.srdf
+[488.651s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/rdf_loader/test/data/kermit.srdf
+[488.652s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/rdf_loader/test/data/gonzo.urdf
+[488.652s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/rdf_loader/test/data/robin.srdf.xacro
+[488.653s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/rdf_loader/test/data/kermit.urdf
+[488.654s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/rdf_loader/test/launch
+[488.654s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/rdf_loader/test/launch/test_rdf_integration.test.py
+[488.655s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include
+[488.655s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit
+[488.655s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/collision_plugin_loader
+[488.656s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/collision_plugin_loader/collision_plugin_loader.h
+[488.656s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include
+[488.656s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit
+[488.657s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/kinematics_plugin_loader
+[488.657s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/kinematics_plugin_loader/kinematics_plugin_loader.h
+[488.657s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include
+[488.658s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit
+[488.658s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/robot_model_loader
+[488.658s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/robot_model_loader/robot_model_loader.h
+[488.658s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include
+[488.659s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit
+[488.659s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/constraint_sampler_manager_loader
+[488.659s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/constraint_sampler_manager_loader/constraint_sampler_manager_loader.h
+[488.660s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include
+[488.660s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit
+[488.660s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/planning_pipeline
+[488.660s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/planning_pipeline/planning_pipeline.h
+[488.660s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit_planning_pipeline_export.h
+[488.661s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/moveit_ros_planning/moveit_list_request_adapter_plugins
+[488.661s] -- Set runtime path of "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/moveit_ros_planning/moveit_list_request_adapter_plugins" to ""
+[488.662s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/moveit_ros_planning/demo_scene
+[488.663s] -- Set runtime path of "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/moveit_ros_planning/demo_scene" to ""
+[488.664s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include
+[488.664s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit
+[488.664s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/planning_scene_monitor
+[488.664s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/planning_scene_monitor/trajectory_monitor.h
+[488.665s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/planning_scene_monitor/planning_scene_monitor.h
+[488.665s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/planning_scene_monitor/current_state_monitor_middleware_handle.hpp
+[488.665s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/planning_scene_monitor/trajectory_monitor_middleware_handle.hpp
+[488.665s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/planning_scene_monitor/current_state_monitor.h
+[488.666s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit_planning_scene_monitor_export.h
+[488.666s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/moveit_ros_planning/moveit_print_planning_model_info
+[488.667s] -- Set runtime path of "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/moveit_ros_planning/moveit_print_planning_model_info" to ""
+[488.667s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/moveit_ros_planning/moveit_print_planning_scene_info
+[488.668s] -- Set runtime path of "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/moveit_ros_planning/moveit_print_planning_scene_info" to ""
+[488.668s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/moveit_ros_planning/moveit_display_random_state
+[488.670s] -- Set runtime path of "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/moveit_ros_planning/moveit_display_random_state" to ""
+[488.670s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/moveit_ros_planning/moveit_visualize_robot_collision_volume
+[488.671s] -- Set runtime path of "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/moveit_ros_planning/moveit_visualize_robot_collision_volume" to ""
+[488.672s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/moveit_ros_planning/moveit_evaluate_collision_checking_speed
+[488.673s] -- Set runtime path of "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/moveit_ros_planning/moveit_evaluate_collision_checking_speed" to ""
+[488.673s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/moveit_ros_planning/moveit_publish_scene_from_text
+[488.674s] -- Set runtime path of "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/moveit_ros_planning/moveit_publish_scene_from_text" to ""
+[488.675s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include
+[488.675s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit
+[488.675s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/trajectory_execution_manager
+[488.675s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/trajectory_execution_manager/trajectory_execution_manager.h
+[488.676s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit_trajectory_execution_manager_export.h
+[488.676s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include
+[488.676s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit
+[488.677s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/plan_execution
+[488.677s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/plan_execution/plan_representation.h
+[488.677s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/plan_execution/plan_execution.h
+[488.678s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include
+[488.678s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit
+[488.678s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/moveit_cpp
+[488.678s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/moveit_cpp/moveit_cpp.h
+[488.678s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/include/moveit/moveit_cpp/planning_component.h
+[488.679s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_rdf_loader.so.2.5.8
+[488.682s] -- Set runtime path of "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_rdf_loader.so.2.5.8" to ""
+[488.682s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_rdf_loader.so
+[488.683s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_kinematics_plugin_loader.so.2.5.8
+[488.684s] -- Set runtime path of "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_kinematics_plugin_loader.so.2.5.8" to ""
+[488.684s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_kinematics_plugin_loader.so
+[488.684s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_robot_model_loader.so.2.5.8
+[488.685s] -- Set runtime path of "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_robot_model_loader.so.2.5.8" to ""
+[488.686s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_robot_model_loader.so
+[488.686s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_constraint_sampler_manager_loader.so.2.5.8
+[488.687s] -- Set runtime path of "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_constraint_sampler_manager_loader.so.2.5.8" to ""
+[488.688s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_constraint_sampler_manager_loader.so
+[488.688s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_planning_pipeline.so.2.5.8
+[488.691s] -- Set runtime path of "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_planning_pipeline.so.2.5.8" to ""
+[488.691s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_planning_pipeline.so
+[488.691s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_trajectory_execution_manager.so.2.5.8
+[488.696s] -- Set runtime path of "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_trajectory_execution_manager.so.2.5.8" to ""
+[488.696s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_trajectory_execution_manager.so
+[488.696s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_plan_execution.so.2.5.8
+[488.697s] -- Set runtime path of "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_plan_execution.so.2.5.8" to ""
+[488.698s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_plan_execution.so
+[488.698s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_planning_scene_monitor.so.2.5.8
+[488.710s] -- Set runtime path of "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_planning_scene_monitor.so.2.5.8" to ""
+[488.710s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_planning_scene_monitor.so
+[488.711s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_collision_plugin_loader.so.2.5.8
+[488.711s] -- Set runtime path of "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_collision_plugin_loader.so.2.5.8" to ""
+[488.712s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_collision_plugin_loader.so
+[488.712s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_default_planning_request_adapter_plugins.so.2.5.8
+[488.713s] -- Set runtime path of "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_default_planning_request_adapter_plugins.so.2.5.8" to ""
+[488.713s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_default_planning_request_adapter_plugins.so
+[488.714s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_cpp.so.2.5.8
+[488.716s] -- Set runtime path of "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_cpp.so.2.5.8" to ""
+[488.716s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/lib/libmoveit_cpp.so
+[488.716s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/environment/library_path.sh
+[488.717s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/environment/library_path.dsv
+[488.717s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/planning_request_adapters_plugin_description.xml
+[488.719s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/ament_index/resource_index/package_run_dependencies/moveit_ros_planning
+[488.720s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/ament_index/resource_index/parent_prefix_path/moveit_ros_planning
+[488.720s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/environment/ament_prefix_path.sh
+[488.720s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/environment/ament_prefix_path.dsv
+[488.721s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/environment/path.sh
+[488.721s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/environment/path.dsv
+[488.721s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/local_setup.bash
+[488.722s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/local_setup.sh
+[488.722s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/local_setup.zsh
+[488.722s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/local_setup.dsv
+[488.722s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/package.dsv
+[488.723s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/ament_index/resource_index/packages/moveit_ros_planning
+[488.723s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/ament_index/resource_index/moveit_core__pluginlib__plugin/moveit_ros_planning
+[488.724s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/cmake/export_moveit_ros_planningExport.cmake
+[488.724s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/cmake/export_moveit_ros_planningExport-release.cmake
+[488.724s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/cmake/ConfigExtras.cmake
+[488.725s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/cmake/ament_cmake_export_targets-extras.cmake
+[488.725s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/cmake/ament_cmake_export_dependencies-extras.cmake
+[488.725s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/cmake/moveit_ros_planningConfig.cmake
+[488.726s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/cmake/moveit_ros_planningConfig-version.cmake
+[488.726s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_planning/share/moveit_ros_planning/package.xml
+[488.735s] Invoked command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_ros_planning' returned '0': AMENT_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_configs_utils:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_ros_occupancy_map_monitor/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/bin:${PATH} PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_configs_utils/lib/python3.10/site-packages:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/local/lib/python3.10/dist-packages:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_ros_planning

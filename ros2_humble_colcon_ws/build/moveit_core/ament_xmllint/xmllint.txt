@@ -1,0 +1,18 @@
+-- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/moveit2/moveit_core':
+ - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/xmllint.xunit.xml
+
+File 'collision_detector_bullet_description.xml' is valid
+
+File 'collision_detector_fcl_description.xml' is valid
+
+File 'filter_plugin_butterworth.xml' is valid
+
+File 'package.xml' is valid
+
+File 'collision_detection_bullet/empty_description.xml' is valid
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/xmllint.xunit.xml'

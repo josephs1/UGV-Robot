@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="0" disabled="0" errors="0" time="0.388" timestamp="2025-03-24T23:26:54" name="AllTests">
+  <testsuite name="PluginTests/CollisionDetectorTests" tests="2" failures="0" disabled="0" errors="0" time="0.388" timestamp="2025-03-24T23:26:54">
+    <testcase name="Threaded/0" value_param="&quot;FCL&quot;" status="run" result="skipped" time="0.032" timestamp="2025-03-24T23:26:54" classname="moveit_core.PluginTests/CollisionDetectorTests" />
+    <testcase name="Threaded/1" value_param="&quot;Bullet&quot;" status="run" result="completed" time="0.356" timestamp="2025-03-24T23:26:54" classname="moveit_core.PluginTests/CollisionDetectorTests" />
+  </testsuite>
+</testsuites>

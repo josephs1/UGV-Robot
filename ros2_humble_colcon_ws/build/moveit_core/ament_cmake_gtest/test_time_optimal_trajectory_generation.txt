@@ -1,0 +1,45 @@
+-- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/trajectory_processing':
+ - /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/trajectory_processing/test_time_optimal_trajectory_generation --gtest_output=xml:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_time_optimal_trajectory_generation.gtest.xml
+
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from time_optimal_trajectory_generation
+[ RUN      ] time_optimal_trajectory_generation.test1
+[       OK ] time_optimal_trajectory_generation.test1 (0 ms)
+[ RUN      ] time_optimal_trajectory_generation.test2
+[       OK ] time_optimal_trajectory_generation.test2 (399 ms)
+[ RUN      ] time_optimal_trajectory_generation.test3
+[       OK ] time_optimal_trajectory_generation.test3 (2119 ms)
+[ RUN      ] time_optimal_trajectory_generation.test_custom_limits
+[INFO] [1742873225.184590131] [moveit_robot_model.robot_model]: Loading robot model 'panda'...
+[WARN] [1742873225.194672267] [moveit_trajectory_processing.time_optimal_trajectory_generation]: Joint acceleration limits are not defined. Using the default 1 rad/s^2. You can define acceleration limits in the URDF or joint_limits.yaml.
+[       OK ] time_optimal_trajectory_generation.test_custom_limits (41 ms)
+[ RUN      ] time_optimal_trajectory_generation.testLargeAccel
+[       OK ] time_optimal_trajectory_generation.testLargeAccel (1 ms)
+[ RUN      ] time_optimal_trajectory_generation.testLastWaypoint
+[INFO] [1742873225.198746578] [moveit_robot_model.robot_model]: Loading robot model 'panda'...
+[WARN] [1742873225.207354924] [moveit_trajectory_processing.time_optimal_trajectory_generation]: Joint acceleration limits are not defined. Using the default 1 rad/s^2. You can define acceleration limits in the URDF or joint_limits.yaml.
+[       OK ] time_optimal_trajectory_generation.testLastWaypoint (12 ms)
+[ RUN      ] time_optimal_trajectory_generation.testPluginAPI
+[INFO] [1742873225.210077330] [moveit_robot_model.robot_model]: Loading robot model 'panda'...
+[       OK ] time_optimal_trajectory_generation.testPluginAPI (284 ms)
+[ RUN      ] time_optimal_trajectory_generation.testRelevantZeroMaxAccelerationsInvalidateTrajectory
+[ERROR] [1742873225.492917450] [moveit_trajectory_processing.time_optimal_trajectory_generation]: Error while integrating forward: zero acceleration and velocity. Are any relevant acceleration components limited to zero?
+[ERROR] [1742873225.492939535] [moveit_trajectory_processing.time_optimal_trajectory_generation]: Error while integrating forward: zero acceleration and velocity. Are any relevant acceleration components limited to zero?
+[ERROR] [1742873225.492945969] [moveit_trajectory_processing.time_optimal_trajectory_generation]: Error while integrating forward: zero acceleration and velocity. Are any relevant acceleration components limited to zero?
+[       OK ] time_optimal_trajectory_generation.testRelevantZeroMaxAccelerationsInvalidateTrajectory (0 ms)
+[ RUN      ] time_optimal_trajectory_generation.testIrrelevantZeroMaxAccelerationsDontInvalidateTrajectory
+[       OK ] time_optimal_trajectory_generation.testIrrelevantZeroMaxAccelerationsDontInvalidateTrajectory (2 ms)
+[ RUN      ] time_optimal_trajectory_generation.testTimeStepZeroMakesTrajectoryInvalid
+[ERROR] [1742873225.494999928] [moveit_trajectory_processing.time_optimal_trajectory_generation]: The trajectory is invalid because the time step is 0.
+[       OK ] time_optimal_trajectory_generation.testTimeStepZeroMakesTrajectoryInvalid (1 ms)
+[----------] 10 tests from time_optimal_trajectory_generation (2859 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (2859 ms total)
+[  PASSED  ] 10 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_time_optimal_trajectory_generation.gtest.xml'
+-- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_time_optimal_trajectory_generation.gtest.xml'

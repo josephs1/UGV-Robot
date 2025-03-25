@@ -1,0 +1,60 @@
+-- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/kinematic_constraints':
+ - /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/kinematic_constraints/test_orientation_constraints --gtest_output=xml:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_orientation_constraints.gtest.xml
+
+[==========] Running 7 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 5 tests from SphericalRobot
+[ RUN      ] SphericalRobot.Test1
+[INFO] [1742873209.220159563] [moveit_robot_model.robot_model]: Loading robot model 'robot'...
+[INFO] [1742873209.220253347] [moveit_robot_model.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[WARN] [1742873209.220458169] [moveit_robot_model.robot_model]: No geometry is associated to any robot links
+[       OK ] SphericalRobot.Test1 (2 ms)
+[ RUN      ] SphericalRobot.Test2
+[INFO] [1742873209.221024846] [moveit_robot_model.robot_model]: Loading robot model 'robot'...
+[INFO] [1742873209.221038834] [moveit_robot_model.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[WARN] [1742873209.221080253] [moveit_robot_model.robot_model]: No geometry is associated to any robot links
+[       OK ] SphericalRobot.Test2 (1 ms)
+[ RUN      ] SphericalRobot.Test3
+[INFO] [1742873209.221261357] [moveit_robot_model.robot_model]: Loading robot model 'robot'...
+[INFO] [1742873209.221273424] [moveit_robot_model.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[WARN] [1742873209.221308057] [moveit_robot_model.robot_model]: No geometry is associated to any robot links
+[       OK ] SphericalRobot.Test3 (0 ms)
+[ RUN      ] SphericalRobot.Test4
+[INFO] [1742873209.221467555] [moveit_robot_model.robot_model]: Loading robot model 'robot'...
+[INFO] [1742873209.221479142] [moveit_robot_model.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[WARN] [1742873209.221511342] [moveit_robot_model.robot_model]: No geometry is associated to any robot links
+[       OK ] SphericalRobot.Test4 (0 ms)
+[ RUN      ] SphericalRobot.Test5
+[INFO] [1742873209.221683324] [moveit_robot_model.robot_model]: Loading robot model 'robot'...
+[INFO] [1742873209.221694527] [moveit_robot_model.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[WARN] [1742873209.221725767] [moveit_robot_model.robot_model]: No geometry is associated to any robot links
+[WARN] [1742873209.221777140] [moveit_kinematic_constraints.kinematic_constraints]: Near-zero value for absolute_x_axis_tolerance
+[WARN] [1742873209.221786423] [moveit_kinematic_constraints.kinematic_constraints]: Near-zero value for absolute_y_axis_tolerance
+[INFO] [1742873209.221795129] [moveit_kinematic_constraints.kinematic_constraints]: Orientation constraint satisfied for link 'yaw'. Quaternion desired: 0.000000 0.707107 0.000000 0.707107, quaternion actual: 0.174941 0.685125 0.174941 0.685125, error: x=0.000000, y=0.000000, z=0.500000, tolerance: x=0.000000, y=0.000000, z=1.000000
+[       OK ] SphericalRobot.Test5 (0 ms)
+[----------] 5 tests from SphericalRobot (3 ms total)
+
+[----------] 2 tests from FloatingJointRobot
+[ RUN      ] FloatingJointRobot.TestDefaultParameterization
+[INFO] [1742873209.222191906] [moveit_robot_model.robot_model]: Loading robot model 'floating_robot'...
+[INFO] [1742873209.222206373] [moveit_robot_model.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[WARN] [1742873209.222247952] [moveit_robot_model.robot_model]: No geometry is associated to any robot links
+[WARN] [1742873209.222374130] [moveit_kinematic_constraints.kinematic_constraints]: Unknown parameterization for orientation constraint tolerance, using default (XYZ_EULER_ANGLES).
+[       OK ] FloatingJointRobot.TestDefaultParameterization (1 ms)
+[ RUN      ] FloatingJointRobot.OrientationConstraintsParameterization
+[INFO] [1742873209.222507893] [moveit_robot_model.robot_model]: Loading robot model 'floating_robot'...
+[INFO] [1742873209.222521432] [moveit_robot_model.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[WARN] [1742873209.222552417] [moveit_robot_model.robot_model]: No geometry is associated to any robot links
+[INFO] [1742873209.222630421] [moveit_kinematic_constraints.kinematic_constraints]: Orientation constraint satisfied for link 'ee'. Quaternion desired: 0.000000 0.000000 0.000000 1.000000, quaternion actual: 0.000000 0.000000 0.000000 1.000000, error: x=0.000000, y=0.000000, z=0.000000, tolerance: x=0.500000, y=0.500000, z=0.500000
+[INFO] [1742873209.222652315] [moveit_kinematic_constraints.kinematic_constraints]: Orientation constraint satisfied for link 'ee'. Quaternion desired: 0.000000 0.000000 0.000000 1.000000, quaternion actual: 0.000000 0.000000 0.000000 1.000000, error: x=0.000000, y=0.000000, z=0.000000, tolerance: x=0.500000, y=0.500000, z=0.500000
+[       OK ] FloatingJointRobot.OrientationConstraintsParameterization (0 ms)
+[----------] 2 tests from FloatingJointRobot (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 2 test suites ran. (4 ms total)
+[  PASSED  ] 7 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_orientation_constraints.gtest.xml'
+-- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_orientation_constraints.gtest.xml'

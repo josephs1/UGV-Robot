@@ -1,0 +1,33 @@
+[0.027s] Invoking command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup': AMENT_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/app_bringup -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup
+[0.062s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.403s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.602s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.603s] -- Added test 'lint_cmake' to check CMake code style
+[0.603s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.606s] -- Added test 'xmllint' to check XML markup files
+[0.613s] -- Configuring done
+[0.636s] -- Generating done
+[0.646s] -- Build files have been written to: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup
+[0.667s] Invoked command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup' returned '0': AMENT_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/app_bringup -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup
+[0.672s] Invoking command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup': AMENT_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup -- -j6 -l6
+[0.759s] Invoked command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup' returned '0': AMENT_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup -- -j6 -l6
+[0.764s] Invoking command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup': AMENT_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup
+[0.786s] -- Install configuration: "Release"
+[0.786s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup/share/app_bringup/launch
+[0.788s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup/share/app_bringup/launch/app.launch.py
+[0.790s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup/share/ament_index/resource_index/package_run_dependencies/app_bringup
+[0.790s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup/share/ament_index/resource_index/parent_prefix_path/app_bringup
+[0.790s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup/share/app_bringup/environment/ament_prefix_path.sh
+[0.791s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup/share/app_bringup/environment/ament_prefix_path.dsv
+[0.791s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup/share/app_bringup/environment/path.sh
+[0.791s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup/share/app_bringup/environment/path.dsv
+[0.791s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup/share/app_bringup/local_setup.bash
+[0.792s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup/share/app_bringup/local_setup.sh
+[0.792s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup/share/app_bringup/local_setup.zsh
+[0.792s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup/share/app_bringup/local_setup.dsv
+[0.792s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup/share/app_bringup/package.dsv
+[0.793s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup/share/ament_index/resource_index/packages/app_bringup
+[0.794s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup/share/app_bringup/cmake/app_bringupConfig.cmake
+[0.794s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup/share/app_bringup/cmake/app_bringupConfig-version.cmake
+[0.794s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup/share/app_bringup/package.xml
+[0.800s] Invoked command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup' returned '0': AMENT_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup

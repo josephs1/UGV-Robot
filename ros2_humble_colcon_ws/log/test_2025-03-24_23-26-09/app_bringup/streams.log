@@ -1,0 +1,206 @@
+[0.058s] Invoking command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup': AMENT_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.086s] UpdateCTestConfiguration  from :/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/CTestConfiguration.ini
+[0.086s] Parse Config file:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/CTestConfiguration.ini
+[0.086s]    Site: UGV-C7-Jetson
+[0.087s]    Build name: (empty)
+[0.087s]  Add coverage exclude regular expressions.
+[0.087s] Create new tag: 20250325-0326 - Experimental
+[0.087s] UpdateCTestConfiguration  from :/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/CTestConfiguration.ini
+[0.087s] Parse Config file:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/CTestConfiguration.ini
+[0.087s] Test project /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup
+[0.087s] Constructing a list of tests
+[0.088s] Done constructing a list of tests
+[0.088s] Updating test list for fixtures
+[0.088s] Added 0 tests to meet fixture requirements
+[0.088s] Checking test dependency graph...
+[0.088s] Checking test dependency graph end
+[0.088s] test 1
+[0.088s]     Start 1: flake8
+[0.089s] 
+[0.089s] 1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/test_results/app_bringup/flake8.xunit.xml" "--package-name" "app_bringup" "--output-file" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/ament_flake8/flake8.txt" "--command" "/opt/ros/humble/bin/ament_flake8" "--xunit-file" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/test_results/app_bringup/flake8.xunit.xml"
+[0.089s] 1: Test timeout computed to be: 60
+[0.273s] 1: -- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/app_bringup':
+[0.273s] 1:  - /opt/ros/humble/bin/ament_flake8 --xunit-file /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/test_results/app_bringup/flake8.xunit.xml
+[1.459s] 1: def generate_launch_description():
+[1.460s] 1: ^
+[1.460s] 1: 	ld = LaunchDescription()
+[1.460s] 1: ^
+[1.460s] 1: 	publisher_node = Node(
+[1.460s] 1: ^
+[1.461s] 1: 		package = "py_pub_sub",
+[1.461s] 1: ^
+[1.461s] 1: 		package = "py_pub_sub",
+[1.461s] 1: 		       ^
+[1.461s] 1: 		package = "py_pub_sub",
+[1.461s] 1: 		         ^
+[1.461s] 1: 		package = "py_pub_sub",
+[1.461s] 1: 		          ^
+[1.462s] 1: 		executable = "py_pub"
+[1.462s] 1: ^
+[1.462s] 1: 		executable = "py_pub"
+[1.462s] 1: 		          ^
+[1.462s] 1: 		executable = "py_pub"
+[1.462s] 1: 		            ^
+[1.462s] 1: 		executable = "py_pub"
+[1.463s] 1: 		             ^
+[1.463s] 1: 	)
+[1.463s] 1: ^
+[1.463s] 1: 	subscriber_node = Node(
+[1.463s] 1: ^
+[1.463s] 1: 		package = "py_pub_sub",
+[1.463s] 1: ^
+[1.463s] 1: 		package = "py_pub_sub",
+[1.464s] 1: 		       ^
+[1.464s] 1: 		package = "py_pub_sub",
+[1.464s] 1: 		         ^
+[1.465s] 1: 		package = "py_pub_sub",
+[1.465s] 1: 		          ^
+[1.465s] 1: 		executable = "py_sub"
+[1.465s] 1: ^
+[1.465s] 1: 		executable = "py_sub"
+[1.465s] 1: 		          ^
+[1.465s] 1: 		executable = "py_sub"
+[1.466s] 1: 		            ^
+[1.466s] 1: 		executable = "py_sub"
+[1.466s] 1: 		             ^
+[1.466s] 1: 	)
+[1.466s] 1: ^
+[1.466s] 1: 	ld.add_action(publisher_node)
+[1.466s] 1: ^
+[1.466s] 1: 	ld.add_action(subscriber_node)
+[1.467s] 1: ^
+[1.467s] 1: 	
+[1.467s] 1: ^
+[1.467s] 1: 	
+[1.467s] 1: ^
+[1.467s] 1: 	return ld
+[1.467s] 1: ^
+[1.467s] 1: 8     E251 unexpected spaces around keyword / parameter equals
+[1.468s] 1: 1     E302 expected 2 blank lines, found 1
+[1.468s] 1: 4     Q000 Double quotes found but single quotes preferred
+[1.468s] 1: 13    W191 indentation contains tabs
+[1.468s] 1: 1     W293 blank line contains whitespace
+[1.468s] 1: 
+[1.468s] 1: ./launch/app.launch.py:4:1: E302 expected 2 blank lines, found 1
+[1.468s] 1: 
+[1.468s] 1: ./launch/app.launch.py:5:1: W191 indentation contains tabs
+[1.469s] 1: 
+[1.469s] 1: ./launch/app.launch.py:7:1: W191 indentation contains tabs
+[1.469s] 1: 
+[1.469s] 1: ./launch/app.launch.py:8:1: W191 indentation contains tabs
+[1.469s] 1: 
+[1.469s] 1: ./launch/app.launch.py:8:10: E251 unexpected spaces around keyword / parameter equals
+[1.469s] 1: 
+[1.470s] 1: ./launch/app.launch.py:8:12: E251 unexpected spaces around keyword / parameter equals
+[1.470s] 1: 
+[1.470s] 1: ./launch/app.launch.py:8:13: Q000 Double quotes found but single quotes preferred
+[1.470s] 1: 
+[1.470s] 1: ./launch/app.launch.py:9:1: W191 indentation contains tabs
+[1.470s] 1: 
+[1.470s] 1: ./launch/app.launch.py:9:13: E251 unexpected spaces around keyword / parameter equals
+[1.470s] 1: 
+[1.471s] 1: ./launch/app.launch.py:9:15: E251 unexpected spaces around keyword / parameter equals
+[1.471s] 1: 
+[1.471s] 1: ./launch/app.launch.py:9:16: Q000 Double quotes found but single quotes preferred
+[1.471s] 1: 
+[1.471s] 1: ./launch/app.launch.py:10:1: W191 indentation contains tabs
+[1.471s] 1: 
+[1.471s] 1: ./launch/app.launch.py:12:1: W191 indentation contains tabs
+[1.471s] 1: 
+[1.472s] 1: ./launch/app.launch.py:13:1: W191 indentation contains tabs
+[1.472s] 1: 
+[1.472s] 1: ./launch/app.launch.py:13:10: E251 unexpected spaces around keyword / parameter equals
+[1.472s] 1: 
+[1.472s] 1: ./launch/app.launch.py:13:12: E251 unexpected spaces around keyword / parameter equals
+[1.472s] 1: 
+[1.472s] 1: ./launch/app.launch.py:13:13: Q000 Double quotes found but single quotes preferred
+[1.473s] 1: 
+[1.473s] 1: ./launch/app.launch.py:14:1: W191 indentation contains tabs
+[1.473s] 1: 
+[1.473s] 1: ./launch/app.launch.py:14:13: E251 unexpected spaces around keyword / parameter equals
+[1.473s] 1: 
+[1.473s] 1: ./launch/app.launch.py:14:15: E251 unexpected spaces around keyword / parameter equals
+[1.473s] 1: 
+[1.473s] 1: ./launch/app.launch.py:14:16: Q000 Double quotes found but single quotes preferred
+[1.474s] 1: 
+[1.474s] 1: ./launch/app.launch.py:15:1: W191 indentation contains tabs
+[1.474s] 1: 
+[1.474s] 1: ./launch/app.launch.py:17:1: W191 indentation contains tabs
+[1.474s] 1: 
+[1.474s] 1: ./launch/app.launch.py:18:1: W191 indentation contains tabs
+[1.474s] 1: 
+[1.474s] 1: ./launch/app.launch.py:19:1: W191 indentation contains tabs
+[1.475s] 1: 
+[1.475s] 1: ./launch/app.launch.py:19:1: W293 blank line contains whitespace
+[1.475s] 1: 
+[1.475s] 1: ./launch/app.launch.py:20:1: W191 indentation contains tabs
+[1.475s] 1: 
+[1.475s] 1: 
+[1.475s] 1: 1 files checked
+[1.475s] 1: 27 errors
+[1.476s] 1: 
+[1.476s] 1: 'E'-type errors: 9
+[1.476s] 1: 'Q'-type errors: 4
+[1.476s] 1: 'W'-type errors: 14
+[1.476s] 1: 
+[1.476s] 1: Checked files:
+[1.476s] 1: 
+[1.476s] 1: * ./launch/app.launch.py
+[1.674s] 1: -- run_test.py: return code 1
+[1.686s] 1: -- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/test_results/app_bringup/flake8.xunit.xml'
+[1.718s] 1/4 Test #1: flake8 ...........................***Failed    1.63 sec
+[1.718s] test 2
+[1.720s]     Start 2: lint_cmake
+[1.720s] 
+[1.720s] 2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/test_results/app_bringup/lint_cmake.xunit.xml" "--package-name" "app_bringup" "--output-file" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/test_results/app_bringup/lint_cmake.xunit.xml"
+[1.720s] 2: Test timeout computed to be: 60
+[1.894s] 2: -- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/app_bringup':
+[1.894s] 2:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/test_results/app_bringup/lint_cmake.xunit.xml
+[2.071s] 2: 
+[2.071s] 2: No problems found
+[2.118s] 2: -- run_test.py: return code 0
+[2.118s] 2: -- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/test_results/app_bringup/lint_cmake.xunit.xml'
+[2.159s] 2/4 Test #2: lint_cmake .......................   Passed    0.44 sec
+[2.160s] test 3
+[2.160s]     Start 3: pep257
+[2.160s] 
+[2.160s] 3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/test_results/app_bringup/pep257.xunit.xml" "--package-name" "app_bringup" "--output-file" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/ament_pep257/pep257.txt" "--command" "/opt/ros/humble/bin/ament_pep257" "--xunit-file" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/test_results/app_bringup/pep257.xunit.xml"
+[2.160s] 3: Test timeout computed to be: 60
+[2.323s] 3: -- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/app_bringup':
+[2.324s] 3:  - /opt/ros/humble/bin/ament_pep257 --xunit-file /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/test_results/app_bringup/pep257.xunit.xml
+[2.623s] 3: checking ./launch/app.launch.py
+[2.623s] 3: No problems found
+[2.710s] 3: -- run_test.py: return code 0
+[2.710s] 3: -- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/test_results/app_bringup/pep257.xunit.xml'
+[2.758s] 3/4 Test #3: pep257 ...........................   Passed    0.60 sec
+[2.759s] test 4
+[2.759s]     Start 4: xmllint
+[2.759s] 
+[2.760s] 4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/test_results/app_bringup/xmllint.xunit.xml" "--package-name" "app_bringup" "--output-file" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/test_results/app_bringup/xmllint.xunit.xml"
+[2.760s] 4: Test timeout computed to be: 60
+[2.918s] 4: -- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/app_bringup':
+[2.919s] 4:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/test_results/app_bringup/xmllint.xunit.xml
+[3.192s] 4: File 'package.xml' is valid
+[3.193s] 4: 
+[3.193s] 4: No problems found
+[3.243s] 4: -- run_test.py: return code 0
+[3.250s] 4: -- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/test_results/app_bringup/xmllint.xunit.xml'
+[3.288s] 4/4 Test #4: xmllint ..........................   Passed    0.53 sec
+[3.288s] 
+[3.289s] 75% tests passed[0;0m, [0;31m1 tests failed[0;0m out of 4
+[3.291s] 
+[3.291s] Label Time Summary:
+[3.291s] flake8        =   1.63 sec*proc (1 test)
+[3.291s] lint_cmake    =   0.44 sec*proc (1 test)
+[3.291s] linter        =   3.19 sec*proc (4 tests)
+[3.291s] pep257        =   0.60 sec*proc (1 test)
+[3.292s] xmllint       =   0.53 sec*proc (1 test)
+[3.292s] 
+[3.292s] Total Test time (real) =   3.20 sec
+[3.292s] 
+[3.292s] The following tests FAILED:
+[3.292s] 	[0;31m  1 - flake8 (Failed)[0;0m
+[3.292s] Errors while running CTest
+[3.293s] Output from these tests are in: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup/Testing/Temporary/LastTest.log
+[3.293s] Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.
+[3.298s] Invoked command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/app_bringup' returned '8': AMENT_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

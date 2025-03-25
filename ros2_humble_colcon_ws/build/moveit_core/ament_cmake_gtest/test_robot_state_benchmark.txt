@@ -1,0 +1,34 @@
+-- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/robot_state':
+ - /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/robot_state/test_robot_state_benchmark --gtest_output=xml:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_robot_state_benchmark.gtest.xml
+
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from Timing
+[ RUN      ] Timing.stateUpdate
+[INFO] [1742873216.344513056] [moveit_robot_model.robot_model]: Loading robot model 'pr2'...
+[WARN] [1742873216.351190364] [moveit_robot_model.robot_model]: Link sensor_mount_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873216.351236968] [moveit_robot_model.robot_model]: Link double_stereo_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1742873216.425355935] [moveit_robot_model.robot_model]: Group state 'tuck_arms' doesn't specify all group joints in group 'arms'. l_shoulder_lift_joint, l_upper_arm_roll_joint, l_elbow_flex_joint, l_forearm_roll_joint, l_wrist_flex_joint, l_wrist_roll_joint, r_shoulder_pan_joint, r_shoulder_lift_joint, r_upper_arm_roll_joint, r_elbow_flex_joint, r_forearm_roll_joint, r_wrist_flex_joint, r_wrist_roll_joint are missing.
+RobotState updates: 864.389ms 
+[       OK ] Timing.stateUpdate (969 ms)
+[ RUN      ] Timing.multiply
+Eigen::Affine * Eigen::Matrix: 229.296ms 100%
+Eigen::Matrix * Eigen::Matrix: 222.084ms 96.855%
+Eigen::Isometry * Eigen::Isometry: 272.929ms 119.03%
+[       OK ] Timing.multiply (725 ms)
+[ RUN      ] Timing.inverse
+Isometry3d::inverse(): 187.81ms 100%
+Affine3d::inverse(Eigen::Isometry): 166.835ms 88.832%
+Affine3d::inverse(): 412.79ms 219.792%
+Matrix4d::inverse(): 494.259ms 263.17%
+[       OK ] Timing.inverse (1262 ms)
+[----------] 3 tests from Timing (2956 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (2956 ms total)
+[  PASSED  ] 3 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_robot_state_benchmark.gtest.xml'
+-- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_core/test_results/moveit_core/test_robot_state_benchmark.gtest.xml'

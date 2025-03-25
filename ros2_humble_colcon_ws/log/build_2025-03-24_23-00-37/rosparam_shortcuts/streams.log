@@ -1,0 +1,49 @@
+[0.858s] Invoking command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts -- -j6 -l6
+[1.042s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[1.080s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[1.083s] [ 15%] Built target gtest_main
+[1.083s] [35m[1mConsolidate compiler generated dependencies of target rosparam_shortcuts[0m
+[1.087s] [ 30%] Built target gtest
+[1.164s] [ 53%] Built target rosparam_shortcuts
+[1.289s] [35m[1mConsolidate compiler generated dependencies of target test_node_parameters[0m
+[1.293s] [35m[1mConsolidate compiler generated dependencies of target rosparam_shortcuts_example[0m
+[1.340s] [35m[1mConsolidate compiler generated dependencies of target rosparam_shortcuts_node_parameters_example[0m
+[1.370s] [ 69%] Built target test_node_parameters
+[1.396s] [ 84%] Built target rosparam_shortcuts_example
+[1.421s] [100%] Built target rosparam_shortcuts_node_parameters_example
+[1.483s] Invoked command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts -- -j6 -l6
+[1.495s] Invoking command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts
+[1.525s] -- Install configuration: ""
+[1.532s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/lib/librosparam_shortcuts.so
+[1.537s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/lib/rosparam_shortcuts/example
+[1.545s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/lib/rosparam_shortcuts/node_parameters_example
+[1.546s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/include
+[1.546s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/include/rosparam_shortcuts
+[1.547s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/include/rosparam_shortcuts/rosparam_shortcuts.h
+[1.547s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/include/rosparam_shortcuts/node_parameters.h
+[1.548s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/rosparam_shortcuts/launch
+[1.551s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/rosparam_shortcuts/launch/example.launch.py
+[1.551s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/rosparam_shortcuts/config
+[1.553s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/rosparam_shortcuts/config/example.yaml
+[1.553s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/rosparam_shortcuts/environment/library_path.sh
+[1.554s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/rosparam_shortcuts/environment/library_path.dsv
+[1.556s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/ament_index/resource_index/package_run_dependencies/rosparam_shortcuts
+[1.556s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/ament_index/resource_index/parent_prefix_path/rosparam_shortcuts
+[1.557s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/rosparam_shortcuts/environment/ament_prefix_path.sh
+[1.557s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/rosparam_shortcuts/environment/ament_prefix_path.dsv
+[1.558s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/rosparam_shortcuts/environment/path.sh
+[1.558s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/rosparam_shortcuts/environment/path.dsv
+[1.559s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/rosparam_shortcuts/local_setup.bash
+[1.559s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/rosparam_shortcuts/local_setup.sh
+[1.562s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/rosparam_shortcuts/local_setup.zsh
+[1.563s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/rosparam_shortcuts/local_setup.dsv
+[1.563s] -- Installing: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/rosparam_shortcuts/package.dsv
+[1.565s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/ament_index/resource_index/packages/rosparam_shortcuts
+[1.574s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/rosparam_shortcuts/cmake/export_rosparam_shortcutsExport.cmake
+[1.574s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/rosparam_shortcuts/cmake/export_rosparam_shortcutsExport-noconfig.cmake
+[1.574s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/rosparam_shortcuts/cmake/ament_cmake_export_targets-extras.cmake
+[1.575s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/rosparam_shortcuts/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.575s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/rosparam_shortcuts/cmake/rosparam_shortcutsConfig.cmake
+[1.575s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/rosparam_shortcuts/cmake/rosparam_shortcutsConfig-version.cmake
+[1.575s] -- Up-to-date: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/rosparam_shortcuts/share/rosparam_shortcuts/package.xml
+[1.588s] Invoked command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts

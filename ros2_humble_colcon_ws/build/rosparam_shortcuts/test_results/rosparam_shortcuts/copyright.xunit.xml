@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="rosparam_shortcuts.copyright"
+  tests="10"
+  errors="0"
+  failures="0"
+  time="0.788"
+>
+  <testcase
+    name="CONTRIBUTING.md"
+    classname="rosparam_shortcuts.copyright"/>
+  <testcase
+    name="LICENSE"
+    classname="rosparam_shortcuts.copyright"/>
+  <testcase
+    name="include/rosparam_shortcuts/node_parameters.h"
+    classname="rosparam_shortcuts.copyright"/>
+  <testcase
+    name="include/rosparam_shortcuts/rosparam_shortcuts.h"
+    classname="rosparam_shortcuts.copyright"/>
+  <testcase
+    name="launch/example.launch.py"
+    classname="rosparam_shortcuts.copyright"/>
+  <testcase
+    name="src/example.cpp"
+    classname="rosparam_shortcuts.copyright"/>
+  <testcase
+    name="src/node_parameters.cpp"
+    classname="rosparam_shortcuts.copyright"/>
+  <testcase
+    name="src/node_parameters_example.cpp"
+    classname="rosparam_shortcuts.copyright"/>
+  <testcase
+    name="src/rosparam_shortcuts.cpp"
+    classname="rosparam_shortcuts.copyright"/>
+  <testcase
+    name="test/test_node_parameters.cpp"
+    classname="rosparam_shortcuts.copyright"/>
+  <system-out>Checked files:
+* CONTRIBUTING.md
+* LICENSE
+* include/rosparam_shortcuts/node_parameters.h
+* include/rosparam_shortcuts/rosparam_shortcuts.h
+* launch/example.launch.py
+* src/example.cpp
+* src/node_parameters.cpp
+* src/node_parameters_example.cpp
+* src/rosparam_shortcuts.cpp
+* test/test_node_parameters.cpp</system-out>
+</testsuite>

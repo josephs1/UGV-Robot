@@ -1,0 +1,51 @@
+[0.053s] Invoking command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/chomp_motion_planner': AMENT_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub:/opt/ros/humble LD_LIBRARY_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/bin:${PATH} PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/moveit2/moveit_planners/chomp/chomp_motion_planner -DCMAKE_INSTALL_PREFIX=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/chomp_motion_planner
+[0.506s] -- The C compiler identification is GNU 11.4.0
+[0.685s] -- The CXX compiler identification is GNU 11.4.0
+[0.726s] -- Detecting C compiler ABI info
+[0.939s] -- Detecting C compiler ABI info - done
+[0.962s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.964s] -- Detecting C compile features
+[0.966s] -- Detecting C compile features - done
+[0.983s] -- Detecting CXX compiler ABI info
+[1.227s] -- Detecting CXX compiler ABI info - done
+[1.252s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.253s] -- Detecting CXX compile features
+[1.255s] -- Detecting CXX compile features - done
+[1.264s] -- Found moveit_common: 2.5.8 (/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common/share/moveit_common/cmake)
+[1.292s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.799s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.450s] [0mchomp_motion_planner: You did not request a specific build type: Choosing 'Release' for maximum performance[0m
+[2.452s] -- Found moveit_core: 2.5.8 (/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/share/moveit_core/cmake)
+[3.185s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[3.337s] -- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[3.444s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.459s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.484s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.517s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.562s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.684s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.692s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.931s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.992s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.096s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.121s] -- Found Threads: TRUE  
+[4.263s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[4.270s] -- Found rclcpp_lifecycle: 16.0.11 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[4.330s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[4.594s] -- library: /usr/lib/aarch64-linux-gnu/libcurl.so
+[4.752s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[5.336s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.386s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.386s] -- Configured cppcheck include dirs: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/moveit2/moveit_planners/chomp/chomp_motion_planner/include
+[5.386s] -- Configured cppcheck exclude dirs and/or files: 
+[5.392s] -- Added test 'xmllint' to check XML markup files
+[5.397s] -- Configuring done
+[5.471s] -- Generating done
+[5.492s] -- Build files have been written to: /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/chomp_motion_planner
+[5.562s] Invoked command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/chomp_motion_planner' returned '0': AMENT_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub:/opt/ros/humble LD_LIBRARY_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/bin:${PATH} PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/moveit2/moveit_planners/chomp/chomp_motion_planner -DCMAKE_INSTALL_PREFIX=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/chomp_motion_planner
+[5.565s] Invoking command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/chomp_motion_planner': AMENT_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_moveit_config:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_pr2_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_resources_panda_description:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_common:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/app_bringup:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/py_pub_sub:/opt/ros/humble LD_LIBRARY_PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/lib:/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/moveit_core/bin:${PATH} PYTHONPATH=/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/install/srdfdom/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/chomp_motion_planner -- -j6 -l6
+[5.718s] [ 33%] [32mBuilding CXX object CMakeFiles/chomp_motion_planner.dir/src/chomp_optimizer.cpp.o[0m
+[5.719s] [ 33%] [32mBuilding CXX object CMakeFiles/chomp_motion_planner.dir/src/chomp_parameters.cpp.o[0m
+[5.722s] [ 50%] [32mBuilding CXX object CMakeFiles/chomp_motion_planner.dir/src/chomp_cost.cpp.o[0m
+[5.726s] [ 66%] [32mBuilding CXX object CMakeFiles/chomp_motion_planner.dir/src/chomp_trajectory.cpp.o[0m
+[5.736s] [ 83%] [32mBuilding CXX object CMakeFiles/chomp_motion_planner.dir/src/chomp_planner.cpp.o[0m
