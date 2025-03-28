@@ -1,8 +1,0 @@
--- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/rosparam_shortcuts':
- - /opt/ros/humble/bin/ament_copyright --xunit-file /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/copyright.xunit.xml
-
-No problems found, checked 10 files
-
-
--- run_test.py: return code 0
--- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/rosparam_shortcuts/test_results/rosparam_shortcuts/copyright.xunit.xml'

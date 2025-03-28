@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="3" failures="0" disabled="0" errors="0" time="0.038" timestamp="2025-03-24T23:26:13" name="AllTests">
-  <testsuite name="TestCpp" tests="3" failures="0" disabled="0" errors="0" time="0.038" timestamp="2025-03-24T23:26:13">
-    <testcase name="testSimple" status="run" result="completed" time="0.015" timestamp="2025-03-24T23:26:13" classname="srdfdom.TestCpp" />
-    <testcase name="testComplex" status="run" result="completed" time="0.011" timestamp="2025-03-24T23:26:13" classname="srdfdom.TestCpp" />
-    <testcase name="testReadWrite" status="run" result="completed" time="0.012" timestamp="2025-03-24T23:26:13" classname="srdfdom.TestCpp" />
-  </testsuite>
-</testsuites>

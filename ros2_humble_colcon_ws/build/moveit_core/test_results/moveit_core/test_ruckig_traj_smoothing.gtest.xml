@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="4" failures="0" disabled="0" errors="0" time="0.047" timestamp="2025-03-24T23:27:05" name="AllTests">
-  <testsuite name="RuckigTests" tests="4" failures="0" disabled="0" errors="0" time="0.047" timestamp="2025-03-24T23:27:05">
-    <testcase name="basic_trajectory" status="run" result="completed" time="0.015" timestamp="2025-03-24T23:27:05" classname="moveit_core.RuckigTests" />
-    <testcase name="basic_trajectory_with_custom_limits" status="run" result="completed" time="0.01" timestamp="2025-03-24T23:27:05" classname="moveit_core.RuckigTests" />
-    <testcase name="trajectory_duration" status="run" result="completed" time="0.011" timestamp="2025-03-24T23:27:05" classname="moveit_core.RuckigTests" />
-    <testcase name="single_waypoint" status="run" result="completed" time="0.011" timestamp="2025-03-24T23:27:05" classname="moveit_core.RuckigTests" />
-  </testsuite>
-</testsuites>

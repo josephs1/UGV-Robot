@@ -1,9 +1,0 @@
-
-[33m=============================== warnings summary ===============================[0m
-../../../../../../../../opt/ros/humble/local/lib/python3.10/dist-packages/xacro/__init__.py:558
-  Warning: invalid escape sequence '\$'
-
-../../../../../../../../opt/ros/humble/local/lib/python3.10/dist-packages/xacro/__init__.py:559
-  Warning: invalid escape sequence '\s'
-
--- Docs: https://docs.pytest.org/en/stable/warnings.html

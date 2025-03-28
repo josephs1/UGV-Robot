@@ -1,9 +1,0 @@
-/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_runtime/CMakeFiles/uninstall.dir
-/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_runtime/CMakeFiles/moveit_runtime_uninstall.dir
-/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_runtime/CMakeFiles/test.dir
-/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_runtime/CMakeFiles/edit_cache.dir
-/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_runtime/CMakeFiles/rebuild_cache.dir
-/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_runtime/CMakeFiles/list_install_components.dir
-/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_runtime/CMakeFiles/install.dir
-/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_runtime/CMakeFiles/install/local.dir
-/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_runtime/CMakeFiles/install/strip.dir

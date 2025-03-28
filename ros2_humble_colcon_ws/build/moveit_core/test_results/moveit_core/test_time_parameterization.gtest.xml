@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="4" failures="0" disabled="0" errors="0" time="0.004" timestamp="2025-03-24T23:27:02" name="AllTests">
-  <testsuite name="TestTimeParameterization" tests="4" failures="0" disabled="0" errors="0" time="0.004" timestamp="2025-03-24T23:27:02">
-    <testcase name="TestIterativeParabolic" status="run" result="completed" time="0.002" timestamp="2025-03-24T23:27:02" classname="moveit_core.TestTimeParameterization" />
-    <testcase name="TestIterativeSpline" status="run" result="completed" time="0.001" timestamp="2025-03-24T23:27:02" classname="moveit_core.TestTimeParameterization" />
-    <testcase name="TestIterativeSplineAddPoints" status="run" result="completed" time="0.001" timestamp="2025-03-24T23:27:02" classname="moveit_core.TestTimeParameterization" />
-    <testcase name="TestRepeatedPoint" status="run" result="completed" time="0" timestamp="2025-03-24T23:27:02" classname="moveit_core.TestTimeParameterization" />
-  </testsuite>
-</testsuites>

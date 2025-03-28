@@ -1,8 +1,0 @@
--- run_test.py: invoking following command in '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/src/moveit2/moveit_common':
- - /opt/ros/humble/bin/ament_copyright --xunit-file /home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_common/test_results/moveit_common/copyright.xunit.xml
-
-No problems found, checked 2 files
-
-
--- run_test.py: return code 0
--- run_test.py: verify result file '/home/ugv-c7/CodeWorkspace/UGV-Robot/ros2_humble_colcon_ws/build/moveit_common/test_results/moveit_common/copyright.xunit.xml'
