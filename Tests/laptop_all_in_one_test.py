@@ -94,7 +94,7 @@ def main():
                 else:
                     break
 
-            time.sleep(0.20)  # Small delay to prevent excessive CPU usage
+            time.sleep(0.15)  # Small delay to prevent excessive CPU usage
 
     except KeyboardInterrupt:
         pass

@@ -49,7 +49,7 @@ void loop() {
                 motorController.writeMicroseconds(speedToPulseWidth(speed)); // Send PWM signal
             }
     }
-    delay(100);
+    delay(150);
 }
   
 // Function to map speed (-1.0 to 1.0) to PWM pulse width (1000 to 2000 μs)
