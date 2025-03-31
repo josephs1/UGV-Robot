@@ -22,7 +22,7 @@ void setup() {
   }
   
 void loop() {
-    if (Serial.available() > 0) {
+    while (Serial.available() > 0) { // Changed from if to while. Might need to change back.
         String cmd = Serial.readStringUntil('\n');  // Read the command until newline
         cmd.trim();  // Remove any trailing newline or spaces
 
@@ -33,28 +33,34 @@ void loop() {
             motorType = 2;
         }
         else if (cmd == "selection"){
+            if (motorType == 1){
+                moveServo(servo1, 0);
+            }
+            else if (motorType == 2){
+                motorController.writeMicroseconds(speedToPulseWidth(0.0)); // Send PWM signal
+            }
             motorType = 0;
         }
-        else if (cmd == ""){
+        // else if (cmd == ""){
         // Do nothing
         }
-        else:
+        else{
             if (motorType == 1){
                 int servoPos = cmd.toInt();
                 moveServo(servo1, servoPos);
             }
             else if (motorType == 2){
                 float speed = cmd.toFloat();
-        
                 motorController.writeMicroseconds(speedToPulseWidth(speed)); // Send PWM signal
             }
+        }
     }
     delay(150);
 }
   
 // Function to map speed (-1.0 to 1.0) to PWM pulse width (1000 to 2000 μs)
 int speedToPulseWidth(float speed) {
-    speed = constrain(speed, -1.0, 1.0); // Ensure speed is within range
+    speed = constrain(speed, -0.6, 0.6); // Ensure speed is within range (-0.6, 0.6). Change later to (-1.0, 1.0).
 
     // Map the speed to a pulse width between 1000 and 2000 μs
     return map(speed * 100, -100, 100, 1000, 2000); // Return pulse width in microseconds

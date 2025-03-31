@@ -4,7 +4,7 @@ import time
 import os
 
 # Set up serial connection to Arduino
-SERIAL_PORT = "/dev/ttyACM0"  # Replace with the Arduino's serial port
+SERIAL_PORT = "COM6" #"/dev/ttyACM0"  # Replace with the Arduino's serial port
 # Command for scanning ports: ls /dev/ttyACM*
 # Giving write permissions: sudo chmod 666 /dev/ttyACM0
 BAUD_RATE = 9600
@@ -24,16 +24,22 @@ joystick.init()
 
 motorPicked = False
 motorType = None
+servoPos = 0
+motorSpeed = 0.0
 
 def main():
+    global motorPicked
+    global motorType
+    global servoPos
+    global motorSpeed
     try:
         while True:
-            pygame.event.pump()  # Process controller events
             if not motorPicked:
                 print("Please pick a motor to control.")
                 print("Press X to control a servo motor.")
                 print("Press Y to control a drivetrain motor.")
                 while not motorPicked:
+                    pygame.event.pump()  # Process controller events
                     if joystick.get_button(2):
                         motorType = 1
                         servoPos = 0
@@ -49,7 +55,8 @@ def main():
                         arduino.write(cmd.encode())
                         motorPicked = True
             else:
-                right_trigger = joystick.get_axis(3)
+                pygame.event.pump()  # Process controller events
+                right_trigger = joystick.get_axis(5) # Right Trigger
                 if right_trigger > 0.5:
                     x_axis = joystick.get_axis(0)  # Left joystick horizontal (-1 to 1)
                     if motorType == 1:
@@ -77,13 +84,16 @@ def main():
                                 arduino.write(cmd.encode())
                         elif x_axis > 0.5:  # Move right
                             if motorSpeed < 1.0:
-                                servoPos += 0.05
+                                motorSpeed += 0.05
                                 print(f"Motor Speed: {motorSpeed}")
                                 cmd = str(motorSpeed)
                                 arduino.write(cmd.encode())
-                        else:
-                            cmd = ""
-                            arduino.write(cmd.encode())
+                        # else:
+                            # cmd = ""
+                            # arduino.write(cmd.encode())
+                # else:
+                    # cmd = ""
+                    # arduino.write(cmd.encode()) 
 
             # B button to select motor type
             if joystick.get_button(1):
@@ -101,6 +111,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+    cmd = str(0.0)
+    arduino.write(cmd.encode())
     pygame.quit()
     arduino.close()
     print("Connection closed.")
