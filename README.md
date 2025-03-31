@@ -1,2 +1,16 @@
 # Senior Design Project: UGV with a Mobile Manipulator
 This repository contains the code for my group's senior design project: a UGV with a mobile manipulation. The code is written for the Arduino Due (microcontroller), the NVIDIA Jetson Orin Nano (microprocessor), and the client laptop.
+
+# Folder Contents
+## Main
+The "Main" folder contains that code for connecting the client laptop to the NVIDIA Jetson Orin Nano through a web socket. The Jetson has a serial connection to an Arduino that will move the mechanical arm's servos and stepper motors along with the drivetrain's DC motors. An Xbox Controller is connected to the laptop for inputs to move the motors. Printed serial messages from both the Jetson and the laptop are outputted.
+
+## Extras
+The "Extras" folder contains old test code used in trial and errors for basic understanding and implementation of functions and libraries that are later used in the "Main" code. It also contains old ROS workspace trial and errors.
+
+## ros_noetic_catkin_ws
+This folder is a workspace for setting up and building a ROS 1 Noetic environment using Catkin. It currently has our robot arm's URDF package, the ROS MoveIt package for simulating our arm in Gazebo and ROS, and the "gazebo_ros_link_attacher" package for attaching blocks to our arm in Gazebo to show our arm "picking up" an object.
+
+## ros2_humble_colcon_ws
+This folder is a workspace for setting up and building a ROS 2 Humble environment using Colcon. The goal is to get MoveIt2 working and simulate our arm just like we did in the ROS 1 Noetic environment, but for now it only has a ROS-python publisher and subscriber for setting up nodes. 
+
