@@ -1,7 +1,7 @@
-# Senior Design Project: UGV with a Mobile Manipulator
+# Senior Design Project: UGV with a Mobile Manipulator:
 This repository contains the code for my group's senior design project: a UGV with a mobile manipulation. The code is written for the Arduino Due (microcontroller), the NVIDIA Jetson Orin Nano (microprocessor), and the client laptop.
 
-# Folder Contents
+# Folder Contents:
 ## Main
 The "Main" folder contains that code for connecting the client laptop to the NVIDIA Jetson Orin Nano through a web socket. The Jetson has a serial connection to an Arduino that will move the mechanical arm's servos and stepper motors along with the drivetrain's DC motors. An Xbox Controller is connected to the laptop for inputs to move the motors. Printed serial messages from both the Jetson and the laptop are outputted.
 
