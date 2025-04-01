@@ -25,7 +25,7 @@ joystick.init()
 motorPicked = False
 motorType = None
 servoPos = 0
-motorSpeed = 0.0
+motorSpeed = 0.00
 
 def main():
     global motorPicked
@@ -44,75 +44,84 @@ def main():
                         motorType = 1
                         servoPos = 0
                         print("Servo motor selected.")
-                        cmd = "servo"
-                        arduino.write(cmd.encode())
+                        cmd = bytes([1])
+                        arduino.write(cmd)
                         motorPicked = True
                     elif joystick.get_button(3):
                         motorType = 2
                         motorSpeed = 0
                         print("Drivetrain motor selected.")
-                        cmd = "motor"
-                        arduino.write(cmd.encode())
+                        cmd = bytes([2])
+                        arduino.write(cmd)
                         motorPicked = True
+                    elif joystick.get_button(1):
+                        # Stop the motor/servo
+                        cmd = bytes([0])
+                        arduino.write(cmd)
+
+                        # Close the serial connection and quit pygame.
+                        pygame.quit()
+                        arduino.close()
+                        print("Connection closed.")
+                        os._exit(1)
             else:
                 pygame.event.pump()  # Process controller events
                 right_trigger = joystick.get_axis(5) # Right Trigger
                 if right_trigger > 0.5:
                     x_axis = joystick.get_axis(0)  # Left joystick horizontal (-1 to 1)
                     if motorType == 1:
-                        if x_axis < -0.5:  # Move servo left
-                            if servoPos > 0:
-                                servoPos -= 1
-                                print(f"Servo Position: {servoPos}")
-                                cmd = str(servoPos)
-                                arduino.write(cmd.encode())
-                        elif x_axis > 0.5:  # Move right
-                            if servoPos < 270:
-                                servoPos += 1
-                                print(f"Servo Position: {servoPos}")
-                                cmd = str(servoPos)
-                                arduino.write(cmd.encode())
-                        else:
-                            cmd = ""
-                            arduino.write(cmd.encode())
+                        if x_axis > 0.5:  # Move right
+                            if (servoPos < 270):
+                                servoPos += 5
+                            print(f"Servo Position: {servoPos}")
+                            cmd = bytes([3])
+                            arduino.write(cmd)
+                        elif x_axis < -0.5:
+                            if (servoPos > 0):
+                                servoPos -= 5
+                            print(f"Servo Position: {servoPos}")
+                            cmd = bytes([4])
+                            arduino.write(cmd)
                     elif motorType == 2:
-                        if x_axis < -0.5:  # Move servo left
-                            if motorSpeed > -1.0:
-                                motorSpeed -= 0.05
-                                print(f"Motor Speed: {motorSpeed}")
-                                cmd = str(motorSpeed)
-                                arduino.write(cmd.encode())
-                        elif x_axis > 0.5:  # Move right
-                            if motorSpeed < 1.0:
-                                motorSpeed += 0.05
-                                print(f"Motor Speed: {motorSpeed}")
-                                cmd = str(motorSpeed)
-                                arduino.write(cmd.encode())
-                        # else:
-                            # cmd = ""
-                            # arduino.write(cmd.encode())
-                # else:
-                    # cmd = ""
-                    # arduino.write(cmd.encode()) 
-
+                        if x_axis > 0.5:  # Move right
+                            if (motorSpeed < 0.6): # Change later to 1.0
+                                motorSpeed += 0.025
+                                motorSpeed = round(motorSpeed, 3)
+                            print(f"Motor Speed: {motorSpeed}")
+                            cmd = bytes([3])
+                            arduino.write(cmd)
+                        elif x_axis < -0.5:  # Move servo left
+                            if (motorSpeed > -0.6): # Change later to -1.0
+                                motorSpeed -= 0.025
+                                motorSpeed = round(motorSpeed, 3)
+                            print(f"Motor Speed: {motorSpeed}")
+                            cmd = bytes([4])
+                            arduino.write(cmd)
+                else:
+                    if motorSpeed != 0.0:
+                        cmd = bytes([0]) # Stop the motor/servo
+                        arduino.write(cmd)
+                        motorSpeed = 0.0
+                    
             # B button to select motor type
             if joystick.get_button(1):
-                if motorPicked == True:
-                    cmd = "selection"
-                    arduino.write(cmd.encode())
-                    motorPicked = False
-                else:
-                    break
+                cmd = bytes([0]) # Stop the motor/servo
+                arduino.write(cmd)
+                motorPicked = False
 
-            time.sleep(0.15)  # Small delay to prevent excessive CPU usage
+            time.sleep(0.07)  # Small delay to prevent excessive CPU usage. 250 Hz is 4 ms.
 
     except KeyboardInterrupt:
         pass
 
 if __name__ == "__main__":
     main()
-    cmd = str(0.0)
-    arduino.write(cmd.encode())
+
+    # Stop the motor/servo
+    cmd = bytes([0])
+    arduino.write(cmd)
+
+    # Close the serial connection and quit pygame.
     pygame.quit()
     arduino.close()
     print("Connection closed.")

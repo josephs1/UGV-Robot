@@ -12,6 +12,8 @@ Servo motorController; // Spark MAX Motor Controller
 Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 
 int motorType = 0;
+float motorSpeed = 0.0;
+int servoPos = 0;
 
 void setup() {
     motorController.attach(MOTOR_PWM_PIN);
@@ -22,40 +24,55 @@ void setup() {
   }
   
 void loop() {
-    while (Serial.available() > 0) { // Changed from if to while. Might need to change back.
-        String cmd = Serial.readStringUntil('\n');  // Read the command until newline
-        cmd.trim();  // Remove any trailing newline or spaces
+    if (Serial.available() > 0) { // Changed from if to while. Might need to change back.
+        byte cmd = Serial.read();
 
-        if (cmd == "servo") {
+        if (cmd == 1) {
             motorType = 1;
         } 
-        else if (cmd == "motor"){
+        else if (cmd == 2){
             motorType = 2;
         }
-        else if (cmd == "selection"){
+        else if (cmd == 0){
             if (motorType == 1){
                 moveServo(servo1, 0);
+                servoPos = 0;
             }
             else if (motorType == 2){
                 motorController.writeMicroseconds(speedToPulseWidth(0.0)); // Send PWM signal
+                motorSpeed = 0.0;
             }
-            motorType = 0;
         }
-        // else if (cmd == ""){
-        // Do nothing
-        }
-        else{
+        else if (cmd == 3){
             if (motorType == 1){
-                int servoPos = cmd.toInt();
+                if (servoPos < 270){
+                  servoPos += 5;
+                }
                 moveServo(servo1, servoPos);
             }
             else if (motorType == 2){
-                float speed = cmd.toFloat();
-                motorController.writeMicroseconds(speedToPulseWidth(speed)); // Send PWM signal
+                if (motorSpeed < 0.6){ // Change later to 1.0
+                  motorSpeed += 0.025;
+                }
+                motorController.writeMicroseconds(speedToPulseWidth(motorSpeed)); // Send PWM signal
+            }
+        }
+        else if (cmd == 4){
+            if (motorType == 1){
+                if (servoPos > 0){
+                  servoPos -= 5;
+                }
+                moveServo(servo1, servoPos);
+            }
+            else if (motorType == 2){
+                if (motorSpeed > -0.6){ // Change later to -1.0
+                  motorSpeed -= 0.025;
+                }
+                motorController.writeMicroseconds(speedToPulseWidth(motorSpeed)); // Send PWM signal
             }
         }
     }
-    delay(150);
+    delay(50);
 }
   
 // Function to map speed (-1.0 to 1.0) to PWM pulse width (1000 to 2000 μs)
