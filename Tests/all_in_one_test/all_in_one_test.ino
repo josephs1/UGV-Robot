@@ -46,7 +46,7 @@ void loop() {
         else if (cmd == 3){
             if (motorType == 1){
                 if (servoPos < 270){
-                  servoPos += 5;
+                  servoPos += 7;
                 }
                 moveServo(servo1, servoPos);
             }
@@ -60,7 +60,7 @@ void loop() {
         else if (cmd == 4){
             if (motorType == 1){
                 if (servoPos > 0){
-                  servoPos -= 5;
+                  servoPos -= 7;
                 }
                 moveServo(servo1, servoPos);
             }

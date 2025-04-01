@@ -72,13 +72,13 @@ def main():
                     if motorType == 1:
                         if x_axis > 0.5:  # Move right
                             if (servoPos < 270):
-                                servoPos += 5
+                                servoPos += 7
                             print(f"Servo Position: {servoPos}")
                             cmd = bytes([3])
                             arduino.write(cmd)
                         elif x_axis < -0.5:
                             if (servoPos > 0):
-                                servoPos -= 5
+                                servoPos -= 7
                             print(f"Servo Position: {servoPos}")
                             cmd = bytes([4])
                             arduino.write(cmd)
