@@ -3,7 +3,7 @@ import keyboard  # Requires `pip install keyboard`
 import time  # To manage the 1-second delay
 
 # Define Jetson Orin Nano's IP and port
-JETSON_IP = "192.168.1.189"  # Replace with the Jetson's actual IP address
+JETSON_IP = ""  # Replace with the Jetson's actual IP address
 PORT = 12345
 
 # Create a socket

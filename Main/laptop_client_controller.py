@@ -143,7 +143,7 @@ def wait_for_jetson_server(JETSON_IP):
 def type_in_Jetson_connection_info():
     
     JETSON_IP = input("Type the IP address of the Jetson: ") # Jetson IP address
-    JETSON_USER = input("Type the username of the Jetson account: ")     # Jetson Username
+    JETSON_USER = input("Type the username of the Jetson account: ")  # Jetson Username
     JETSON_PASS = input("Type the password of the Jetson account: ")  # Jetson Password
     return JETSON_IP, JETSON_USER, JETSON_PASS
 
