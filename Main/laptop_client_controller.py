@@ -9,9 +9,6 @@ import os
 import sys
 
 # Define Jetson Orin Nano's IP and port
-JETSON_IP = "10.0.0.179"  # Replace with the Jetson's actual IP address
-JETSON_USER = "ugv-c7"     # Jetson Username
-JETSON_PASS = "stevens-siemens-C7"  # Jetson Password
 PORT = 12345  # Port number (should match the Jetson server)
 
 # Initialize pygame and the joystick
@@ -34,7 +31,7 @@ last_time = time.time()
 command_sent = ""
 
 # Function to capture and display Jetson logs via SSH
-def display_jetson_log():
+def display_jetson_log(JETSON_IP, JETSON_USER, JETSON_PASS):
     try:
         # SSH client setup to read the log file remotely
         ssh_client = paramiko.SSHClient()
@@ -113,7 +110,7 @@ def capture_local_terminal():
         pass
 
 # Function to start a new terminal window on the laptop to show Jetson's terminal output
-def start_jetson_server():
+def start_jetson_server(JETSON_IP, JETSON_USER, JETSON_PASS):
     try:
         # SSH client setup to run the jetson_server.py remotely
         ssh_client = paramiko.SSHClient()
@@ -132,7 +129,7 @@ def start_jetson_server():
         print(f"Error starting the Jetson server: {e}")
 
 # Wait for Jetson server to be ready for connection
-def wait_for_jetson_server():
+def wait_for_jetson_server(JETSON_IP):
     while True:
         try:
             # Attempt to connect to the Jetson Nano's socket
@@ -143,13 +140,22 @@ def wait_for_jetson_server():
             print("Waiting for Jetson server to be ready...")
             time.sleep(2)  # Wait for 2 seconds before retrying
 
+def type_in_Jetson_connection_info():
+    
+    JETSON_IP = input("Type the IP address of the Jetson: ") # Jetson IP address
+    JETSON_USER = input("Type the username of the Jetson account: ")     # Jetson Username
+    JETSON_PASS = input("Type the password of the Jetson account: ")  # Jetson Password
+    return JETSON_IP, JETSON_USER, JETSON_PASS
+
+
 # Start the local terminal capture and the Jetson terminal capture
 if __name__ == "__main__":
-    start_jetson_server() 
-    wait_for_jetson_server()
+    JETSON_IP, JETSON_USER, JETSON_PASS = type_in_Jetson_connection_info()
+    start_jetson_server(JETSON_IP, JETSON_USER, JETSON_PASS) 
+    wait_for_jetson_server(JETSON_IP)
 
     # Start the display_log function in a separate thread
-    log_thread = threading.Thread(target=display_jetson_log)
+    log_thread = threading.Thread(target=display_jetson_log, args=(JETSON_IP, JETSON_USER, JETSON_PASS))
     log_thread.start()
 
     capture_local_terminal()
