@@ -6,7 +6,7 @@ import paramiko  # Require 'pip install paramiko'
 import threading  # For running the log display in a separate thread
 import re
 import os
-import sys
+from dotenv import load_dotenv, find_dotenv # pip install python-dotenv
 
 # Define Jetson Orin Nano's IP and port
 PORT = 12345  # Port number (should match the Jetson server)
@@ -17,11 +17,11 @@ pygame.joystick.init()
 os.system('cls')
 
 # Ensure at least one controller is connected
-if pygame.joystick.get_count() == 0:
-    print("No controller detected. Please connect an Xbox controller and restart.")
-    exit()
-joystick = pygame.joystick.Joystick(0)
-joystick.init()
+# if pygame.joystick.get_count() == 0:
+#     print("No controller detected. Please connect an Xbox controller and restart.")
+#     exit()
+# joystick = pygame.joystick.Joystick(0)
+# joystick.init()
 
 # Create a socket connection
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -141,10 +141,21 @@ def wait_for_jetson_server(JETSON_IP):
             time.sleep(2)  # Wait for 2 seconds before retrying
 
 def type_in_Jetson_connection_info():
-    
-    JETSON_IP = input("Type the IP address of the Jetson: ") # Jetson IP address
-    JETSON_USER = input("Type the username of the Jetson account: ")  # Jetson Username
-    JETSON_PASS = input("Type the password of the Jetson account: ")  # Jetson Password
+    # Try to find and load the .env file
+    dotenv_path = find_dotenv()
+
+    if dotenv_path:
+        load_dotenv(dotenv_path)
+        print(".env file found.")
+        JETSON_IP = os.getenv("IP_ADDRESS")
+        JETSON_USER = os.getenv("JETSON_USER")
+        JETSON_PASS = os.getenv("JETSON_PASS")
+
+    else:
+        print(".env file does not exist.")
+        JETSON_IP = input("Type the IP address of the Jetson: ") # Jetson IP address
+        JETSON_USER = input("Type the username of the Jetson account: ")  # Jetson Username
+        JETSON_PASS = input("Type the password of the Jetson account: ")  # Jetson Password
     return JETSON_IP, JETSON_USER, JETSON_PASS
 
 
