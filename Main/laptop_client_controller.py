@@ -17,11 +17,11 @@ pygame.joystick.init()
 os.system('cls')
 
 # Ensure at least one controller is connected
-# if pygame.joystick.get_count() == 0:
-#     print("No controller detected. Please connect an Xbox controller and restart.")
-#     exit()
-# joystick = pygame.joystick.Joystick(0)
-# joystick.init()
+if pygame.joystick.get_count() == 0:
+    print("No controller detected. Please connect an Xbox controller and restart.")
+    exit()
+joystick = pygame.joystick.Joystick(0)
+joystick.init()
 
 # Create a socket connection
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
