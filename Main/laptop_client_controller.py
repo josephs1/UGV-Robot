@@ -9,7 +9,12 @@ import os
 from dotenv import load_dotenv, find_dotenv # pip install python-dotenv
 
 # Define Jetson Orin Nano's IP and port
-PORT = 12345  # Port number (should match the Jetson server)
+dotenv_path = find_dotenv()
+if dotenv_path:
+    load_dotenv(dotenv_path)
+    PORT = os.getenv("PORT")
+else:
+    PORT = 12345  # Port number (should match the Jetson server)
 
 # Initialize pygame and the joystick
 pygame.init()

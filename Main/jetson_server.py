@@ -2,6 +2,8 @@
 import socket
 import serial
 import logging
+import os
+from dotenv import load_dotenv, find_dotenv # pip install python-dotenv
 
 # Set up serial connection to Arduino
 ########SERIAL_PORT = "/dev/ttyACM0"  # Replace with the Arduino's serial port
@@ -12,7 +14,12 @@ BAUD_RATE = 9600
 
 # Set up server
 HOST = "0.0.0.0"
-PORT = 12345
+dotenv_path = find_dotenv()
+if dotenv_path:
+    load_dotenv(dotenv_path)
+    PORT = os.getenv("PORT")
+else:
+    PORT = 12345  # Port number (should match the Jetson server)
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.bind((HOST, PORT))
 server_socket.listen(1)
