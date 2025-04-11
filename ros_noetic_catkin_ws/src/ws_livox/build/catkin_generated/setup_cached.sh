@@ -7,8 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/ws_livox/devel:$CMAKE_PREFIX_PATH"
 export PWD='/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/ws_livox/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/ws_livox/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/ws_livox/src:$ROS_PACKAGE_PATH"
-export ROS_VERSION='1'

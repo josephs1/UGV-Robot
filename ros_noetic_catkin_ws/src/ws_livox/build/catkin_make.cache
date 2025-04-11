@@ -1,2 +1,2 @@
-livox_ros_driver2
--DROS_EDITION=ROS1 -DCATKIN_DEVEL_PREFIX=/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/ws_livox/devel -DCMAKE_INSTALL_PREFIX=/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/ws_livox/install -G Unix Makefiles
+livox_ros_driver/livox_ros_driver
+-DCATKIN_DEVEL_PREFIX=/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/ws_livox/devel -DCMAKE_INSTALL_PREFIX=/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/ws_livox/install -G Unix Makefiles
