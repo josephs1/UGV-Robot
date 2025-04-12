@@ -9,7 +9,7 @@
 Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 
 #define servo1 0
-#define delay_time 1000
+#define delay_time 2000
 
 void setup() {
   // put your setup code here, to run once:
@@ -31,6 +31,16 @@ void loop() {
   delay(1000);
 
   moveServo(servo1, 0);
+//  moveServo(servo2, 0);
+//  moveServo(servo80kg, 0);
+  delay(delay_time);
+
+  moveServo(servo1, 90);
+//  moveServo(servo2, 0);
+//  moveServo(servo80kg, 0);
+  delay(delay_time);
+
+  moveServo(servo1, 180);
 //  moveServo(servo2, 0);
 //  moveServo(servo80kg, 0);
   delay(delay_time);
