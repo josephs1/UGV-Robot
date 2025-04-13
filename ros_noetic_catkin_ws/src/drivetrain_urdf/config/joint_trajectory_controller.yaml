@@ -1,0 +1,12 @@
+# Instead of using TAB for indentation, use two spaces at the place of one TAB
+
+# Controller to control robot arm joints
+drivetrain_controller:
+  type: "position_controllers/JointTrajectoryController"
+  joints: [left_wheel_joint, right_wheel_joint]
+
+# Controller to continuously publish joint states/positions. Rate is in Hz.
+joint_state_controller:
+  type: "joint_state_controller/JointStateController"
+  publish_rate: 50
+

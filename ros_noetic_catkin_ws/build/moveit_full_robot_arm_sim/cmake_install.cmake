@@ -118,6 +118,21 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/setup.fish;/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/local_setup.fish")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+file(INSTALL DESTINATION "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install" TYPE FILE FILES
+    "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/setup.fish"
+    "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/local_setup.fish"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")

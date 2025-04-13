@@ -6,13 +6,13 @@ import stat
 import sys
 
 # find the import for catkin's python package - either from source space or from an installed underlay
-if os.path.exists(os.path.join('/opt/ros/noetic/share/catkin/cmake', 'catkinConfig.cmake.in')):
-    sys.path.insert(0, os.path.join('/opt/ros/noetic/share/catkin/cmake', '..', 'python'))
+if os.path.exists(os.path.join('/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/catkin/cmake', 'catkinConfig.cmake.in')):
+    sys.path.insert(0, os.path.join('/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/catkin/cmake', '..', 'python'))
 try:
     from catkin.environment_cache import generate_environment_script
 except ImportError:
     # search for catkin package in all workspaces and prepend to path
-    for workspace in '/opt/ros/noetic;/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/devel'.split(';'):
+    for workspace in '/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/devel;/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/drivetrain_catkin_ws/devel;/opt/ros/noetic'.split(';'):
         python_path = os.path.join(workspace, 'lib/python3/dist-packages')
         if os.path.isdir(os.path.join(python_path, 'catkin')):
             sys.path.insert(0, python_path)

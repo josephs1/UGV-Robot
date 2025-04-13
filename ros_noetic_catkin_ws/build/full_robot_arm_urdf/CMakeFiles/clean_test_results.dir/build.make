@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_c
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/full_robot_arm_urdf/test_results
+	/usr/bin/python3 /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/catkin/cmake/test/remove_test_results.py /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/full_robot_arm_urdf/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make

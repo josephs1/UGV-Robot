@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="drivetrain_urdf">
+
+  <link name="world"/>
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.25853 -0.477 0.1222"
+        rpy="0 0 0" />
+      <mass
+        value="18.295" />
+      <inertia
+        ixx="0.10003"
+        ixy="1.888E-07"
+        ixz="9.4489E-10"
+        iyy="0.18366"
+        iyz="-7.4547E-08"
+        izz="0.18101" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://drivetrain_urdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://drivetrain_urdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="base_joint" type="fixed">
+  	<parent link="world"/>
+  	<child link="base_link"/>
+  	<origin rpy="0 0 0" xyz="0.0 0.0 0.02"/>
+  </joint>
+
+  <link
+    name="left_wheel">
+    <inertial>
+      <origin
+        xyz="1.3885E-08 -4.7617E-10 -8.5336E-12"
+        rpy="0 0 0" />
+      <mass
+        value="0.36704" />
+      <inertia
+        ixx="0.00082344"
+        ixy="4.2918E-12"
+        ixz="1.5551E-13"
+        iyy="0.0004503"
+        iyz="2.6527E-10"
+        izz="0.0004503" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://drivetrain_urdf/meshes/left_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://drivetrain_urdf/meshes/left_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.026657 -0.33398 0.025404"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_wheel" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="right_wheel">
+    <inertial>
+      <origin
+        xyz="1.38846331099174E-08 4.10696837649382E-10 2.41110575949222E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.367037154275228" />
+      <inertia
+        ixx="0.000823444186063912"
+        ixy="-3.66312406808114E-12"
+        ixz="-2.24165888026677E-12"
+        iyy="0.000450304106155883"
+        iyz="9.61590847448285E-10"
+        izz="0.0004503035608644" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://drivetrain_urdf/meshes/right_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://drivetrain_urdf/meshes/right_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.53466 -0.33397 0.025369"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_wheel" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+
+  <transmission name="left_wheel_trans">
+  	<type>transmission_interface/SimpleTransmission</type>
+  	<joint name="left_wheel_joint">
+  		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  	</joint>
+  	<actuator name="left_wheel_motor">
+  		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  		<mechanicalReduction>1</mechanicalReduction>
+  	</actuator>
+  </transmission>
+  
+  <transmission name="right_wheel_trans">
+  	<type>transmission_interface/SimpleTransmission</type>
+  	<joint name="right_wheel_joint">
+  		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  	</joint>
+  	<actuator name="right_wheel_motor">
+  		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  		<mechanicalReduction>1</mechanicalReduction>
+  	</actuator>
+  </transmission>
+  
+  <gazebo>
+  	<plugin name="control" filename="libgazebo_ros_control.so">
+  		<robotNamespace>/</robotNamespace>
+  	</plugin>
+  </gazebo>
+  
+  <gazebo reference="left_wheel">
+  	<selfCollide>true</selfCollide>
+  </gazebo>
+  
+  <gazebo reference="right_wheel">
+  	<selfCollide>true</selfCollide>
+  </gazebo>
+
+</robot>

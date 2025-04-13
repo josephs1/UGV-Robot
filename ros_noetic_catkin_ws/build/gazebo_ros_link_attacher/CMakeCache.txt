@@ -783,7 +783,7 @@ boost_system_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_system-1.71.0
 boost_thread_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_thread-1.71.0
 
 //The directory containing a CMake configuration file for catkin.
-catkin_DIR:PATH=/opt/ros/noetic/share/catkin/cmake
+catkin_DIR:PATH=/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/devel/share/catkin/cmake
 
 //The directory containing a CMake configuration file for ccd.
 ccd_DIR:PATH=ccd_DIR-NOTFOUND
