@@ -1,0 +1,8 @@
+prefix=/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/drivetrain_catkin_ws/devel/.private/drivetrain_urdf
+
+Name: drivetrain_urdf
+Description: Description of drivetrain_urdf
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs roscpp rospy std_msgs message_runtime

@@ -1,0 +1,6 @@
+devel_space: /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/catkin_ws2/devel
+install: false
+install_space: /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/catkin_ws2/install
+profile: default
+source_space: /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/catkin_ws2/src
+workspace: /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/catkin_ws2

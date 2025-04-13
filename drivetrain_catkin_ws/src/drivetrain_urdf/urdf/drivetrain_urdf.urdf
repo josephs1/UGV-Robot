@@ -4,6 +4,9 @@
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
   name="drivetrain_urdf">
+  
+  <link name="world"/>
+  
   <link
     name="base_link">
     <inertial>
@@ -44,6 +47,13 @@
       </geometry>
     </collision>
   </link>
+  
+  <joint name="base_joint" type="fixed">
+  	<parent link="world"/>
+  	<child link="base_link"/>
+  	<origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+  </joint>
+  
   <link
     name="left_wheel">
     <inertial>
@@ -150,4 +160,41 @@
     <axis
       xyz="0 0 0" />
   </joint>
+  
+  <transmission name="left_wheel_trans">
+  	<type>transmission_interface/SimpleTransmission</type>
+  	<joint name="left_wheel_joint">
+  		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  	</joint>
+  	<actuator name="left_wheel_motor">
+  		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  		<mechanicalReduction>1</mechanicalReduction>
+  	</actuator>
+  </transmission>
+  
+  <transmission name="right_wheel_trans">
+  	<type>transmission_interface/SimpleTransmission</type>
+  	<joint name="right_wheel_joint">
+  		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  	</joint>
+  	<actuator name="right_wheel_motor">
+  		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  		<mechanicalReduction>1</mechanicalReduction>
+  	</actuator>
+  </transmission>
+  
+  <gazebo>
+  	<plugin name="control" filename="libgazebo_ros_control.so">
+  		<robotNamespace>/</robotNamespace>
+  	</plugin>
+  </gazebo>
+  
+  <gazebo reference="left_wheel">
+  	<selfCollide>true</selfCollide>
+  </gazebo>
+  
+  <gazebo reference="right_wheel">
+  	<selfCollide>true</selfCollide>
+  </gazebo>
+
 </robot>

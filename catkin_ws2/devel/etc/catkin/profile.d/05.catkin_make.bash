@@ -1,0 +1,1 @@
+/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/catkin_ws2/devel/.private/catkin/etc/catkin/profile.d/05.catkin_make.bash

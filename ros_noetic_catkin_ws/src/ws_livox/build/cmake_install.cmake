@@ -131,7 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/ws_livox/build/gtest/cmake_install.cmake")
-  include("/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/ws_livox/build/livox_ros_driver2/cmake_install.cmake")
+  include("/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/ws_livox/build/LIO-Livox/cmake_install.cmake")
 
 endif()
 
