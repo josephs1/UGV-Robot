@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

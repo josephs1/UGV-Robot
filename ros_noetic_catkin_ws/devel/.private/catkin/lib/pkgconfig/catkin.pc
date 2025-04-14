@@ -1,8 +1,8 @@
-prefix=/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/devel/.private/catkin
+prefix=/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/devel/.private/catkin
 
 Name: catkin
 Description: Description of catkin
-Version: 0.8.10
+Version: 0.8.11
 Cflags: 
 Libs: -L${prefix}/lib 
 Requires: 

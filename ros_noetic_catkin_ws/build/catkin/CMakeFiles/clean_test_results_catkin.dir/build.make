@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/catkin
+CMAKE_SOURCE_DIR = /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/catkin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin
+CMAKE_BINARY_DIR = /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin
 
 # Utility rule file for clean_test_results_catkin.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_c
 include CMakeFiles/clean_test_results_catkin.dir/progress.make
 
 CMakeFiles/clean_test_results_catkin:
-	/usr/bin/python3 /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/catkin/cmake/test/remove_test_results.py /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin/test_results/catkin
+	/usr/bin/python3.8 /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/catkin/cmake/test/remove_test_results.py /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin/test_results/catkin
 
 clean_test_results_catkin: CMakeFiles/clean_test_results_catkin
 clean_test_results_catkin: CMakeFiles/clean_test_results_catkin.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/clean_test_results_catkin.dir/clean:
 .PHONY : CMakeFiles/clean_test_results_catkin.dir/clean
 
 CMakeFiles/clean_test_results_catkin.dir/depend:
-	cd /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/catkin /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/catkin /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin/CMakeFiles/clean_test_results_catkin.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/catkin /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/catkin /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin/CMakeFiles/clean_test_results_catkin.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results_catkin.dir/depend
 

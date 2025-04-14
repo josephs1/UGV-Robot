@@ -3,7 +3,7 @@
 
 # since this file is sourced either use the provided _CATKIN_SETUP_DIR
 # or fall back to the destination set at configure time
-: ${_CATKIN_SETUP_DIR:=/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/devel/.private/full_robot_arm_urdf}
+: ${_CATKIN_SETUP_DIR:=/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/devel/.private/full_robot_arm_urdf}
 CATKIN_SETUP_UTIL_ARGS="--extend --local"
 . "$_CATKIN_SETUP_DIR/setup.sh"
 unset CATKIN_SETUP_UTIL_ARGS

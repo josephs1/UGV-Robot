@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/devel/.private/full_robot_arm_urdf:$CMAKE_PREFIX_PATH"
-export PWD='/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/full_robot_arm_urdf'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/devel/.private/full_robot_arm_urdf/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/full_robot_arm_urdf:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/devel/.private/full_robot_arm_urdf:$CMAKE_PREFIX_PATH"
+export PWD='/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/full_robot_arm_urdf'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/devel/.private/full_robot_arm_urdf/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/full_robot_arm_urdf:$ROS_PACKAGE_PATH"

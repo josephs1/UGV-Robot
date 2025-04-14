@@ -1,8 +1,0 @@
-prefix=/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/devel/.private/gazebo_ros_link_attacher
-
-Name: gazebo_ros_link_attacher
-Description: Description of gazebo_ros_link_attacher
-Version: 0.0.0
-Cflags: -I/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/devel/.private/gazebo_ros_link_attacher/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime

@@ -1,8 +1,8 @@
-# Install script for directory: /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/moveit_full_robot_arm_sim
+# Install script for directory: /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/moveit_full_robot_arm_sim
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,126 +49,111 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/_setup_util.py")
+   "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install" TYPE PROGRAM FILES "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install" TYPE PROGRAM FILES "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/env.sh")
+   "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install" TYPE PROGRAM FILES "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install" TYPE PROGRAM FILES "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/setup.bash;/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/local_setup.bash")
+   "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/setup.bash;/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install" TYPE FILE FILES
-    "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/setup.bash"
-    "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install" TYPE FILE FILES
+    "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/setup.bash"
+    "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/setup.sh;/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/local_setup.sh")
+   "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/setup.sh;/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install" TYPE FILE FILES
-    "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/setup.sh"
-    "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install" TYPE FILE FILES
+    "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/setup.sh"
+    "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/setup.zsh;/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/local_setup.zsh")
+   "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/setup.zsh;/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install" TYPE FILE FILES
-    "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/setup.zsh"
-    "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install" TYPE FILE FILES
+    "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/setup.zsh"
+    "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/setup.fish;/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/local_setup.fish")
+   "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install" TYPE FILE FILES
-    "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/setup.fish"
-    "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/local_setup.fish"
-    )
+file(INSTALL DESTINATION "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install" TYPE FILE FILES "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/.rosinstall")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/.rosinstall")
-  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-file(INSTALL DESTINATION "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install" TYPE FILE FILES "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/.rosinstall")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/moveit_full_robot_arm_sim.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/moveit_full_robot_arm_sim.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_full_robot_arm_sim/cmake" TYPE FILE FILES
-    "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/moveit_full_robot_arm_simConfig.cmake"
-    "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/moveit_full_robot_arm_simConfig-version.cmake"
+    "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/moveit_full_robot_arm_simConfig.cmake"
+    "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/catkin_generated/installspace/moveit_full_robot_arm_simConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_full_robot_arm_sim" TYPE FILE FILES "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/moveit_full_robot_arm_sim/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_full_robot_arm_sim" TYPE FILE FILES "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/moveit_full_robot_arm_sim/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_full_robot_arm_sim" TYPE DIRECTORY FILES "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/moveit_full_robot_arm_sim/launch" REGEX "/setup\\_assistant\\.launch$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_full_robot_arm_sim" TYPE DIRECTORY FILES "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/moveit_full_robot_arm_sim/launch" REGEX "/setup\\_assistant\\.launch$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_full_robot_arm_sim" TYPE DIRECTORY FILES "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/moveit_full_robot_arm_sim/config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_full_robot_arm_sim" TYPE DIRECTORY FILES "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/moveit_full_robot_arm_sim/config")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/gtest/cmake_install.cmake")
+  include("/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/gtest/cmake_install.cmake")
 
 endif()
 
@@ -180,5 +165,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

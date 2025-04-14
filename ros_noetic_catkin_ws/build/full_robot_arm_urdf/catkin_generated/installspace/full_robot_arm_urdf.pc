@@ -1,4 +1,4 @@
-prefix=/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install
+prefix=/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install
 
 Name: full_robot_arm_urdf
 Description: Description of full_robot_arm_urdf

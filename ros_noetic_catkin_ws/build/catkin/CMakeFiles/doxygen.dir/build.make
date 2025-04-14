@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/catkin
+CMAKE_SOURCE_DIR = /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/catkin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin
+CMAKE_BINARY_DIR = /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin
 
 # Utility rule file for doxygen.
 
@@ -67,6 +67,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/catkin /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/catkin /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/catkin /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/catkin /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/catkin/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

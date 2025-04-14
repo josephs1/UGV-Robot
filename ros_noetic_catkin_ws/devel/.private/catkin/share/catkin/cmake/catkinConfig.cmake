@@ -11,7 +11,7 @@
 #    contains the include dirs / library dirs / libraries of the searched component <comp>.
 
 if(CATKIN_TOPLEVEL_FIND_PACKAGE OR NOT CATKIN_TOPLEVEL)
-  set(catkin_EXTRAS_DIR "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/catkin/cmake")
+  set(catkin_EXTRAS_DIR "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/catkin/cmake")
 
   # prevent multiple inclusion from repeated find_package() calls in non-workspace context
   # as long as this variable is in the scope the variables from all.cmake are also, so no need to be evaluated again

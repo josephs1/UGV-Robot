@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/moveit_full_robot_arm_sim
+CMAKE_SOURCE_DIR = /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/moveit_full_robot_arm_sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim
+CMAKE_BINARY_DIR = /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/CMakeFiles /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/CMakeFiles /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/build/moveit_full_robot_arm_sim/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

@@ -1,8 +1,0 @@
-prefix=/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/ws_livox/devel
-
-Name: livox_ros_driver2
-Description: Description of livox_ros_driver2
-Version: 1.0.0
-Cflags: -I/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/ws_livox/devel/include
-Libs: -L${prefix}/lib 
-Requires: roscpp rospy std_msgs message_runtime pcl_ros

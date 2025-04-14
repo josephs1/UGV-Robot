@@ -18,7 +18,7 @@ if not type -q bass
 end
 
 if test -z $_CATKIN_SETUP_DIR
-    set _CATKIN_SETUP_DIR /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/devel/.private/catkin
+    set _CATKIN_SETUP_DIR /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/devel/.private/catkin
 end
 
 set _SETUP_UTIL "$_CATKIN_SETUP_DIR/_setup_util.py"

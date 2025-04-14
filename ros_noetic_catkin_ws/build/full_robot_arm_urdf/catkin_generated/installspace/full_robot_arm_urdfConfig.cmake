@@ -67,14 +67,14 @@ set(full_robot_arm_urdf_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(full_robot_arm_urdf_SOURCE_PREFIX /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/full_robot_arm_urdf)
-  set(full_robot_arm_urdf_DEVEL_PREFIX /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/devel/.private/full_robot_arm_urdf)
+  set(full_robot_arm_urdf_SOURCE_PREFIX /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/src/full_robot_arm_urdf)
+  set(full_robot_arm_urdf_DEVEL_PREFIX /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/devel/.private/full_robot_arm_urdf)
   set(full_robot_arm_urdf_INSTALL_PREFIX "")
   set(full_robot_arm_urdf_PREFIX ${full_robot_arm_urdf_DEVEL_PREFIX})
 else()
   set(full_robot_arm_urdf_SOURCE_PREFIX "")
   set(full_robot_arm_urdf_DEVEL_PREFIX "")
-  set(full_robot_arm_urdf_INSTALL_PREFIX /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install)
+  set(full_robot_arm_urdf_INSTALL_PREFIX /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install)
   set(full_robot_arm_urdf_PREFIX ${full_robot_arm_urdf_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/lib;/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/devel/lib;/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/drivetrain_catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install/lib;/opt/ros/noetic/lib;/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/devel/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

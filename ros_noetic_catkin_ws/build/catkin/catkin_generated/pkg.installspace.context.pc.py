@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "catkin"
-PROJECT_SPACE_DIR = "/home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install"
-PROJECT_VERSION = "0.8.10"
+PROJECT_SPACE_DIR = "/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install"
+PROJECT_VERSION = "0.8.11"

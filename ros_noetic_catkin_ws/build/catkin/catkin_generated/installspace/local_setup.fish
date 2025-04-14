@@ -5,7 +5,7 @@
 # or fall back to the destination set at configure time
 
 if test -z $_CATKIN_SETUP_DIR
-    set _CATKIN_SETUP_DIR /home/jstefan1/Documents/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install
+    set _CATKIN_SETUP_DIR /home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install
 end
 
 set CATKIN_SETUP_UTIL_ARGS "--extend --local"
