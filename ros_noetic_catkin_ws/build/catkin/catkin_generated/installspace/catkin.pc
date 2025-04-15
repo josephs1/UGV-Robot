@@ -1,8 +1,0 @@
-prefix=/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/install
-
-Name: catkin
-Description: Description of catkin
-Version: 0.8.11
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

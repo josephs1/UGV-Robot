@@ -1,1 +1,0 @@
-/home/jstefan1/CodeWorkspace/UGV-Robot/ros_noetic_catkin_ws/devel/.private/catkin/local_setup.sh
