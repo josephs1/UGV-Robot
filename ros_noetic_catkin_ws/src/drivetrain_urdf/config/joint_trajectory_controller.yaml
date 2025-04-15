@@ -1,6 +1,6 @@
 # Instead of using TAB for indentation, use two spaces at the place of one TAB
 
-# Controller to control robot arm joints
+# Controller to control drivetrain joints
 drivetrain_controller:
   type: "position_controllers/JointTrajectoryController"
   joints: [left_wheel_joint, right_wheel_joint]

@@ -48,10 +48,10 @@
     </collision>
   </link>
 
-  <joint name="base_joint" type="fixed">
+  <joint name="drivetrain_base_joint" type="fixed">
   	<parent link="world"/>
   	<child link="drivetrain_base_link"/>
-  	<origin rpy="0 0 0" xyz="0.0 0.0 0.02"/>
+  	<origin rpy="0 0 0" xyz="0.0 0.0 0.05"/>
   </joint>
 
   <link
