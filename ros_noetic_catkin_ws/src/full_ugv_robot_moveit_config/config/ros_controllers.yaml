@@ -26,9 +26,9 @@ controller_list:
     - ee_finger2_prox_joint
     - ee_finger2_dist_joint
     
-  - name: drivetrain_controller
-    action_ns: follow_joint_trajectory
-    type: FollowJointTrajectory
-    joints:
-    - left_wheel_joint
-    - right_wheel_joint
+#  - name: drivetrain_controller
+#    action_ns: follow_joint_trajectory
+#    type: FollowJointTrajectory
+#    joints:
+#    - left_wheel_joint
+#    - right_wheel_joint

@@ -19,6 +19,7 @@
   <param name="robot_description" textfile="$(find full_robot_arm_urdf)/urdf/full_robot_arm_urdf.urdf"/>
 	
   <!--spawn a empty gazebo world-->
+  <!--
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
 	<arg name="world_name" value="$(find gazebo_ros_link_attacher)/worlds/test_attacher.world"/>
 	<arg name="debug" value="$(arg debug)" />
@@ -28,6 +29,8 @@
 	<arg name="headless" value="$(arg headless)"/>
 	<arg name="extra_gazebo_args" value="$(arg extra_gazebo_args)"/>
   </include>
+  -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch"/>
   
   <node name="tf_footprint_base" pkg="tf" type="static_transform_publisher" args="0 0 0 0 0 0 base_link base_footprint 40" />
 	
