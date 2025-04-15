@@ -8,7 +8,7 @@
   <link name="world"/>
 
   <link
-    name="base_link">
+    name="drivetrain_base_link">
     <inertial>
       <origin
         xyz="0.25853 -0.477 0.1222"
@@ -29,7 +29,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://drivetrain_urdf/meshes/base_link.STL" />
+          filename="package://drivetrain_urdf/meshes/drivetrain_base_link.STL" />
       </geometry>
       <material
         name="">
@@ -43,14 +43,14 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://drivetrain_urdf/meshes/base_link.STL" />
+          filename="package://drivetrain_urdf/meshes/drivetrain_base_link.STL" />
       </geometry>
     </collision>
   </link>
 
   <joint name="base_joint" type="fixed">
   	<parent link="world"/>
-  	<child link="base_link"/>
+  	<child link="drivetrain_base_link"/>
   	<origin rpy="0 0 0" xyz="0.0 0.0 0.02"/>
   </joint>
 
@@ -58,7 +58,7 @@
     name="left_wheel">
     <inertial>
       <origin
-        xyz="1.3885E-08 -4.7617E-10 -8.5336E-12"
+        xyz="1.3885E-08 -4.7617E-10 -8.5335E-12"
         rpy="0 0 0" />
       <mass
         value="0.36704" />
@@ -101,7 +101,7 @@
       xyz="-0.026657 -0.33398 0.025404"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="drivetrain_base_link" />
     <child
       link="left_wheel" />
     <axis
@@ -111,17 +111,17 @@
     name="right_wheel">
     <inertial>
       <origin
-        xyz="1.38846331099174E-08 4.10696837649382E-10 2.41110575949222E-10"
+        xyz="1.38846332209397E-08 4.10696837649382E-10 2.41110575949222E-10"
         rpy="0 0 0" />
       <mass
-        value="0.367037154275228" />
+        value="0.367037154275227" />
       <inertia
-        ixx="0.000823444186063912"
-        ixy="-3.66312406808114E-12"
-        ixz="-2.24165888026677E-12"
-        iyy="0.000450304106155883"
-        iyz="9.61590847448285E-10"
-        izz="0.0004503035608644" />
+        ixx="0.000823444186063911"
+        ixy="-3.66312426938167E-12"
+        ixz="-2.24165898011139E-12"
+        iyy="0.000450304106155882"
+        iyz="9.61590847610915E-10"
+        izz="0.000450303560864401" />
     </inertial>
     <visual>
       <origin
@@ -154,7 +154,7 @@
       xyz="0.53466 -0.33397 0.025369"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="drivetrain_base_link" />
     <child
       link="right_wheel" />
     <axis
