@@ -33,7 +33,6 @@ client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Variable to track the last time a command was sent
 last_time = time.time()
-command_sent = ""
 
 # Function to capture and display Jetson logs via SSH
 def display_jetson_log(JETSON_IP, JETSON_USER, JETSON_PASS):
@@ -69,37 +68,24 @@ def display_jetson_log(JETSON_IP, JETSON_USER, JETSON_PASS):
 
 # Function to capture the local terminal output (laptop's terminal)
 def capture_local_terminal():
-    global last_time, command_sent
+    global last_time
     try:
         while True:
             pygame.event.pump()  # Process controller events
             current_time = time.time()
-            right_trigger = joystick.get_axis(3)
+            right_trigger = joystick.get_axis(5)
 
             # Only send commands if the right trigger is pressed (threshold check)
             if right_trigger > 0.5:
                 # Process input every 0.5 seconds
                 if current_time - last_time >= 0.5:
-                    x_axis = joystick.get_axis(0)  # Left joystick horizontal (-1 to 1)
-                    y_axis = joystick.get_axis(1)  # Left joystick vertical (-1 to 1)
-
-                    if y_axis < -0.5:  # Move up
-                        new_command = "UP"
-                    elif y_axis > 0.5:  # Move down
-                        new_command = "DOWN"
-                    elif x_axis < -0.5:  # Move left
-                        new_command = "LEFT"
-                    elif x_axis > 0.5:  # Move right
-                        new_command = "RIGHT"
-                    else:
-                        new_command = ""
-
-                    # Send the command if it has changed
-                    if new_command and new_command != command_sent:
-                        client_socket.sendall(new_command.encode())
-                        print(f"Client: {new_command}")
-                        command_sent = new_command
-                        last_time = current_time  # Update last_time
+                    # x_axis = joystick.get_axis(0)  # Left joystick horizontal (-1 to 1)
+                    left_y_axis = joystick.get_axis(1)  # Left joystick vertical (-1 to 1)
+                    right_y_axis = joystick.get_axis(4)  # Right joystick vertical (-1 to 1)
+                    combined_axis = f"{left_y_axis:.2f},{right_y_axis:.2f}\n"
+                    client_socket.sendall(combined_axis.encode())
+                    print(f"Client: Left:{left_y_axis:.2f}, Right:{right_y_axis:.2f}")
+                    last_time = current_time  # Update last_time
 
             # Check if the "Back" button (button B) is pressed to exit.
             if joystick.get_button(1):

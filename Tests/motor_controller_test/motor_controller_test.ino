@@ -13,6 +13,10 @@ Servo backLeftController;
 Servo frontRightController; 
 Servo backRightController; 
 
+String inputString = "";
+float left_wheel_speed = 0.0;
+float right_wheel_speed = 0.0;
+
 void setup() {
     Serial.begin(9600); // Start serial communication
     frontLeftController.attach(FRONT_LEFT_MOTOR);
