@@ -23,14 +23,14 @@ drivetrain_controller:
   linear:
     x:
       has_velocity_limits: true
-      max_velocity: 1.0
-      min_velocity: -1.0
+      max_velocity: 15.0
+      min_velocity: -15.0
 
   angular:
     z:
       has_velocity_limits: true
-      max_velocity: 2.0
-      min_velocity: -2.0
+      max_velocity: 15.0
+      min_velocity: -15.0
   
 # Controller to control end effector joints
 hand_ee_controller:

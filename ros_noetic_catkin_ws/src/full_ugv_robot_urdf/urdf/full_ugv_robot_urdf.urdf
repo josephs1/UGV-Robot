@@ -157,9 +157,9 @@
     <child
       link="left_wheel" />
     <axis
-      xyz="1 0 0" />
+      xyz="-1 0 0" />
     <limit
-      effort="5.0" velocity="10.0"/>
+      effort="10.0" velocity="15.0"/>
   </joint>
   <link
     name="right_wheel">
@@ -212,9 +212,9 @@
     <child
       link="right_wheel" />
     <axis
-      xyz="1 0 0" />
+      xyz="-1 0 0" />
     <limit
-      effort="5.0" velocity="10.0"/>
+      effort="10.0" velocity="15.0"/>
   </joint>
 
   <link
