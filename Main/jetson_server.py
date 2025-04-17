@@ -17,7 +17,7 @@ HOST = "0.0.0.0"
 dotenv_path = find_dotenv()
 if dotenv_path:
     load_dotenv(dotenv_path)
-    PORT = os.getenv("PORT")
+    PORT = int(os.getenv("PORT"))
 else:
     PORT = 12345  # Port number (should match the Jetson server)
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

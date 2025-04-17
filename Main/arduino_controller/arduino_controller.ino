@@ -53,7 +53,7 @@ void loop() {
           float tempRight = inputString.substring(commaIndex + 1).toFloat();
 
           // Only assign if valid
-          left_wheel_speed = tempLeft;
+          left_wheel_speed = tempLeft*-1.0;
           right_wheel_speed = tempRight;
           
           // Set Motor Speed

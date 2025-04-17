@@ -12,7 +12,7 @@ from dotenv import load_dotenv, find_dotenv # pip install python-dotenv
 dotenv_path = find_dotenv()
 if dotenv_path:
     load_dotenv(dotenv_path)
-    PORT = os.getenv("PORT")
+    PORT = int(os.getenv("PORT"))
 else:
     PORT = 12345  # Port number (should match the Jetson server)
 
@@ -80,8 +80,8 @@ def capture_local_terminal():
                 # Process input every 0.5 seconds
                 if current_time - last_time >= 0.5:
                     # x_axis = joystick.get_axis(0)  # Left joystick horizontal (-1 to 1)
-                    left_y_axis = joystick.get_axis(1)  # Left joystick vertical (-1 to 1)
-                    right_y_axis = joystick.get_axis(4)  # Right joystick vertical (-1 to 1)
+                    left_y_axis = joystick.get_axis(1)  # Left joystick vertical (-1 is up, 1 is down)
+                    right_y_axis = joystick.get_axis(3)  # Right joystick vertical (-1 is up, 1 is down)
                     combined_axis = f"{left_y_axis:.2f},{right_y_axis:.2f}\n"
                     client_socket.sendall(combined_axis.encode())
                     print(f"Client: Left:{left_y_axis:.2f}, Right:{right_y_axis:.2f}")
@@ -138,7 +138,7 @@ def type_in_Jetson_connection_info():
     if dotenv_path:
         load_dotenv(dotenv_path)
         print(".env file found.")
-        JETSON_IP = os.getenv("IP_ADDRESS")
+        JETSON_IP = os.getenv("JETSON_IP")
         JETSON_USER = os.getenv("JETSON_USER")
         JETSON_PASS = os.getenv("JETSON_PASS")
 
