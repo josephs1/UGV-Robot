@@ -8,9 +8,9 @@ robot_arm_controller:
 # Controller to control drivetrain joints
 drivetrain_controller:
   type: "diff_drive_controller/DiffDriveController"
-  left_wheel: 'left_wheel_joint'
-  right_wheel: 'right_wheel_joint'
-  publish_rate: 10
+  left_wheel: ['left_wheel_joint', 'left_front_wheel_joint', 'left_back_wheel_joint']
+  right_wheel: ['right_wheel_joint', 'right_front_wheel_joint', 'right_back_wheel_joint']
+  publish_rate: 50
   wheel_separation: 0.2286  # Distance between wheels in meters
   wheel_radius: 0.0635      # Radius of wheels in meters
   enable_odom_tf: true
@@ -23,14 +23,14 @@ drivetrain_controller:
   linear:
     x:
       has_velocity_limits: true
-      max_velocity: 15.0
-      min_velocity: -15.0
+      max_velocity: 30.0
+      min_velocity: -30.0
 
   angular:
     z:
       has_velocity_limits: true
-      max_velocity: 15.0
-      min_velocity: -15.0
+      max_velocity: 30.0
+      min_velocity: -30.0
   
 # Controller to control end effector joints
 hand_ee_controller:

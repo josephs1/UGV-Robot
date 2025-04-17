@@ -3,7 +3,7 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="drivetrain_urdf">
+  name="full_ugv_robot_urdf">
 
   <link name="root_link"/>
 
@@ -11,17 +11,17 @@
     name="drivetrain_base_link">
     <inertial>
       <origin
-        xyz="0.25853 -0.477 0.1222"
+        xyz="0.25893 -0.48948 0.13065"
         rpy="0 0 0" />
       <mass
-        value="18.295" />
+        value="16.826" />
       <inertia
-        ixx="0.10003"
+        ixx="0.096739"
         ixy="1.888E-07"
-        ixz="9.4489E-10"
-        iyy="0.18366"
-        iyz="-7.4547E-08"
-        izz="0.18101" />
+        ixz="9.5052E-10"
+        iyy="0.18186"
+        iyz="-7.282E-08"
+        izz="0.17921" />
     </inertial>
     <visual>
       <origin
@@ -53,7 +53,7 @@
   	<child link="drivetrain_base_link"/>
   	<origin rpy="0 0 0" xyz="0.0 0.0 0.05"/>
   </joint>
-  
+
   <link
     name="base_link">
     <inertial>
@@ -105,7 +105,7 @@
     name="left_wheel">
     <inertial>
       <origin
-        xyz="1.3885E-08 -4.7617E-10 -8.5335E-12"
+        xyz="1.3885E-08 -4.7617E-10 -8.5337E-12"
         rpy="0 0 0" />
       <mass
         value="0.36704" />
@@ -159,23 +159,24 @@
     <axis
       xyz="-1 0 0" />
     <limit
-      effort="15.0" velocity="30.0"/>
+      effort="15"
+      velocity="30" />
   </joint>
   <link
     name="right_wheel">
     <inertial>
       <origin
-        xyz="1.38846332209397E-08 4.10696837649382E-10 2.41110575949222E-10"
+        xyz="1.3885E-08 4.107E-10 2.4111E-10"
         rpy="0 0 0" />
       <mass
-        value="0.367037154275227" />
+        value="0.36704" />
       <inertia
-        ixx="0.000823444186063911"
-        ixy="-3.66312426938167E-12"
-        ixz="-2.24165898011139E-12"
-        iyy="0.000450304106155882"
-        iyz="9.61590847610915E-10"
-        izz="0.000450303560864401" />
+        ixx="0.00082344"
+        ixy="-3.6631E-12"
+        ixz="-2.2417E-12"
+        iyy="0.0004503"
+        iyz="9.6159E-10"
+        izz="0.0004503" />
     </inertial>
     <visual>
       <origin
@@ -188,17 +189,22 @@
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.79216 0.81961 0.93333 1" />
       </material>
     </visual>
     <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="package://full_ugv_robot_urdf/meshes/right_wheel.STL" />
+        <cylinder radius="0.0635" length="0.02"/>
       </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>1.0</mu>
+            <mu2>1.0</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
   <joint
@@ -214,7 +220,256 @@
     <axis
       xyz="-1 0 0" />
     <limit
-      effort="15.0" velocity="30.0"/>
+      effort="15"
+      velocity="30" />
+  </joint>
+
+  <link
+    name="left_front_wheel">
+    <inertial>
+      <origin
+        xyz="-1.38846338870735E-08 -1.22056642570811E-10 4.66495952977652E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.367037154275229" />
+      <inertia
+        ixx="0.000823444186063911"
+        ixy="-9.9195770866913E-13"
+        ixz="4.17846004288441E-12"
+        iyy="0.000450302870219107"
+        iyz="-2.66576517452119E-10"
+        izz="0.000450304796801175" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_ugv_robot_urdf/meshes/left_front_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.0635" length="0.02"/>
+      </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>1.0</mu>
+            <mu2>1.0</mu2>
+          </ode>
+        </friction>
+      </surface>
+    </collision>
+  </link>
+  <joint
+    name="left_front_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.017386 -0.10541 0.0254"
+      rpy="0 0 0" />
+    <parent
+      link="drivetrain_base_link" />
+    <child
+      link="left_front_wheel" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      effort="15"
+      velocity="30" />
+  </joint>
+
+  <link
+    name="right_front_wheel">
+    <inertial>
+      <origin
+        xyz="1.38846335540066E-08 1.84573023531698E-10 4.39020375608834E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.367037154275226" />
+      <inertia
+        ixx="0.000823444186063905"
+        ixy="-1.59170261207575E-12"
+        ixz="-3.98873364337992E-12"
+        iyy="0.000450302988377704"
+        iyz="5.33613932717208E-10"
+        izz="0.000450304678642573" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_ugv_robot_urdf/meshes/right_front_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.0635" length="0.02"/>
+      </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>1.0</mu>
+            <mu2>1.0</mu2>
+          </ode>
+        </friction>
+      </surface>
+    </collision>
+  </link>
+  <joint
+    name="right_front_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.52539 -0.10541 0.0254"
+      rpy="0 0 0" />
+    <parent
+      link="drivetrain_base_link" />
+    <child
+      link="right_front_wheel" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      effort="15"
+      velocity="30" />
+  </joint>
+
+  <link
+    name="left_back_wheel">
+    <inertial>
+      <origin
+        xyz="-1.3885E-08 3.8422E-10 -2.8139E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.36704" />
+      <inertia
+        ixx="0.00082344"
+        ixy="3.4178E-12"
+        ixz="-2.6005E-12"
+        iyy="0.0004503"
+        iyz="-9.9678E-10"
+        izz="0.0004503" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_ugv_robot_urdf/meshes/left_back_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.0635" length="0.02"/>
+      </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>1.0</mu>
+            <mu2>1.0</mu2>
+          </ode>
+        </friction>
+      </surface>
+    </collision>
+  </link>
+  <joint
+    name="left_back_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.017386 -0.56261 0.0254"
+      rpy="0 0 0" />
+    <parent
+      link="drivetrain_base_link" />
+    <child
+      link="left_back_wheel" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      effort="15"
+      velocity="30" />
+  </joint>
+
+  <link
+    name="right_back_wheel">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://full_ugv_robot_urdf/meshes/right_back_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.0635" length="0.02"/>
+      </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>1.0</mu>
+            <mu2>1.0</mu2>
+          </ode>
+        </friction>
+      </surface>
+    </collision>
+  </link>
+  <joint
+    name="right_back_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.52539 -0.56261 0.0254"
+      rpy="0 0 0" />
+    <parent
+      link="drivetrain_base_link" />
+    <child
+      link="right_back_wheel" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      effort="15"
+      velocity="30" />
   </joint>
 
   <link
@@ -512,6 +767,7 @@
       effort="2.45"
       velocity="8.08" />
   </joint>
+
   <link
     name="ee_thumb_prox">
     <inertial>
@@ -994,6 +1250,46 @@
   	</joint>
   	<actuator name="right_wheel_motor">
   		<mechanicalReduction>1</mechanicalReduction>
+  	</actuator>
+  </transmission>
+
+  <transmission name="left_front_wheel_trans">
+  	<type>transmission_interface/SimpleTransmission</type>
+  	<joint name="left_front_wheel_joint">
+    		<hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  	</joint>
+  	<actuator name="left_front_wheel_motor">
+    		<mechanicalReduction>1</mechanicalReduction>
+  	</actuator>
+  </transmission>
+
+  <transmission name="left_back_wheel_trans">
+  	<type>transmission_interface/SimpleTransmission</type>
+  	<joint name="left_back_wheel_joint">
+    		<hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  	</joint>
+  	<actuator name="left_back_wheel_motor">
+    		<mechanicalReduction>1</mechanicalReduction>
+  	</actuator>
+  </transmission>
+
+  <transmission name="right_front_wheel_trans">
+  	<type>transmission_interface/SimpleTransmission</type>
+  	<joint name="right_front_wheel_joint">
+    		<hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  	</joint>
+  	<actuator name="right_front_wheel_motor">
+    		<mechanicalReduction>1</mechanicalReduction>
+  	</actuator>
+  </transmission>
+
+  <transmission name="right_back_wheel_trans">
+  	<type>transmission_interface/SimpleTransmission</type>
+  	<joint name="right_back_wheel_joint">
+    		<hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  	</joint>
+  	<actuator name="right_back_wheel_motor">
+    		<mechanicalReduction>1</mechanicalReduction>
   	</actuator>
   </transmission>
   
