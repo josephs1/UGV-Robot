@@ -3,7 +3,7 @@
     This is a format for representing semantic information about the robot structure.
     A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
 -->
-<robot name="drivetrain_urdf">
+<robot name="full_ugv_robot_urdf">
     <!--GROUPS: Representation of a set of joints and links. This can be useful for specifying DOF to plan for, defining arms, end effectors, etc-->
     <!--LINKS: When a link is specified, the parent joint of that link (if it exists) is automatically included-->
     <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
@@ -88,7 +88,7 @@
         <joint name="ee_finger2_dist_joint" value="0.25"/>
         <joint name="ee_finger2_prox_joint" value="0.9"/>
         <joint name="ee_finger2_roll_joint" value="0"/>
-        <joint name="ee_thumb_dist_joint" value="-0.25"/>
+        <joint name="ee_thumb_dist_joint" value="-0.9"/>
         <joint name="ee_thumb_prox_joint" value="-0.9"/>
     </group_state>
     <group_state name="hand_closed" group="hand_group">
@@ -115,13 +115,21 @@
     <end_effector name="hand_ee" parent_link="link_5" group="hand_group"/>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="base_link" link2="drivetrain_base_link" reason="Adjacent"/>
+    <disable_collisions link1="base_link" link2="left_back_wheel" reason="Never"/>
+    <disable_collisions link1="base_link" link2="left_front_wheel" reason="Never"/>
     <disable_collisions link1="base_link" link2="left_wheel" reason="Never"/>
     <disable_collisions link1="base_link" link2="link_1" reason="Adjacent"/>
     <disable_collisions link1="base_link" link2="link_2" reason="Never"/>
     <disable_collisions link1="base_link" link2="link_3" reason="Never"/>
+    <disable_collisions link1="base_link" link2="right_back_wheel" reason="Never"/>
+    <disable_collisions link1="base_link" link2="right_front_wheel" reason="Never"/>
     <disable_collisions link1="base_link" link2="right_wheel" reason="Never"/>
+    <disable_collisions link1="drivetrain_base_link" link2="left_back_wheel" reason="Adjacent"/>
+    <disable_collisions link1="drivetrain_base_link" link2="left_front_wheel" reason="Adjacent"/>
     <disable_collisions link1="drivetrain_base_link" link2="left_wheel" reason="Adjacent"/>
     <disable_collisions link1="drivetrain_base_link" link2="link_1" reason="Never"/>
+    <disable_collisions link1="drivetrain_base_link" link2="right_back_wheel" reason="Adjacent"/>
+    <disable_collisions link1="drivetrain_base_link" link2="right_front_wheel" reason="Adjacent"/>
     <disable_collisions link1="drivetrain_base_link" link2="right_wheel" reason="Adjacent"/>
     <disable_collisions link1="ee_finger1_dist" link2="ee_finger1_prox" reason="Adjacent"/>
     <disable_collisions link1="ee_finger1_dist" link2="ee_finger1_roll" reason="Never"/>
@@ -163,18 +171,40 @@
     <disable_collisions link1="ee_thumb_prox" link2="link_3" reason="Never"/>
     <disable_collisions link1="ee_thumb_prox" link2="link_4" reason="Never"/>
     <disable_collisions link1="ee_thumb_prox" link2="link_5" reason="Adjacent"/>
+    <disable_collisions link1="left_back_wheel" link2="left_front_wheel" reason="Never"/>
+    <disable_collisions link1="left_back_wheel" link2="left_wheel" reason="Never"/>
+    <disable_collisions link1="left_back_wheel" link2="link_1" reason="Never"/>
+    <disable_collisions link1="left_back_wheel" link2="link_2" reason="Never"/>
+    <disable_collisions link1="left_back_wheel" link2="right_back_wheel" reason="Never"/>
+    <disable_collisions link1="left_back_wheel" link2="right_front_wheel" reason="Never"/>
+    <disable_collisions link1="left_back_wheel" link2="right_wheel" reason="Never"/>
+    <disable_collisions link1="left_front_wheel" link2="left_wheel" reason="Never"/>
+    <disable_collisions link1="left_front_wheel" link2="link_1" reason="Never"/>
+    <disable_collisions link1="left_front_wheel" link2="link_2" reason="Never"/>
+    <disable_collisions link1="left_front_wheel" link2="right_back_wheel" reason="Never"/>
+    <disable_collisions link1="left_front_wheel" link2="right_front_wheel" reason="Never"/>
+    <disable_collisions link1="left_front_wheel" link2="right_wheel" reason="Never"/>
     <disable_collisions link1="left_wheel" link2="link_1" reason="Never"/>
     <disable_collisions link1="left_wheel" link2="link_2" reason="Never"/>
+    <disable_collisions link1="left_wheel" link2="right_back_wheel" reason="Never"/>
+    <disable_collisions link1="left_wheel" link2="right_front_wheel" reason="Never"/>
     <disable_collisions link1="left_wheel" link2="right_wheel" reason="Never"/>
     <disable_collisions link1="link_1" link2="link_2" reason="Adjacent"/>
     <disable_collisions link1="link_1" link2="link_3" reason="Never"/>
     <disable_collisions link1="link_1" link2="link_4" reason="Never"/>
+    <disable_collisions link1="link_1" link2="right_back_wheel" reason="Never"/>
+    <disable_collisions link1="link_1" link2="right_front_wheel" reason="Never"/>
     <disable_collisions link1="link_1" link2="right_wheel" reason="Never"/>
     <disable_collisions link1="link_2" link2="link_3" reason="Adjacent"/>
     <disable_collisions link1="link_2" link2="link_4" reason="Never"/>
     <disable_collisions link1="link_2" link2="link_5" reason="Never"/>
+    <disable_collisions link1="link_2" link2="right_back_wheel" reason="Never"/>
+    <disable_collisions link1="link_2" link2="right_front_wheel" reason="Never"/>
     <disable_collisions link1="link_2" link2="right_wheel" reason="Never"/>
     <disable_collisions link1="link_3" link2="link_4" reason="Adjacent"/>
     <disable_collisions link1="link_3" link2="link_5" reason="Never"/>
     <disable_collisions link1="link_4" link2="link_5" reason="Adjacent"/>
+    <disable_collisions link1="right_back_wheel" link2="right_front_wheel" reason="Never"/>
+    <disable_collisions link1="right_back_wheel" link2="right_wheel" reason="Never"/>
+    <disable_collisions link1="right_front_wheel" link2="right_wheel" reason="Never"/>
 </robot>

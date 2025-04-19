@@ -4,8 +4,8 @@ moveit_setup_assistant_config:
     relative_path: urdf/full_ugv_robot_urdf.urdf
     xacro_args: ""
   SRDF:
-    relative_path: config/drivetrain_urdf.srdf
+    relative_path: config/full_ugv_robot_urdf.srdf
   CONFIG:
     author_name: Joseph Stefanoni
     author_email: jstefan1@stevens.edu
-    generated_timestamp: 1744688920
+    generated_timestamp: 1745031633

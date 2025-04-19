@@ -12,7 +12,7 @@ drivetrain_controller:
   right_wheel: ['right_wheel_joint', 'right_front_wheel_joint', 'right_back_wheel_joint']
   publish_rate: 50
   wheel_separation: 0.2286  # Distance between wheels in meters
-  wheel_radius: 0.1      # Radius of wheels in meters. Used to be 0.0635
+  wheel_radius: 0.0635      # Radius of wheels in meters.
   enable_odom_tf: true
   odom_frame_id: odom
   base_frame_id: root_link
@@ -23,14 +23,14 @@ drivetrain_controller:
   linear:
     x:
       has_velocity_limits: true
-      max_velocity: 30.0
-      min_velocity: -30.0
+      max_velocity: 10.0
+      min_velocity: -10.0
 
   angular:
     z:
       has_velocity_limits: true
-      max_velocity: 30.0
-      min_velocity: -30.0
+      max_velocity: 5.0
+      min_velocity: -5.0
   
 # Controller to control end effector joints
 hand_ee_controller:

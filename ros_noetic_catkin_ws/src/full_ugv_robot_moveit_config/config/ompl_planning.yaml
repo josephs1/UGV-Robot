@@ -261,7 +261,6 @@ finger1_group:
   projection_evaluator: joints(ee_finger1_roll_joint,ee_finger1_prox_joint)
   longest_valid_segment_fraction: 0.005
 finger2_group:
-  default_planner_config: RRT
   planner_configs:
     - AnytimePathShortening
     - SBL

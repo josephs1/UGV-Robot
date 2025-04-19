@@ -3,7 +3,7 @@
   <name>full_ugv_robot_moveit_config</name>
   <version>0.3.0</version>
   <description>
-     An automatically generated package with all the configuration and launch files for using the drivetrain_urdf with the MoveIt Motion Planning Framework
+     An automatically generated package with all the configuration and launch files for using the full_ugv_robot_urdf with the MoveIt Motion Planning Framework
   </description>
   <author email="jstefan1@stevens.edu">Joseph Stefanoni</author>
   <maintainer email="jstefan1@stevens.edu">Joseph Stefanoni</maintainer>
