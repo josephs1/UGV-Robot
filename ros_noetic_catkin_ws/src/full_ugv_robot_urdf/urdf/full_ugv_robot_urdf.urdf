@@ -134,7 +134,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <cylinder radius="0.0635" length="0.02"/>
+        <cylinder radius="0.1" length="0.02"/>
       </geometry>
       <surface>
         <friction>
@@ -195,7 +195,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <cylinder radius="0.0635" length="0.02"/>
+        <cylinder radius="0.1" length="0.02"/>
       </geometry>
       <surface>
         <friction>
@@ -257,7 +257,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <cylinder radius="0.0635" length="0.02"/>
+        <cylinder radius="0.1" length="0.02"/>
       </geometry>
       <surface>
         <friction>
@@ -319,7 +319,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <cylinder radius="0.0635" length="0.02"/>
+        <cylinder radius="0.1" length="0.02"/>
       </geometry>
       <surface>
         <friction>
@@ -381,7 +381,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <cylinder radius="0.0635" length="0.02"/>
+        <cylinder radius="0.1" length="0.02"/>
       </geometry>
       <surface>
         <friction>
@@ -414,17 +414,17 @@
     name="right_back_wheel">
     <inertial>
       <origin
-        xyz="0 0 0"
+        xyz="-1.3885E-08 3.8422E-10 -2.8139E-10"
         rpy="0 0 0" />
       <mass
-        value="0" />
+        value="0.36704" />
       <inertia
-        ixx="0"
-        ixy="0"
-        ixz="0"
-        iyy="0"
-        iyz="0"
-        izz="0" />
+        ixx="0.00082344"
+        ixy="3.4178E-12"
+        ixz="-2.6005E-12"
+        iyy="0.0004503"
+        iyz="-9.9678E-10"
+        izz="0.0004503" />
     </inertial>
     <visual>
       <origin
@@ -443,7 +443,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <cylinder radius="0.0635" length="0.02"/>
+        <cylinder radius="0.1" length="0.02"/>
       </geometry>
       <surface>
         <friction>
@@ -505,7 +505,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <cylinder radius="0.0635" length="0.02"/>
+        <cylinder radius="0.1" length="0.02"/>
       </geometry>
       <surface>
         <friction>
