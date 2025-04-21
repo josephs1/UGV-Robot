@@ -10,6 +10,7 @@ This folder is a workspace for setting up and building a ROS 1 Noetic environmen
 
 ![ROS Arm Movement](https://github.com/josephs1/UGV-Robot/blob/main/Extras/ROS_arm_movement.gif)
 *Figure 1: Testing Arm Movements in ROS with MoveIt.*
+
 ![ROS Hand Movement](https://github.com/josephs1/UGV-Robot/blob/main/Extras/ROS_hand_movement.gif)
 *Figure 2: Testing Hand Movements in ROS with MoveIt.*
 
