@@ -9,9 +9,11 @@ The "Main" folder contains that code for connecting the client laptop to the NVI
 This folder is a workspace for setting up and building a ROS 1 Noetic environment using Catkin. It currently has our robot arm's URDF package, the ROS MoveIt package for simulating our arm in Gazebo and ROS, and the "gazebo_ros_link_attacher" package for attaching blocks to our arm in Gazebo to show our arm "picking up" an object.
 
 ![ROS Arm Movement](https://github.com/josephs1/UGV-Robot/blob/main/Extras/ROS_arm_movement.gif)
+
 *Figure 1: Testing Arm Movements in ROS with MoveIt.*
 
 ![ROS Hand Movement](https://github.com/josephs1/UGV-Robot/blob/main/Extras/ROS_hand_movement.gif)
+
 *Figure 2: Testing Hand Movements in ROS with MoveIt.*
 
 ## Extras
