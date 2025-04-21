@@ -5,11 +5,11 @@ This repository contains the code for my group's senior design project: a UGV wi
 ## Main
 The "Main" folder contains that code for connecting the client laptop to the NVIDIA Jetson Orin Nano through a web socket. The Jetson has a serial connection to an Arduino that will move the mechanical arm's servos and stepper motors along with the drivetrain's DC motors. An Xbox Controller is connected to the laptop for inputs to move the motors. Printed serial messages from both the Jetson and the laptop are outputted.
 
-## Extras
-The "Extras" folder contains old test code used in trial and errors for basic understanding and implementation of functions and libraries that are later used in the "Main" code. It also contains old ROS workspace trial and errors.
-
 ## ros_noetic_catkin_ws
 This folder is a workspace for setting up and building a ROS 1 Noetic environment using Catkin. It currently has our robot arm's URDF package, the ROS MoveIt package for simulating our arm in Gazebo and ROS, and the "gazebo_ros_link_attacher" package for attaching blocks to our arm in Gazebo to show our arm "picking up" an object.
+
+## Extras
+The "Extras" folder contains old test code used in trial and errors for basic understanding and implementation of functions and libraries that are later used in the "Main" code. It also contains old ROS workspace trial and errors.
 
 ## Tests
 The "Tests" folder contains code for testing purposes, such as scripts programming the Arduino, scripts for the laptop client, and scripts for the Jetson Orin Nano. The goal is to understand basic functionality of using new libraries, suchas WebSocket, Pygame joystick controllers, Serial connections and commands, etc.
