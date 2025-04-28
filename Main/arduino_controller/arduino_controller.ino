@@ -53,8 +53,8 @@ void loop() {
           float tempRight = inputString.substring(commaIndex + 1).toFloat();
 
           // Only assign if valid
-          left_wheel_speed = tempLeft*-1.0;
-          right_wheel_speed = tempRight;
+          left_wheel_speed = (tempLeft*-1.0)/2.0;
+          right_wheel_speed = (tempRight)/2.0;
           
           // Set Motor Speed
           left_wheel_motor1.writeMicroseconds(speedToPulseWidth(left_wheel_speed));
@@ -79,7 +79,7 @@ void loop() {
   
 // Function to map speed (-1.0 to 1.0) to PWM pulse width (1000 to 2000 μs)
 int speedToPulseWidth(float speed) {
-    speed = constrain(speed, -0.6, 0.6); // Ensure speed is within range (-0.6, 0.6). Change later to (-1.0, 1.0).
+    speed = constrain(speed, -0.5, 0.5); // Ensure speed is within range (-0.6, 0.6). Change later to (-1.0, 1.0).
 
     // Map the speed to a pulse width between 1000 and 2000 μs
     return map(speed * 100, -100, 100, 1000, 2000); // Return pulse width in microseconds
