@@ -57,10 +57,18 @@ void loop() {
           right_wheel_speed = (tempRight)/2.0;
           
           // Set Motor Speed
-          left_wheel_motor1.writeMicroseconds(speedToPulseWidth(left_wheel_speed));
-          left_wheel_motor2.writeMicroseconds(speedToPulseWidth(left_wheel_speed));
-          right_wheel_motor1.writeMicroseconds(speedToPulseWidth(right_wheel_speed));
-          right_wheel_motor2.writeMicroseconds(speedToPulseWidth(right_wheel_speed));
+          if (-0.1 < left_wheel_speed < 1.0){
+            left_wheel_motor1.writeMicroseconds(speedToPulseWidth(0));
+            left_wheel_motor2.writeMicroseconds(speedToPulseWidth(0));
+            right_wheel_motor1.writeMicroseconds(speedToPulseWidth(0));
+            right_wheel_motor2.writeMicroseconds(speedToPulseWidth(0));
+          }
+          else{
+            left_wheel_motor1.writeMicroseconds(speedToPulseWidth(left_wheel_speed));
+            left_wheel_motor2.writeMicroseconds(speedToPulseWidth(left_wheel_speed));
+            right_wheel_motor1.writeMicroseconds(speedToPulseWidth(right_wheel_speed));
+            right_wheel_motor2.writeMicroseconds(speedToPulseWidth(right_wheel_speed));
+          }
 
           // Print to Serial Monitor
           Serial.println("Received: " + inputString);
