@@ -75,17 +75,31 @@ def capture_local_terminal():
             current_time = time.time()
             right_trigger = joystick.get_axis(5)
 
-            # Only send commands if the right trigger is pressed (threshold check)
-            if right_trigger > 0.5:
-                # Process input every 0.5 seconds
-                if current_time - last_time >= 0.5:
-                    # x_axis = joystick.get_axis(0)  # Left joystick horizontal (-1 to 1)
-                    left_y_axis = joystick.get_axis(1)  # Left joystick vertical (-1 is up, 1 is down)
+            # Nema Motor control (when not driving)
+            if right_trigger <= 0.5:
+                if current_time - last_time >= 0.5:  # Optional delay to avoid spamming
                     right_y_axis = joystick.get_axis(3)  # Right joystick vertical (-1 is up, 1 is down)
-                    combined_axis = f"{left_y_axis:.2f},{right_y_axis:.2f}\n"
-                    client_socket.sendall(combined_axis.encode())
-                    print(f"Client: Left:{left_y_axis:.2f}, Right:{right_y_axis:.2f}")
-                    last_time = current_time  # Update last_time
+                    velocity = 0.0
+                    deadzone = 0.25
+                    if abs(right_y_axis) > deadzone:
+                        if right_y_axis > 0:
+                            velocity = -1.0
+                        else:
+                            velocity = 1.0
+                    command = f"nema,{velocity:.1f}\n"
+                    client_socket.sendall(command.encode())
+                    print(f"Client: Nema → Velocity: {velocity:.1f}")
+                    last_time = current_time
+
+            # Drivetrain control (when trigger is pressed)
+            elif right_trigger > 0.5:
+                if current_time - last_time > 0.5:  # Process input every 0.5 seconds
+                    left_y_axis = joystick.get_axis(1) # Left joystick vertical (-1 is up, 1 is down)
+                    right_y_axis = joystick.get_axis(3) # Right joystick vertical (-1 is up, 1 is down)
+                    command = f"drive,{left_y_axis:.2f},{right_y_axis:.2f}\n"
+                    client_socket.sendall(command.encode())
+                    print(f"Client: Drive command sent - Left: {left_y_axis:.2f}, Right: {right_y_axis:.2f}")
+                    last_time = current_time
 
             # Check if the "Back" button (button B) is pressed to exit.
             if joystick.get_button(1):
