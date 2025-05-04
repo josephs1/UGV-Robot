@@ -58,87 +58,41 @@ void setup() {
 }
   
 void loop() {
-  while (Serial.available()) {
-    char c = Serial.read();
-    if (c == '\n') {
-      inputString.trim();
-      if (inputString == "exit") {
-        // Do nothing
-      }
-      else {
-        int commaIndex = inputString.indexOf(',');
-        if (commaIndex > 0) {
-          String command = inputString.substring(0, commaIndex);
-          String args = inputString.substring(commaIndex + 1);
+    delay(2000);
+    left_wheel_motor1.writeMicroseconds(speedToPulseWidth(-0.2));
+    left_wheel_motor2.writeMicroseconds(speedToPulseWidth(-0.2));
+    //right_wheel_motor1.writeMicroseconds(speedToPulseWidth(0.2));
+    //right_wheel_motor2.writeMicroseconds(speedToPulseWidth(0.2));
 
-          if (command == "nema") {
-            float directionValue = args.toFloat();
-        
-            const float stepAngle = 20.0;  // Step in 20-degree increments
-        
-            // Update target angle based on input
-            if (directionValue == 1.0) {
-                targetAngle += stepAngle;  // Increase by 20 degrees
-            } else if (directionValue == -1.0) {
-                targetAngle -= stepAngle;  // Decrease by 20 degrees
-            }
-        
-            // Clamp angle between -3600 and 3600 (i.e. 180 * 20)
-            if (targetAngle > 3600) targetAngle = 3600;
-            if (targetAngle < -3600) targetAngle = -3600;
-        
-            moveStepperToTarget();
-          }
-          else if (command == "drive"){
-            int commaIndex2 = args.indexOf(',');
-            if (commaIndex2 > 0){
-              float tempLeft = args.substring(0, commaIndex2).toFloat();
-              float tempRight = args.substring(commaIndex2 + 1).toFloat();
-              
-              left_wheel_speed = (tempLeft*-1.0)/3.0;
-              right_wheel_speed = (tempRight)/3.0;
-
-              // Set Left Motor Speed
-              if (left_wheel_speed > -0.03 && left_wheel_speed < 0.03){
-                left_wheel_motor1.writeMicroseconds(speedToPulseWidth(0));
-                left_wheel_motor2.writeMicroseconds(speedToPulseWidth(0));
-                
-              }
-              else{
-                left_wheel_motor1.writeMicroseconds(speedToPulseWidth(left_wheel_speed));
-                left_wheel_motor2.writeMicroseconds(speedToPulseWidth(left_wheel_speed));
-              }
-
-              // Set Right Motor Speed
-              if (right_wheel_speed > -0.03 && right_wheel_speed < 0.03){
-                right_wheel_motor1.writeMicroseconds(speedToPulseWidth(0));
-                right_wheel_motor2.writeMicroseconds(speedToPulseWidth(0));
-              }
-              else {
-                right_wheel_motor1.writeMicroseconds(speedToPulseWidth(right_wheel_speed));
-                right_wheel_motor2.writeMicroseconds(speedToPulseWidth(right_wheel_speed));
-              }
-
-              // Print to Serial Monitor
-              Serial.println("Received: " + inputString);
-              Serial.print("Left: "); Serial.println(left_wheel_speed);
-              Serial.print("Right: "); Serial.println(right_wheel_speed);
-            }
-          }
-        }
-      }
-      inputString = "";
-      lastDataTime = millis();
-    }
-    else {
-      inputString += c;
-    }
-  }
-  // Check for timeout and stop motors if necessary
-  if (millis() - lastDataTime > timeoutDuration) {
+    delay(1000);
     stopMotors();
-  }  
-  delay(20);
+
+    delay(2000);
+    left_wheel_motor1.writeMicroseconds(speedToPulseWidth(0.2));
+    left_wheel_motor2.writeMicroseconds(speedToPulseWidth(0.2));
+    //right_wheel_motor1.writeMicroseconds(speedToPulseWidth(-0.2));
+    //right_wheel_motor2.writeMicroseconds(speedToPulseWidth(-0.2));
+
+    delay(1000);
+    stopMotors();
+
+    delay(2000);
+    left_wheel_motor1.writeMicroseconds(speedToPulseWidth(0.2));
+    left_wheel_motor2.writeMicroseconds(speedToPulseWidth(0.2));
+    //right_wheel_motor1.writeMicroseconds(speedToPulseWidth(0.2));
+    //right_wheel_motor2.writeMicroseconds(speedToPulseWidth(0.2));
+
+    delay(1000);
+    stopMotors();
+
+    delay(2000);
+    left_wheel_motor1.writeMicroseconds(speedToPulseWidth(-0.2));
+    left_wheel_motor2.writeMicroseconds(speedToPulseWidth(-0.2));
+    //right_wheel_motor1.writeMicroseconds(speedToPulseWidth(-0.2));
+    //right_wheel_motor2.writeMicroseconds(speedToPulseWidth(-0.2));
+
+    delay(1000);
+    stopMotors();
 }
 
 void stopMotors() {
@@ -170,8 +124,8 @@ void moveStepperToTarget() {
     int stepsToMove = abs(angleDiff) / degreesPerStep;
 
     // Ensure targetAngle stays within [-180, 180] range
-    if (targetAngle > 3600) targetAngle = 3600;
-    if (targetAngle < -3600) targetAngle = -3600;
+    if (targetAngle > 180) targetAngle = 180;
+    if (targetAngle < -180) targetAngle = -180;
 
     digitalWrite(dirPin, direction);
     for (int i = 0; i < stepsToMove; i++) {

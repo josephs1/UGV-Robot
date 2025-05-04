@@ -33,6 +33,7 @@ client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Variable to track the last time a command was sent
 last_time = time.time()
+previous_command = ""
 
 # Function to capture and display Jetson logs via SSH
 def display_jetson_log(JETSON_IP, JETSON_USER, JETSON_PASS):
@@ -68,7 +69,7 @@ def display_jetson_log(JETSON_IP, JETSON_USER, JETSON_PASS):
 
 # Function to capture the local terminal output (laptop's terminal)
 def capture_local_terminal():
-    global last_time
+    global last_time, previous_command
     try:
         while True:
             pygame.event.pump()  # Process controller events
@@ -77,7 +78,7 @@ def capture_local_terminal():
 
             # Nema Motor control (when not driving)
             if right_trigger <= 0.5:
-                if current_time - last_time >= 0.5:  # Optional delay to avoid spamming
+                if current_time - last_time >= 0.2:  # Optional delay to avoid spamming
                     right_y_axis = joystick.get_axis(3)  # Right joystick vertical (-1 is up, 1 is down)
                     velocity = 0.0
                     deadzone = 0.25
@@ -93,13 +94,22 @@ def capture_local_terminal():
 
             # Drivetrain control (when trigger is pressed)
             elif right_trigger > 0.5:
-                if current_time - last_time > 0.5:  # Process input every 0.5 seconds
+                if current_time - last_time > 0.2:  # Process input every 0.5 seconds
                     left_y_axis = joystick.get_axis(1) # Left joystick vertical (-1 is up, 1 is down)
                     right_y_axis = joystick.get_axis(3) # Right joystick vertical (-1 is up, 1 is down)
+
+                    # Apply deadzone filter
+                    if abs(left_y_axis) < 0.1:
+                        left_y_axis = 0.0
+                    if abs(right_y_axis) < 0.1:
+                        right_y_axis = 0.0
+
                     command = f"drive,{left_y_axis:.2f},{right_y_axis:.2f}\n"
-                    client_socket.sendall(command.encode())
-                    print(f"Client: Drive command sent - Left: {left_y_axis:.2f}, Right: {right_y_axis:.2f}")
-                    last_time = current_time
+                    if command != previous_command:  # Avoid sending duplicate commands
+                        client_socket.sendall(command.encode())
+                        print(f"Client: Drive command sent - Left: {left_y_axis:.2f}, Right: {right_y_axis:.2f}")
+                        previous_command = command  # Update previous command
+                        last_time = current_time
 
             # Check if the "Back" button (button B) is pressed to exit.
             if joystick.get_button(1):
