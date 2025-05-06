@@ -70,27 +70,43 @@ def display_jetson_log(JETSON_IP, JETSON_USER, JETSON_PASS):
 # Function to capture the local terminal output (laptop's terminal)
 def capture_local_terminal():
     global last_time, previous_command
+    active_device = "servo1"
+    devices = ["servo1", "servo2", "servo3", "nema"]
+    device_index = 0
+    x_button_prev = 0
     try:
         while True:
             pygame.event.pump()  # Process controller events
             current_time = time.time()
             right_trigger = joystick.get_axis(5)
+            x_button = joystick.get_button(2)  # X button is usually button 2
+
+            # Cycle active device if X button is newly pressed and trigger not held
+            if x_button and not x_button_prev and right_trigger <= 0.5:
+                device_index = (device_index + 1) % len(devices)
+                active_device = devices[device_index]
+                print(f"Switched control to: {active_device}")
+
+            x_button_prev = x_button
 
             # Nema Motor control (when not driving)
             if right_trigger <= 0.5:
-                if current_time - last_time >= 0.2:  # Optional delay to avoid spamming
-                    right_y_axis = joystick.get_axis(3)  # Right joystick vertical (-1 is up, 1 is down)
-                    velocity = 0.0
+                if current_time - last_time >= 0.2:
+                    right_y_axis = joystick.get_axis(3)
                     deadzone = 0.25
                     if abs(right_y_axis) > deadzone:
                         if right_y_axis > 0:
-                            velocity = -1.0
+                            value = -1.0
                         else:
-                            velocity = 1.0
-                    command = f"nema,{velocity:.1f}\n"
-                    client_socket.sendall(command.encode())
-                    print(f"Client: Nema → Velocity: {velocity:.1f}")
-                    last_time = current_time
+                            value = 1.0
+                        command = f"{active_device},{value:.1f}\n"
+                        client_socket.sendall(command.encode())
+                        print(f"Client: {active_device} → {value:.1f}")
+                        last_time = current_time
+                        if active_device=="nema":
+                            time.sleep(1.5)
+                    else:
+                        value = 0.0
 
             # Drivetrain control (when trigger is pressed)
             elif right_trigger > 0.5:
@@ -117,7 +133,7 @@ def capture_local_terminal():
                 client_socket.sendall(new_command.encode())
                 break
 
-            time.sleep(0.02)  # Small delay to prevent excessive CPU usage
+            time.sleep(0.09)  # Small delay to prevent excessive CPU usage
 
     except KeyboardInterrupt:
         new_command = "exit"
