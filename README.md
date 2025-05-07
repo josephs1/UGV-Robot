@@ -1,7 +1,7 @@
 # Senior Design Project: UGV with a Mobile Manipulator:
 This repository contains the code for my group's senior design project: a UGV with a mobile manipulation. The code is written for the Arduino Due (microcontroller), the NVIDIA Jetson Orin Nano (microprocessor), and the client laptop.
 
-![Drivetrain Movement](https://github.com/josephs1/UGV-Robot/blob/main/Extras/Autonomous%20Drivetrain%20Movement%20compressed.mp4)
+![Robot Photo](https://github.com/josephs1/UGV-Robot/blob/main/Extras/Robot_photo.jpg))
 
 # Folder Contents:
 ## Main
