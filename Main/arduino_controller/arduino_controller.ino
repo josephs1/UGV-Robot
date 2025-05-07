@@ -105,9 +105,9 @@ void loop() {
             servoPos1 = constrain(servoPos1, 0, 270);
             moveServo(servo1, servoPos1);
         
-            Serial.print("servo1 moved to ");
-            Serial.print(servoPos1);
-            Serial.println(" degrees");
+            //Serial.print("servo1 moved to ");
+            //Serial.print(servoPos1);
+            //Serial.println(" degrees");
           }
           else if (command == "servo2") {
             int dir = args.toFloat();
@@ -116,9 +116,9 @@ void loop() {
             servoPos2 = constrain(servoPos2, 0, 270);
             moveServo(servo2, servoPos2);
         
-            Serial.print("servo2 moved to ");
-            Serial.print(servoPos2);
-            Serial.println(" degrees");
+            //Serial.print("servo2 moved to ");
+            //Serial.print(servoPos2);
+            //Serial.println(" degrees");
           }
           else if (command == "servo3") {
             int dir = args.toFloat();
@@ -127,9 +127,9 @@ void loop() {
             servoPos3 = constrain(servoPos3, 0, 270);
             moveServo(servo3, servoPos3);
         
-            Serial.print("servo3 moved to ");
-            Serial.print(servoPos3);
-            Serial.println(" degrees");
+            //Serial.print("servo3 moved to ");
+            //Serial.print(servoPos3);
+            //Serial.println(" degrees");
           }
           else if (command == "drive"){
             int commaIndex2 = args.indexOf(',');
@@ -162,9 +162,9 @@ void loop() {
               }
 
               // Print to Serial Monitor
-              Serial.println("Received: " + inputString);
-              Serial.print("Left: "); Serial.println(left_wheel_speed);
-              Serial.print("Right: "); Serial.println(right_wheel_speed);
+              //Serial.println("Received: " + inputString);
+              //Serial.print("Left: "); Serial.println(left_wheel_speed);
+              //Serial.print("Right: "); Serial.println(right_wheel_speed);
             }
           }
         }
@@ -227,6 +227,6 @@ void moveStepperToTarget() {
     }
 
     currentAngle = targetAngle;
-    Serial.print("Moved to angle: ");
-    Serial.println(currentAngle);
+    //Serial.print("Moved to angle: ");
+    //Serial.println(currentAngle);
 }

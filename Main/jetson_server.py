@@ -1,7 +1,7 @@
 # Used sudo apt install python3-serial on jetson
 import socket
 import serial
-import logging
+# import logging
 import os
 from dotenv import load_dotenv, find_dotenv # pip install python-dotenv
 
@@ -25,12 +25,14 @@ server_socket.bind((HOST, PORT))
 server_socket.listen(1)
 
 # Set up logging
+"""
 logging.basicConfig(filename='/home/ugv-c7/CodeWorkspace/UGV-Robot/Main/jetson_server_output.log', 
                     level=logging.INFO, 
                     filemode='w')
+"""
 client_socket, addr = server_socket.accept()
-logging.info(f"Jetson: Connected to client at {addr}.\n")
-logging.info("Use the left joystick to send commands. Press 'Back' on the controller to exit.\n")
+# logging.info(f"Jetson: Connected to client at {addr}.\n")
+# logging.info("Use the left joystick to send commands. Press 'Back' on the controller to exit.\n")
 
 try:
     while True:
@@ -40,13 +42,14 @@ try:
             break
         if data=="exit":
             break
-        logging.info(f"Jetson: {data}\n")
+        # logging.info(f"Jetson: {data}\n")
         
         # Send data to Arduino
         arduino.write(data.encode())
 except Exception as e:
-    logging.error(f"Error occurred: {e}")
+    # logging.error(f"Error occurred: {e}")
+    print(f"Error occurred: {e}")
 finally:
     client_socket.close()
     arduino.close()
-    logging.info("Jetson: Connection closed.")
+    # logging.info("Jetson: Connection closed.")
