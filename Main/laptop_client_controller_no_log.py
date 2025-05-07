@@ -88,7 +88,7 @@ def capture_local_terminal():
                         print(f"Client: {active_device} → {value:.1f}")
                         last_time = current_time
                         if active_device == "nema":
-                            time.sleep(1.5)
+                            time.sleep(0.01)
                     else:
                         value = 0.0
 
@@ -112,7 +112,7 @@ def capture_local_terminal():
                 client_socket.sendall(new_command.encode())
                 break
 
-            time.sleep(0.09)
+            time.sleep(0.1)
 
     except KeyboardInterrupt:
         new_command = "exit"
@@ -124,7 +124,7 @@ def start_jetson_server(JETSON_IP, JETSON_USER, JETSON_PASS):
         ssh_client = paramiko.SSHClient()
         ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         ssh_client.connect(JETSON_IP, username=JETSON_USER, password=JETSON_PASS)
-        command = f'python3 ~/CodeWorkspace/UGV-Robot/Main/jetson_server.py &'
+        command = f'python3 ~/CodeWorkspace/UGV-Robot/Main/jetson_server_no_log.py &'
         stdin, stdout, stderr = ssh_client.exec_command(command)
         print("Started jetson_server.py on the Jetson.")
         ssh_client.close()

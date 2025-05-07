@@ -83,7 +83,7 @@ void loop() {
           if (command == "nema") {
             float directionValue = args.toFloat();
         
-            const float stepAngle = 20.0;  // Step in 20-degree increments
+            const float stepAngle = 30.0;  // Step in 20-degree increments
         
             // Update target angle based on input
             if (directionValue == 1.0) {
