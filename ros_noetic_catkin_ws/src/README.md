@@ -6,3 +6,8 @@
 <pre><code>sudo apt update</code></pre>
 <pre><code>sudo apt install ros-noetic-desktop-full</code></pre>
 
+<pre><code>
+cd apt install
+sudo crazy
+</code></pre>  
+
