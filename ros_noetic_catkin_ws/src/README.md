@@ -40,8 +40,9 @@ Instruction from repo: https://github.com/Livox-SDK/livox_ros_driver2
 - <pre><code>cd livox_ros_driver2</code></pre>
 - <pre><code>./build.sh ROS1</code></pre>
 
-# Launching ROS Files
-Always source before roslaunching at directory: .../UGV-Robot/ros_noetic_catkin_ws/
+# Launching ROS Files:
+Always source before roslaunching at directory: .../UGV-Robot/ros_noetic_catkin_ws/ with the following command:
+- source devel/setup.bash
 
 ## Moving drivetrain in Gazebo:
 - <pre><code>roslaunch full_ugv_robot_urdf full_ugv_robot_urdf.launch</code></pre>
