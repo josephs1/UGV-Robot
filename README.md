@@ -22,7 +22,7 @@ This folder is a workspace for setting up and building a ROS 1 Noetic environmen
 The "Extras" folder contains old test code used in trial and errors for basic understanding and implementation of functions and libraries that are later used in the "Main" code. It also contains old ROS workspace trial and errors.
 
 ## Tests
-The "Tests" folder contains code for testing purposes, such as scripts programming the Arduino, scripts for the laptop client, and scripts for the Jetson Orin Nano. The goal is to understand basic functionality of using new libraries, suchas WebSocket, Pygame joystick controllers, Serial connections and commands, etc.
+The "Tests" folder contains code for testing purposes, such as scripts programming the Arduino, scripts for the laptop client, and scripts for the Jetson Orin Nano. The goal is to understand basic functionality of using new libraries, such as WebSocket, Pygame joystick controllers, Serial connections and commands, etc.
 
 ## ROS_Extras
 Contains extra files that were used in editing other downloaded git repositories. Since saved files in those folders cannot be seen in this repository, they were put inside this folder.
