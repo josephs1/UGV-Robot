@@ -47,6 +47,8 @@ class MyRobot:
         self._planning_group = Group_Name
         # Instantiate a MoveGroupCommander Object. This interface can be used to plan and execute motions on the robotic arm
         self._group = moveit_commander.MoveGroupCommander(self._planning_group)
+        self._group.set_planning_time(22.0)
+        self._group.set_num_planning_attempts(35)
         
         # Create a DisplayTrajectory ROS publisher which is used to display trajectories in Rviz
         self._display_trajectory_publisher = rospy.Publisher('/move_group/display_planned_path', moveit_msgs.msg.DisplayTrajectory, queue_size=1)
@@ -76,24 +78,42 @@ class MyRobot:
         target_pose.position.z = current_pose.position.z + dz
         target_pose.orientation = current_pose.orientation  # Keep the same orientation
         
-        #----------------------
+        # Tolerances
+        self._group.set_goal_position_tolerance(0.03)        
+        self._group.set_goal_orientation_tolerance(0.05)
+        
+        # Constraints
         constraints = moveit_msgs.msg.Constraints()
         orientation_constraint = moveit_msgs.msg.OrientationConstraint()
 
         orientation_constraint.link_name = self._eef_link
         orientation_constraint.header.frame_id = self._planning_frame
         orientation_constraint.orientation = current_pose.orientation
-        orientation_constraint.absolute_x_axis_tolerance = 0.1
-        orientation_constraint.absolute_y_axis_tolerance = 0.1
-        orientation_constraint.absolute_z_axis_tolerance = 0.1
+        orientation_constraint.absolute_x_axis_tolerance = 0.2
+        orientation_constraint.absolute_y_axis_tolerance = 0.2
+        orientation_constraint.absolute_z_axis_tolerance = 0.2
         orientation_constraint.weight = 1.0
 
         constraints.orientation_constraints.append(orientation_constraint)
+        
+        joint_names = self._group.get_active_joints()
+        current_joint_values = self._group.get_current_joint_values()
+
+        for i, joint_name in enumerate(joint_names):
+            joint_constraint = moveit_msgs.msg.JointConstraint()
+            joint_constraint.joint_name = joint_name
+            joint_constraint.position = current_joint_values[i]
+            joint_constraint.tolerance_above = 0.55  # 50 degrees = ~0.87 radians
+            joint_constraint.tolerance_below = 0.55
+            joint_constraint.weight = 1.0
+            constraints.joint_constraints.append(joint_constraint)
+        
         self._group.set_path_constraints(constraints)
-        #----------------------
         
         self._group.set_pose_target(target_pose)
         plan_success, plan, planning_time, error_code = self._group.plan()
+        
+        self._group.clear_path_constraints()
 
         if plan_success:
             self._last_plan = plan
@@ -113,17 +133,17 @@ class MyRobot:
                 # Stop the listener when Escape is pressed
                 return False
             elif key.char == 'w':
-                self.move_relative(0, 0, 0.05)  # Move up by 0.01 in Z
+                self.move_relative(0, 0, 0.03)  # Move up by 0.01 in Z
             elif key.char == 's':
-                self.move_relative(0, 0, -0.05)  # Move down by 0.01 in Z
+                self.move_relative(0, 0, -0.03)  # Move down by 0.01 in Z
             elif key.char == 'a':
-                self.move_relative(-0.05, 0, 0)  # Move left by 0.01 in X
+                self.move_relative(-0.03, 0, 0)  # Move left by 0.01 in X
             elif key.char == 'd':
-                self.move_relative(0.05, 0, 0)  # Move right by 0.01 in X
+                self.move_relative(0.03, 0, 0)  # Move right by 0.01 in X
             elif key.char == 'e':
-                self.move_relative(0, 0.05, 0)  # Move forward by 0.01 in Y
+                self.move_relative(0, 0.03, 0)  # Move forward by 0.01 in Y
             elif key.char == 'q':
-                self.move_relative(0, -0.05, 0)  # Move backward by 0.01 in Y
+                self.move_relative(0, -0.03, 0)  # Move backward by 0.01 in Y
         except AttributeError:
             pass  # Handle special keys like shift, ctrl, etc.
 
@@ -175,17 +195,17 @@ class MyRobot:
                 dz = 0
 	    
             if dx < 0:
-                self.move_relative(0, 0, 0.05)
+                self.move_relative(0, 0, 0.03)
             elif dx > 0:
-                self.move_relative(0, 0, -0.05)
+                self.move_relative(0, 0, -0.03)
             if dy < 0:
-                self.move_relative(-0.05, 0, 0)
+                self.move_relative(-0.03, 0, 0)
             elif dy > 0:
-                self.move_relative(0.05, 0, 0)
+                self.move_relative(0.03, 0, 0)
             if dz < 0:
-                self.move_relative(0, 0.05, 0)
+                self.move_relative(0, 0.03, 0)
             elif dz > 0:
-                self.move_relative(0, -0.05, 0)
+                self.move_relative(0, -0.03, 0)
                 
             # Button A (index 0) executes the latest plan
             if joystick.get_button(0):
