@@ -1,3 +1,0 @@
-[submodule "ros_noetic_catkin_ws/src/livox_ros_driver2"]
-	path = ros_noetic_catkin_ws/src/livox_ros_driver2
-	url = https://github.com/Livox-SDK/livox_ros_driver2.git
