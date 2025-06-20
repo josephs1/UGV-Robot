@@ -1,4 +1,5 @@
-# Senior Design Project: UGV with a Mobile Manipulator:
+# Senior Design Project - UGV with a Mobile Manipulator:
+### Sponsored by Siemens
 This repository contains the code for my group's senior design project: a UGV with a mobile manipulation. The code is written for the Arduino Due (microcontroller), the NVIDIA Jetson Orin Nano (microprocessor), and the client laptop.
 
 <img src="https://github.com/josephs1/UGV-Robot/blob/main/Extras/Robot_photo.jpg?raw=true" width="30%" height="30%">
